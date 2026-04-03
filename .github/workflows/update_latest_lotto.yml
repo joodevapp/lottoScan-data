@@ -1,10 +1,12 @@
 name: 로또 데이터 자동 업데이트
-
 on:
   schedule:
-    - cron: '40,45,50,55 11 * * 6'  # 20:40 ~ 20:55
-    - cron: '0,5,10,15,20,25,30 12 * * 6'  # 21:00 ~ 21:30
-  workflow_dispatch:  # 수동 실행 가능
+    - cron: '40,45,50,55 11 * * 6'
+    - cron: '0,5,10,15,20,25,30 12 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
@@ -12,18 +14,14 @@ jobs:
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v4
-
       - name: Python 설정
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: 패키지 설치
         run: pip install requests
-
       - name: 데이터 업데이트
         run: python update_latest_lotto.py
-
       - name: 변경사항 커밋
         run: |
           git config user.name "github-actions"
