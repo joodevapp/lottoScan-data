@@ -5,12 +5,12 @@ import os
 def get_lotto_number(draw_no):
     url = f"https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo={draw_no}"
     headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Referer': 'https://www.dhlottery.co.kr/gameResult.do?method=byWin',
-    'Accept': 'application/json, text/javascript, */*; q=0.01',
-    'Accept-Language': 'ko-KR,ko;q=0.9',
-    'X-Requested-With': 'XMLHttpRequest',
-}
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Referer': 'https://www.dhlottery.co.kr/gameResult.do?method=byWin',
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'Accept-Language': 'ko-KR,ko;q=0.9',
+        'X-Requested-With': 'XMLHttpRequest',
+    }
     try:
         res = requests.get(url, headers=headers, timeout=10)
         print(f"Status code: {res.status_code}")
