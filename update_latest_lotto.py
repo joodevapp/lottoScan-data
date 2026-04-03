@@ -28,7 +28,7 @@ def login_dhlottery(user_id, user_pw):
         }
     )
     print(f"로그인 상태코드: {res.status_code}")
-    
+    print(f"로그인 응답: {res.text[:500]}")  # 이 줄 추가
     # 로그인 확인
     check = session.get("https://www.dhlottery.co.kr/common.do?method=main", headers={
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
