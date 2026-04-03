@@ -1,0 +1,1 @@
+# lottoScan-data
