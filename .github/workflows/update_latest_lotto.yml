@@ -17,11 +17,12 @@ jobs:
         with:
           python-version: '3.11'
       - name: 패키지 설치
-        run: |
-          pip install playwright
-          playwright install chromium
+        run: pip install requests
       - name: 데이터 업데이트
         run: python update_latest_lotto.py
+        env:
+          LOTTO_ID: ${{ secrets.LOTTO_ID }}
+          LOTTO_PW: ${{ secrets.LOTTO_PW }}
       - name: 변경사항 커밋
         run: |
           git config user.name "github-actions"
