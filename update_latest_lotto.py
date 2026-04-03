@@ -1,20 +1,39 @@
 import requests
 import json
 import os
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_v1_5
+import binascii
+
+def encrypt_password(modulus_hex, exponent_hex, password):
+    modulus = int(modulus_hex, 16)
+    exponent = int(exponent_hex, 16)
+    key = RSA.construct((modulus, exponent))
+    cipher = PKCS1_v1_5.new(key)
+    encrypted = cipher.encrypt(password.encode('utf-8'))
+    return binascii.hexlify(encrypted).decode('utf-8')
 
 def login_dhlottery(user_id, user_pw):
     session = requests.Session()
-    
-    # 먼저 메인 페이지 접속해서 쿠키 받기
-    session.get("https://www.dhlottery.co.kr/common.do?method=main", headers={
+    headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    })
+    }
+    
+    # 메인 페이지에서 RSA 키 가져오기
+    main_page = session.get("https://www.dhlottery.co.kr/common.do?method=main", headers=headers)
+    modulus = main_page.text.split("var rsaModulus = '")[1].split("'")[0]
+    exponent = "10001"
+    print(f"RSA 모듈러스 획득: {modulus[:20]}...")
+    
+    # 비밀번호 암호화
+    encrypted_pw = encrypt_password(modulus, exponent, user_pw)
+    print("비밀번호 암호화 완료")
     
     # 로그인
     login_data = {
         'returnUrl': '',
         'userId': user_id,
-        'password': user_pw,
+        'password': encrypted_pw,
         'newsEventYn': '',
         'ssoYn': 'Y',
     }
@@ -23,16 +42,14 @@ def login_dhlottery(user_id, user_pw):
         "https://www.dhlottery.co.kr/userSsl.do?method=login",
         data=login_data,
         headers={
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            **headers,
             'Referer': 'https://www.dhlottery.co.kr/user.do?method=login',
         }
     )
     print(f"로그인 상태코드: {res.status_code}")
-    print(f"로그인 응답: {res.text[:500]}")  # 이 줄 추가
+    
     # 로그인 확인
-    check = session.get("https://www.dhlottery.co.kr/common.do?method=main", headers={
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    })
+    check = session.get("https://www.dhlottery.co.kr/common.do?method=main", headers=headers)
     if 'j_popup_logout' in check.text:
         print("로그인 성공 확인!")
     else:
