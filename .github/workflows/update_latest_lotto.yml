@@ -4,10 +4,8 @@ on:
     - cron: '40,45,50,55 11 * * 6'
     - cron: '0,5,10,15,20,25,30 12 * * 6'
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -19,7 +17,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: 패키지 설치
-        run: pip install requests
+        run: |
+          pip install playwright
+          playwright install chromium
       - name: 데이터 업데이트
         run: python update_latest_lotto.py
       - name: 변경사항 커밋
