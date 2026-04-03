@@ -9,6 +9,8 @@ def get_lotto_number(draw_no):
     }
     try:
         res = requests.get(url, headers=headers, timeout=10)
+        print(f"Status code: {res.status_code}")
+        print(f"Response: {res.text[:200]}")
         data = res.json()
         if data.get('returnValue') == 'success':
             return {
@@ -43,6 +45,7 @@ else:
 
 # 마지막 회차 확인
 last_draw_no = all_data[-1]['draw_no'] if all_data else 0
+print(f"마지막 회차: {last_draw_no}")
 
 # 새 데이터 가져오기
 new_data = []
