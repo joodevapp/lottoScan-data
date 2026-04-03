@@ -1,40 +1,75 @@
+import requests
 import json
 import os
-from playwright.sync_api import sync_playwright
 
-def get_lotto_number(draw_no):
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        url = f"https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo={draw_no}"
-        response = page.goto(url)
-        content = page.text_content("body")
-        browser.close()
-        print(f"Response: {content[:200]}")
-        try:
-            data = json.loads(content)
-            if data.get('returnValue') == 'success':
-                return {
-                    "draw_no": data['drwNo'],
-                    "numbers": [
-                        data['drwtNo1'], data['drwtNo2'], data['drwtNo3'],
-                        data['drwtNo4'], data['drwtNo5'], data['drwtNo6']
-                    ],
-                    "bonus_no": data['bnusNo'],
-                    "date": data['drwNoDate'] + "T00:00:00Z",
-                    "total_sales_amount": data['totSellamnt'],
-                    "divisions": [
-                        {"prize": data['firstWinamnt'], "winners": data['firstPrzwnerCo']},
-                        {"prize": data['secondWinamnt'], "winners": data['secondPrzwnerCo']},
-                        {"prize": data['thirdWinamnt'], "winners": data['thirdPrzwnerCo']},
-                        {"prize": data['fourthWinamnt'], "winners": data['fourthPrzwnerCo']},
-                        {"prize": data['fifthWinamnt'], "winners": data['fifthPrzwnerCo']},
-                    ],
-                    "winners_combination": {}
-                }
-        except Exception as e:
-            print(f"Error: {e}")
+def login_dhlottery(user_id, user_pw):
+    session = requests.Session()
+    
+    # 먼저 메인 페이지 접속해서 쿠키 받기
+    session.get("https://www.dhlottery.co.kr/common.do?method=main", headers={
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    })
+    
+    # 로그인
+    login_data = {
+        'returnUrl': '',
+        'userId': user_id,
+        'password': user_pw,
+        'newsEventYn': '',
+        'ssoYn': 'Y',
+    }
+    
+    res = session.post(
+        "https://www.dhlottery.co.kr/userSsl.do?method=login",
+        data=login_data,
+        headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Referer': 'https://www.dhlottery.co.kr/user.do?method=login',
+        }
+    )
+    print(f"로그인 상태코드: {res.status_code}")
+    return session
+
+def get_lotto_number(session, draw_no):
+    url = f"https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo={draw_no}"
+    try:
+        res = session.get(url, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Referer': 'https://www.dhlottery.co.kr/gameResult.do?method=byWin',
+        })
+        print(f"Status code: {res.status_code}")
+        print(f"Response: {res.text[:200]}")
+        data = res.json()
+        if data.get('returnValue') == 'success':
+            return {
+                "draw_no": data['drwNo'],
+                "numbers": [
+                    data['drwtNo1'], data['drwtNo2'], data['drwtNo3'],
+                    data['drwtNo4'], data['drwtNo5'], data['drwtNo6']
+                ],
+                "bonus_no": data['bnusNo'],
+                "date": data['drwNoDate'] + "T00:00:00Z",
+                "total_sales_amount": data['totSellamnt'],
+                "divisions": [
+                    {"prize": data['firstWinamnt'], "winners": data['firstPrzwnerCo']},
+                    {"prize": data['secondWinamnt'], "winners": data['secondPrzwnerCo']},
+                    {"prize": data['thirdWinamnt'], "winners": data['thirdPrzwnerCo']},
+                    {"prize": data['fourthWinamnt'], "winners": data['fourthPrzwnerCo']},
+                    {"prize": data['fifthWinamnt'], "winners": data['fifthPrzwnerCo']},
+                ],
+                "winners_combination": {}
+            }
+    except Exception as e:
+        print(f"Error: {e}")
     return None
+
+# 환경변수에서 아이디/비밀번호 가져오기
+user_id = os.environ.get('LOTTO_ID')
+user_pw = os.environ.get('LOTTO_PW')
+print(f"로그인 시도: {user_id}")
+
+# 로그인
+session = login_dhlottery(user_id, user_pw)
 
 # all.json 불러오기
 all_json_path = "results/all.json"
@@ -52,7 +87,7 @@ print(f"마지막 회차: {last_draw_no}")
 new_data = []
 draw_no = last_draw_no + 1
 while True:
-    result = get_lotto_number(draw_no)
+    result = get_lotto_number(session, draw_no)
     if result is None:
         break
     new_data.append(result)
