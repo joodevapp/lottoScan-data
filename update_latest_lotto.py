@@ -28,6 +28,16 @@ def login_dhlottery(user_id, user_pw):
         }
     )
     print(f"로그인 상태코드: {res.status_code}")
+    
+    # 로그인 확인
+    check = session.get("https://www.dhlottery.co.kr/common.do?method=main", headers={
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    })
+    if 'j_popup_logout' in check.text:
+        print("로그인 성공 확인!")
+    else:
+        print("로그인 실패 - 세션 없음")
+    
     return session
 
 def get_lotto_number(session, draw_no):
