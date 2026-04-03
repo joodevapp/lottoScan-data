@@ -22,7 +22,7 @@ jobs:
         run: pip install requests
 
       - name: 데이터 업데이트
-        run: python update.py
+        run: python update_latest_lotto.py
 
       - name: 변경사항 커밋
         run: |
