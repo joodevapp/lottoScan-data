@@ -39,14 +39,17 @@ def login_dhlottery(user_id, user_pw):
     }
     
     res = session.post(
-        "https://www.dhlottery.co.kr/userSsl.do?method=login",
-        data=login_data,
-        headers={
-            **headers,
-            'Referer': 'https://www.dhlottery.co.kr/user.do?method=login',
-        }
-    )
-    print(f"로그인 상태코드: {res.status_code}")
+    "https://www.dhlottery.co.kr/userSsl.do?method=login",
+    data=login_data,
+    headers={
+        **headers,
+        'Referer': 'https://www.dhlottery.co.kr/user.do?method=login',
+    },
+    allow_redirects=False  # 리다이렉트 막기
+)
+print(f"로그인 상태코드: {res.status_code}")
+print(f"로그인 응답 헤더: {dict(res.headers)}")
+print(f"로그인 응답 내용: {res.text[:300]}")
     
     # 로그인 확인
     check = session.get("https://www.dhlottery.co.kr/common.do?method=main", headers=headers)
