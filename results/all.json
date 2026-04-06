@@ -47837,55 +47837,5 @@
       "semi_auto": 1,
       "manual": 5
     }
-  },
-  {
-    "draw_no": 1217,
-    "numbers": [
-      8,
-      10,
-      15,
-      20,
-      29,
-      31
-    ],
-    "bonus_no": 41,
-    "date": "2026-03-28T00:00:00Z",
-    "total_sales_amount": 125155256000,
-    "divisions": [
-      {
-        "prize": 2179738018,
-        "winners": 14
-      },
-      {
-        "prize": 59835946,
-        "winners": 85
-      }
-    ],
-    "winners_combination": {}
-  },
-  {
-    "draw_no": 1218,
-    "numbers": [
-      3,
-      28,
-      31,
-      32,
-      42,
-      45
-    ],
-    "bonus_no": 25,
-    "date": "2026-04-04T00:00:00Z",
-    "total_sales_amount": 123335928000,
-    "divisions": [
-      {
-        "prize": 1714482042,
-        "winners": 18
-      },
-      {
-        "prize": 64293077,
-        "winners": 80
-      }
-    ],
-    "winners_combination": {}
   }
 ]
