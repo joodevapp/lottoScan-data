@@ -1,0 +1,28 @@
+name: 로또 판매점 데이터 업데이트
+on:
+  schedule:
+    - cron: '0,10,20,30 12 * * 6'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests
+      - name: 판매점 데이터 업데이트
+        run: python update_winning_stores.py
+      - name: 변경사항 커밋
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add results/all_winning_stores.json results/lotto_db_final.csv
+          git diff --staged --quiet || git commit -m "update stores $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
