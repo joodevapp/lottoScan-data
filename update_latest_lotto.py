@@ -19,6 +19,9 @@ def get_lotto_data(draw_no):
             numbers = page.query_selector_all('.num.win .ball_645')
             bonus = page.query_selector('.num.bonus .ball_645')
             date_el = page.query_selector('.desc')
+
+            print(f"URL: {page.url}")
+            print(f"페이지 텍스트: {page.inner_text('body')[:300]}")
             
             if not numbers or len(numbers) < 6:
                 browser.close()
