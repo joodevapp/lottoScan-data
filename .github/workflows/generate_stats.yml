@@ -1,0 +1,28 @@
+name: 로또 통계 생성
+on:
+  schedule:
+    - cron: '0 13 * * 6'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests
+      - name: 번호별 출현 통계 생성
+        run: python generate_number_stats.py
+      - name: 변경사항 커밋
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add results/stats/
+          git diff --staged --quiet || git commit -m "update stats $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
