@@ -75,7 +75,19 @@ def get_lotto_data_from_page(draw_no):
             
             total_match = re.search(r'총판매금액\s*:\s*([\d,]+)원', text[pos:pos+2000])
             total = int(total_match.group(1).replace(',', '')) if total_match else 0
-            
+            # winners_combination 찾기
+            auto_match = re.search(r'자동(\d+)', text[pos:pos+2000])
+            manual_match = re.search(r'수동(\d+)', text[pos:pos+2000])
+            semi_match = re.search(r'반자동(\d+)', text[pos:pos+2000])
+
+            winners_combination = {}
+            if auto_match:
+                winners_combination['auto'] = int(auto_match.group(1))
+            if manual_match:
+                winners_combination['manual'] = int(manual_match.group(1))
+            if semi_match:
+                winners_combination['semi_auto'] = int(semi_match.group(1))
+                
             return {
                 "draw_no": draw_no,
                 "numbers": nums,
@@ -83,7 +95,7 @@ def get_lotto_data_from_page(draw_no):
                 "date": date,
                 "total_sales_amount": total,
                 "divisions": divisions,
-                "winners_combination": {}
+                "winners_combination": winners_combination
             }
         except Exception as e:
             print(f"Error: {e}")
