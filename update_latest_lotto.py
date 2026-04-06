@@ -101,7 +101,7 @@ def get_lotto_data_from_page(draw_no):
             print(f"Error: {e}")
             return None
 
-all_json_path = "results/all.json"
+all_json_path = "results/All_Lotto_Data.json"
 if os.path.exists(all_json_path):
     with open(all_json_path, "r", encoding="utf-8") as f:
         all_data = json.load(f)
