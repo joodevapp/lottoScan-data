@@ -69,6 +69,7 @@ def get_lotto_data_from_page(draw_no):
                 return None
             
             # 당첨금 정보 찾기
+            print(f"블록 텍스트: {text[pos:pos+2000]}")
             prize_pattern = r'(\d+)등\s*([\d,]+)원\s*(\d+)\s*([\d,]+)원'
             prize_matches = re.findall(prize_pattern, text[pos:pos+2000])
             
