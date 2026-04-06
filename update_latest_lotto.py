@@ -16,7 +16,6 @@ def get_latest_draw_no():
         page.wait_for_load_state('networkidle')
         text = page.inner_text('body')
         browser.close()
-        # 최신 회차 찾기
         matches = re.findall(r'제\s*(\d+)회\s*추첨\s*결과', text)
         if matches:
             return max([int(m) for m in matches])
@@ -37,10 +36,6 @@ def get_lotto_data_from_page(draw_no):
         browser.close()
 
         try:
-            # 해당 회차 블록 찾기
-            pattern = rf'제\s*{draw_no}회\s*추첨\s*결과\s*([\d{{4}}년\s\d{{2}}월\s\d{{2}}일]+)\s*추첨\s*당첨번호\s*([\d\s]+)\s*보너스번호\s*(\d+)'
-            
-            # 날짜 찾기
             date_pattern = rf'제\s*{draw_no}회\s*추첨\s*결과\s*(\d{{4}}\.\d{{2}}\.\d{{2}})\s*추첨'
             date_match = re.search(date_pattern, text)
             if not date_match:
@@ -49,14 +44,12 @@ def get_lotto_data_from_page(draw_no):
             date_str = date_match.group(1)
             date = date_str.replace('.', '-') + 'T00:00:00Z'
             
-            # 해당 회차 위치 찾기
             pos = text.find(f'제 {draw_no}회 추첨 결과')
             if pos == -1:
                 return None
             
             block = text[pos:pos+500]
             
-            # 번호들 찾기
             nums_pattern = r'당첨번호\s*([\d\s]+)\s*보너스번호\s*(\d+)'
             nums_match = re.search(nums_pattern, block)
             if not nums_match:
@@ -68,9 +61,7 @@ def get_lotto_data_from_page(draw_no):
             if len(nums) != 6:
                 return None
             
-            # 당첨금 정보 찾기
-            print(f"블록 텍스트: {text[pos:pos+2000]}")
-            prize_pattern = r'(\d+)등\s*([\d,]+)원\s*(\d+)\s*([\d,]+)원'
+            prize_pattern = r'(\d)등\n([\d,]+)원\n([\d,]+)\n([\d,]+)원'
             prize_matches = re.findall(prize_pattern, text[pos:pos+2000])
             
             divisions = []
@@ -82,7 +73,6 @@ def get_lotto_data_from_page(draw_no):
                 except:
                     pass
             
-            # 총판매액
             total_match = re.search(r'총판매금액\s*:\s*([\d,]+)원', text[pos:pos+2000])
             total = int(total_match.group(1).replace(',', '')) if total_match else 0
             
@@ -99,7 +89,6 @@ def get_lotto_data_from_page(draw_no):
             print(f"Error: {e}")
             return None
 
-# all.json 불러오기
 all_json_path = "results/all.json"
 if os.path.exists(all_json_path):
     with open(all_json_path, "r", encoding="utf-8") as f:
@@ -110,7 +99,6 @@ else:
 last_draw_no = all_data[-1]['draw_no'] if all_data else 0
 print(f"마지막 회차: {last_draw_no}")
 
-# 최신 회차 확인
 latest_draw_no = get_latest_draw_no()
 print(f"최신 회차: {latest_draw_no}")
 
