@@ -12,7 +12,7 @@ def get_lotto_data(draw_no):
             timezone_id='Asia/Seoul'
         )
         page = context.new_page()
-        page.goto(f'https://www.dhlottery.co.kr/gameResult.do?method=byWin&drwNo={draw_no}')
+        page.goto(f'https://www.dhlottery.co.kr/lt645/result?ltEpsd={draw_no}')
         page.wait_for_load_state('networkidle')
         
         try:
