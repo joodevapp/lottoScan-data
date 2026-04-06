@@ -1,0 +1,1011 @@
+{
+  "generated_at": "2026-04-04",
+  "total_rounds": 1218,
+  "2개월": 9,
+  "6개월": 26,
+  "1년": 52,
+  "3년": 154,
+  "10년": 514,
+  "periods": {
+    "2개월": {
+      "top": [
+        15,
+        27,
+        10,
+        31,
+        38,
+        3
+      ],
+      "bottom": [
+        18,
+        22,
+        34,
+        37,
+        39,
+        43
+      ],
+      "stats": [
+        {
+          "number": 1,
+          "count": 1
+        },
+        {
+          "number": 2,
+          "count": 0
+        },
+        {
+          "number": 3,
+          "count": 2
+        },
+        {
+          "number": 4,
+          "count": 0
+        },
+        {
+          "number": 5,
+          "count": 2
+        },
+        {
+          "number": 6,
+          "count": 0
+        },
+        {
+          "number": 7,
+          "count": 1
+        },
+        {
+          "number": 8,
+          "count": 2
+        },
+        {
+          "number": 9,
+          "count": 1
+        },
+        {
+          "number": 10,
+          "count": 3
+        },
+        {
+          "number": 11,
+          "count": 1
+        },
+        {
+          "number": 12,
+          "count": 0
+        },
+        {
+          "number": 13,
+          "count": 1
+        },
+        {
+          "number": 14,
+          "count": 1
+        },
+        {
+          "number": 15,
+          "count": 4
+        },
+        {
+          "number": 16,
+          "count": 0
+        },
+        {
+          "number": 17,
+          "count": 1
+        },
+        {
+          "number": 18,
+          "count": 0
+        },
+        {
+          "number": 19,
+          "count": 2
+        },
+        {
+          "number": 20,
+          "count": 1
+        },
+        {
+          "number": 21,
+          "count": 1
+        },
+        {
+          "number": 22,
+          "count": 0
+        },
+        {
+          "number": 23,
+          "count": 2
+        },
+        {
+          "number": 24,
+          "count": 1
+        },
+        {
+          "number": 25,
+          "count": 2
+        },
+        {
+          "number": 26,
+          "count": 1
+        },
+        {
+          "number": 27,
+          "count": 4
+        },
+        {
+          "number": 28,
+          "count": 1
+        },
+        {
+          "number": 29,
+          "count": 1
+        },
+        {
+          "number": 30,
+          "count": 1
+        },
+        {
+          "number": 31,
+          "count": 3
+        },
+        {
+          "number": 32,
+          "count": 1
+        },
+        {
+          "number": 33,
+          "count": 1
+        },
+        {
+          "number": 34,
+          "count": 0
+        },
+        {
+          "number": 35,
+          "count": 1
+        },
+        {
+          "number": 36,
+          "count": 1
+        },
+        {
+          "number": 37,
+          "count": 0
+        },
+        {
+          "number": 38,
+          "count": 3
+        },
+        {
+          "number": 39,
+          "count": 0
+        },
+        {
+          "number": 40,
+          "count": 1
+        },
+        {
+          "number": 41,
+          "count": 1
+        },
+        {
+          "number": 42,
+          "count": 1
+        },
+        {
+          "number": 43,
+          "count": 0
+        },
+        {
+          "number": 44,
+          "count": 2
+        },
+        {
+          "number": 45,
+          "count": 2
+        }
+      ]
+    },
+    "6개월": {
+      "top": [
+        27,
+        15,
+        3,
+        24,
+        31,
+        38
+      ],
+      "bottom": [
+        11,
+        14,
+        18,
+        22,
+        34,
+        43
+      ],
+      "stats": [
+        {
+          "number": 1,
+          "count": 5
+        },
+        {
+          "number": 2,
+          "count": 2
+        },
+        {
+          "number": 3,
+          "count": 6
+        },
+        {
+          "number": 4,
+          "count": 2
+        },
+        {
+          "number": 5,
+          "count": 4
+        },
+        {
+          "number": 6,
+          "count": 3
+        },
+        {
+          "number": 7,
+          "count": 3
+        },
+        {
+          "number": 8,
+          "count": 4
+        },
+        {
+          "number": 9,
+          "count": 3
+        },
+        {
+          "number": 10,
+          "count": 4
+        },
+        {
+          "number": 11,
+          "count": 1
+        },
+        {
+          "number": 12,
+          "count": 2
+        },
+        {
+          "number": 13,
+          "count": 2
+        },
+        {
+          "number": 14,
+          "count": 1
+        },
+        {
+          "number": 15,
+          "count": 7
+        },
+        {
+          "number": 16,
+          "count": 5
+        },
+        {
+          "number": 17,
+          "count": 3
+        },
+        {
+          "number": 18,
+          "count": 1
+        },
+        {
+          "number": 19,
+          "count": 3
+        },
+        {
+          "number": 20,
+          "count": 3
+        },
+        {
+          "number": 21,
+          "count": 2
+        },
+        {
+          "number": 22,
+          "count": 1
+        },
+        {
+          "number": 23,
+          "count": 3
+        },
+        {
+          "number": 24,
+          "count": 6
+        },
+        {
+          "number": 25,
+          "count": 3
+        },
+        {
+          "number": 26,
+          "count": 4
+        },
+        {
+          "number": 27,
+          "count": 9
+        },
+        {
+          "number": 28,
+          "count": 4
+        },
+        {
+          "number": 29,
+          "count": 3
+        },
+        {
+          "number": 30,
+          "count": 5
+        },
+        {
+          "number": 31,
+          "count": 6
+        },
+        {
+          "number": 32,
+          "count": 3
+        },
+        {
+          "number": 33,
+          "count": 5
+        },
+        {
+          "number": 34,
+          "count": 1
+        },
+        {
+          "number": 35,
+          "count": 4
+        },
+        {
+          "number": 36,
+          "count": 4
+        },
+        {
+          "number": 37,
+          "count": 3
+        },
+        {
+          "number": 38,
+          "count": 6
+        },
+        {
+          "number": 39,
+          "count": 3
+        },
+        {
+          "number": 40,
+          "count": 3
+        },
+        {
+          "number": 41,
+          "count": 3
+        },
+        {
+          "number": 42,
+          "count": 3
+        },
+        {
+          "number": 43,
+          "count": 1
+        },
+        {
+          "number": 44,
+          "count": 3
+        },
+        {
+          "number": 45,
+          "count": 4
+        }
+      ]
+    },
+    "1년": {
+      "top": [
+        3,
+        27,
+        16,
+        24,
+        8,
+        15
+      ],
+      "bottom": [
+        14,
+        18,
+        2,
+        22,
+        43,
+        34
+      ],
+      "stats": [
+        {
+          "number": 1,
+          "count": 8
+        },
+        {
+          "number": 2,
+          "count": 3
+        },
+        {
+          "number": 3,
+          "count": 12
+        },
+        {
+          "number": 4,
+          "count": 6
+        },
+        {
+          "number": 5,
+          "count": 8
+        },
+        {
+          "number": 6,
+          "count": 8
+        },
+        {
+          "number": 7,
+          "count": 8
+        },
+        {
+          "number": 8,
+          "count": 9
+        },
+        {
+          "number": 9,
+          "count": 8
+        },
+        {
+          "number": 10,
+          "count": 6
+        },
+        {
+          "number": 11,
+          "count": 6
+        },
+        {
+          "number": 12,
+          "count": 7
+        },
+        {
+          "number": 13,
+          "count": 6
+        },
+        {
+          "number": 14,
+          "count": 4
+        },
+        {
+          "number": 15,
+          "count": 9
+        },
+        {
+          "number": 16,
+          "count": 10
+        },
+        {
+          "number": 17,
+          "count": 7
+        },
+        {
+          "number": 18,
+          "count": 4
+        },
+        {
+          "number": 19,
+          "count": 7
+        },
+        {
+          "number": 20,
+          "count": 6
+        },
+        {
+          "number": 21,
+          "count": 5
+        },
+        {
+          "number": 22,
+          "count": 3
+        },
+        {
+          "number": 23,
+          "count": 9
+        },
+        {
+          "number": 24,
+          "count": 10
+        },
+        {
+          "number": 25,
+          "count": 5
+        },
+        {
+          "number": 26,
+          "count": 7
+        },
+        {
+          "number": 27,
+          "count": 12
+        },
+        {
+          "number": 28,
+          "count": 8
+        },
+        {
+          "number": 29,
+          "count": 6
+        },
+        {
+          "number": 30,
+          "count": 8
+        },
+        {
+          "number": 31,
+          "count": 9
+        },
+        {
+          "number": 32,
+          "count": 5
+        },
+        {
+          "number": 33,
+          "count": 7
+        },
+        {
+          "number": 34,
+          "count": 2
+        },
+        {
+          "number": 35,
+          "count": 8
+        },
+        {
+          "number": 36,
+          "count": 7
+        },
+        {
+          "number": 37,
+          "count": 8
+        },
+        {
+          "number": 38,
+          "count": 8
+        },
+        {
+          "number": 39,
+          "count": 7
+        },
+        {
+          "number": 40,
+          "count": 9
+        },
+        {
+          "number": 41,
+          "count": 6
+        },
+        {
+          "number": 42,
+          "count": 7
+        },
+        {
+          "number": 43,
+          "count": 3
+        },
+        {
+          "number": 44,
+          "count": 6
+        },
+        {
+          "number": 45,
+          "count": 5
+        }
+      ]
+    },
+    "3년": {
+      "top": [
+        3,
+        7,
+        16,
+        30,
+        38,
+        6
+      ],
+      "bottom": [
+        39,
+        41,
+        25,
+        43,
+        5,
+        2
+      ],
+      "stats": [
+        {
+          "number": 1,
+          "count": 21
+        },
+        {
+          "number": 2,
+          "count": 11
+        },
+        {
+          "number": 3,
+          "count": 28
+        },
+        {
+          "number": 4,
+          "count": 17
+        },
+        {
+          "number": 5,
+          "count": 13
+        },
+        {
+          "number": 6,
+          "count": 27
+        },
+        {
+          "number": 7,
+          "count": 28
+        },
+        {
+          "number": 8,
+          "count": 19
+        },
+        {
+          "number": 9,
+          "count": 19
+        },
+        {
+          "number": 10,
+          "count": 19
+        },
+        {
+          "number": 11,
+          "count": 20
+        },
+        {
+          "number": 12,
+          "count": 21
+        },
+        {
+          "number": 13,
+          "count": 24
+        },
+        {
+          "number": 14,
+          "count": 18
+        },
+        {
+          "number": 15,
+          "count": 22
+        },
+        {
+          "number": 16,
+          "count": 28
+        },
+        {
+          "number": 17,
+          "count": 17
+        },
+        {
+          "number": 18,
+          "count": 16
+        },
+        {
+          "number": 19,
+          "count": 27
+        },
+        {
+          "number": 20,
+          "count": 19
+        },
+        {
+          "number": 21,
+          "count": 23
+        },
+        {
+          "number": 22,
+          "count": 15
+        },
+        {
+          "number": 23,
+          "count": 20
+        },
+        {
+          "number": 24,
+          "count": 21
+        },
+        {
+          "number": 25,
+          "count": 14
+        },
+        {
+          "number": 26,
+          "count": 21
+        },
+        {
+          "number": 27,
+          "count": 25
+        },
+        {
+          "number": 28,
+          "count": 25
+        },
+        {
+          "number": 29,
+          "count": 19
+        },
+        {
+          "number": 30,
+          "count": 28
+        },
+        {
+          "number": 31,
+          "count": 23
+        },
+        {
+          "number": 32,
+          "count": 18
+        },
+        {
+          "number": 33,
+          "count": 25
+        },
+        {
+          "number": 34,
+          "count": 18
+        },
+        {
+          "number": 35,
+          "count": 22
+        },
+        {
+          "number": 36,
+          "count": 19
+        },
+        {
+          "number": 37,
+          "count": 24
+        },
+        {
+          "number": 38,
+          "count": 28
+        },
+        {
+          "number": 39,
+          "count": 15
+        },
+        {
+          "number": 40,
+          "count": 23
+        },
+        {
+          "number": 41,
+          "count": 15
+        },
+        {
+          "number": 42,
+          "count": 16
+        },
+        {
+          "number": 43,
+          "count": 14
+        },
+        {
+          "number": 44,
+          "count": 20
+        },
+        {
+          "number": 45,
+          "count": 19
+        }
+      ]
+    },
+    "10년": {
+      "top": [
+        12,
+        21,
+        45,
+        16,
+        3,
+        33
+      ],
+      "bottom": [
+        32,
+        40,
+        20,
+        8,
+        25,
+        5
+      ],
+      "stats": [
+        {
+          "number": 1,
+          "count": 63
+        },
+        {
+          "number": 2,
+          "count": 64
+        },
+        {
+          "number": 3,
+          "count": 78
+        },
+        {
+          "number": 4,
+          "count": 59
+        },
+        {
+          "number": 5,
+          "count": 52
+        },
+        {
+          "number": 6,
+          "count": 77
+        },
+        {
+          "number": 7,
+          "count": 72
+        },
+        {
+          "number": 8,
+          "count": 55
+        },
+        {
+          "number": 9,
+          "count": 62
+        },
+        {
+          "number": 10,
+          "count": 68
+        },
+        {
+          "number": 11,
+          "count": 68
+        },
+        {
+          "number": 12,
+          "count": 86
+        },
+        {
+          "number": 13,
+          "count": 76
+        },
+        {
+          "number": 14,
+          "count": 67
+        },
+        {
+          "number": 15,
+          "count": 70
+        },
+        {
+          "number": 16,
+          "count": 79
+        },
+        {
+          "number": 17,
+          "count": 67
+        },
+        {
+          "number": 18,
+          "count": 75
+        },
+        {
+          "number": 19,
+          "count": 76
+        },
+        {
+          "number": 20,
+          "count": 56
+        },
+        {
+          "number": 21,
+          "count": 80
+        },
+        {
+          "number": 22,
+          "count": 62
+        },
+        {
+          "number": 23,
+          "count": 60
+        },
+        {
+          "number": 24,
+          "count": 72
+        },
+        {
+          "number": 25,
+          "count": 53
+        },
+        {
+          "number": 26,
+          "count": 65
+        },
+        {
+          "number": 27,
+          "count": 70
+        },
+        {
+          "number": 28,
+          "count": 71
+        },
+        {
+          "number": 29,
+          "count": 64
+        },
+        {
+          "number": 30,
+          "count": 76
+        },
+        {
+          "number": 31,
+          "count": 70
+        },
+        {
+          "number": 32,
+          "count": 59
+        },
+        {
+          "number": 33,
+          "count": 78
+        },
+        {
+          "number": 34,
+          "count": 72
+        },
+        {
+          "number": 35,
+          "count": 73
+        },
+        {
+          "number": 36,
+          "count": 70
+        },
+        {
+          "number": 37,
+          "count": 68
+        },
+        {
+          "number": 38,
+          "count": 78
+        },
+        {
+          "number": 39,
+          "count": 70
+        },
+        {
+          "number": 40,
+          "count": 59
+        },
+        {
+          "number": 41,
+          "count": 65
+        },
+        {
+          "number": 42,
+          "count": 67
+        },
+        {
+          "number": 43,
+          "count": 65
+        },
+        {
+          "number": 44,
+          "count": 67
+        },
+        {
+          "number": 45,
+          "count": 80
+        }
+      ]
+    }
+  }
+}
