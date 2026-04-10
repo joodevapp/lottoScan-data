@@ -19,6 +19,8 @@ jobs:
         run: pip install requests
       - name: 번호별 출현 통계 생성
         run: python generate_number_stats.py
+      - name: 홀짝 통계 생성
+        run: python generate_odd_even_stats.py
       - name: 변경사항 커밋
         run: |
           git config user.name "github-actions"
