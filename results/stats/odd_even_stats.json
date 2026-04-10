@@ -1,8 +1,9 @@
 {
   "generated_at": "2026-04-04",
   "total_rounds": 1218,
-  "periods": {
-    "2개월": {
+  "periods": [
+    {
+      "label": "2개월",
       "round_count": 8,
       "most_pattern": "홀3짝3",
       "most_pattern_count": 4,
@@ -83,7 +84,8 @@
         }
       ]
     },
-    "6개월": {
+    {
+      "label": "6개월",
       "round_count": 25,
       "most_pattern": "홀4짝2",
       "most_pattern_count": 11,
@@ -164,7 +166,8 @@
         }
       ]
     },
-    "1년": {
+    {
+      "label": "1년",
       "round_count": 51,
       "most_pattern": "홀4짝2",
       "most_pattern_count": 17,
@@ -245,7 +248,8 @@
         }
       ]
     },
-    "3년": {
+    {
+      "label": "3년",
       "round_count": 154,
       "most_pattern": "홀4짝2",
       "most_pattern_count": 52,
@@ -326,7 +330,8 @@
         }
       ]
     },
-    "10년": {
+    {
+      "label": "10년",
       "round_count": 514,
       "most_pattern": "홀3짝3",
       "most_pattern_count": 162,
@@ -407,5 +412,5 @@
         }
       ]
     }
-  }
+  ]
 }
