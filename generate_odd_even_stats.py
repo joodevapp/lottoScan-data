@@ -17,7 +17,6 @@ def get_pattern(numbers):
     return f"홀{odd}짝{even}"
 
 def calc_streak(data):
-    """최근 연속 패턴 계산"""
     if not data:
         return {"pattern": "", "count": 0}
     latest_pattern = get_pattern(data[-1]['numbers'])
@@ -30,7 +29,6 @@ def calc_streak(data):
     return {"pattern": latest_pattern, "count": count}
 
 def calc_prev_diff(data, months):
-    """전 기간 대비 최다 패턴 변화"""
     cutoff_now = datetime.now() - timedelta(days=months * 30)
     cutoff_prev = datetime.now() - timedelta(days=months * 60)
     
@@ -40,13 +38,11 @@ def calc_prev_diff(data, months):
     if not current or not previous:
         return {"pattern": "", "diff": 0}
     
-    # 현재 기간 최다 패턴
     cur_counts = defaultdict(int)
     for item in current:
         cur_counts[get_pattern(item['numbers'])] += 1
     top_pattern = max(cur_counts, key=cur_counts.get)
     
-    # 이전 기간 같은 패턴 횟수
     prev_counts = defaultdict(int)
     for item in previous:
         prev_counts[get_pattern(item['numbers'])] += 1
@@ -54,12 +50,11 @@ def calc_prev_diff(data, months):
     diff = cur_counts[top_pattern] - prev_counts[top_pattern]
     return {"pattern": top_pattern, "diff": diff}
 
-def calc_period_stats(data, months):
+def calc_period_stats(data, label, months):
     rounds = get_rounds_for_period(data, months)
     if not rounds:
         return None
     
-    # 패턴별 카운트
     pattern_counts = defaultdict(int)
     total_odd = 0
     for item in rounds:
@@ -70,10 +65,8 @@ def calc_period_stats(data, months):
     avg_odd = round(total_odd / total, 1)
     avg_even = round(6 - avg_odd, 1)
     
-    # 최다 패턴
     most_pattern = max(pattern_counts, key=pattern_counts.get)
     
-    # 전체 패턴 목록 (홀0짝6 ~ 홀6짝0)
     all_patterns = []
     max_count = max(pattern_counts.values()) if pattern_counts else 1
     for odd in range(7):
@@ -88,7 +81,6 @@ def calc_period_stats(data, months):
             "value": round(count / max_count, 4)
         })
     
-    # 최근 5회차
     recent_5 = []
     for item in reversed(rounds[-5:]):
         recent_5.append({
@@ -97,6 +89,7 @@ def calc_period_stats(data, months):
         })
     
     return {
+        "label": label,
         "round_count": total,
         "most_pattern": most_pattern,
         "most_pattern_count": pattern_counts[most_pattern],
@@ -113,23 +106,23 @@ def generate_odd_even_stats():
     total_rounds = len(data)
     latest_date = data[-1]['date'][:10]
     
-    periods = {
-        "2개월": 2,
-        "6개월": 6,
-        "1년": 12,
-        "3년": 36,
-        "10년": 120
-    }
+    periods = [
+        ("2개월", 2),
+        ("6개월", 6),
+        ("1년", 12),
+        ("3년", 36),
+        ("10년", 120)
+    ]
     
     result = {
         "generated_at": latest_date,
         "total_rounds": total_rounds,
-        "periods": {}
+        "periods": []
     }
     
-    for name, months in periods.items():
-        print(f"{name} 계산중...")
-        result["periods"][name] = calc_period_stats(data, months)
+    for label, months in periods:
+        print(f"{label} 계산중...")
+        result["periods"].append(calc_period_stats(data, label, months))
     
     os.makedirs("results/stats", exist_ok=True)
     with open("results/stats/odd_even_stats.json", "w", encoding="utf-8") as f:
