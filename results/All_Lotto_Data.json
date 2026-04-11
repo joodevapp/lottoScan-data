@@ -47919,5 +47919,46 @@
       "manual": 2,
       "semi_auto": 1
     }
+  },
+  {
+    "draw_no": 1219,
+    "numbers": [
+      1,
+      2,
+      15,
+      28,
+      39,
+      45
+    ],
+    "bonus_no": 31,
+    "date": "2026-04-11T00:00:00Z",
+    "total_sales_amount": 120945801000,
+    "divisions": [
+      {
+        "prize": 2508232844,
+        "winners": 12
+      },
+      {
+        "prize": 65148906,
+        "winners": 77
+      },
+      {
+        "prize": 1629252,
+        "winners": 3079
+      },
+      {
+        "prize": 50000,
+        "winners": 150733
+      },
+      {
+        "prize": 5000,
+        "winners": 2560905
+      }
+    ],
+    "winners_combination": {
+      "auto": 0,
+      "manual": 0,
+      "semi_auto": 0
+    }
   }
 ]
