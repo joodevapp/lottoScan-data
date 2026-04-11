@@ -23,6 +23,8 @@ jobs:
         run: python generate_odd_even_stats.py
       - name: 구간 통계 생성
         run: python generate_range_stats.py
+      - name: 합계 통계 생성
+        run: python generate_sum_stats.py
       - name: 변경사항 커밋
         run: |
           git config user.name "github-actions"
