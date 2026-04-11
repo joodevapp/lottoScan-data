@@ -25,6 +25,8 @@ def get_top_range(numbers):
     counts = defaultdict(int)
     for n in numbers:
         counts[get_range(n)] += 1
+    if not counts:
+        return ""
     return max(counts, key=counts.get)
 
 def get_rounds_for_period(data, months):
@@ -42,12 +44,11 @@ def calc_latest_distribution(latest):
         })
     return distribution
 
-def calc_cold_range(data):
-    """가장 오래 안 나온 구간"""
+def calc_cold_range(rounds):
     cold = {}
     for label, _, _ in RANGES:
         count = 0
-        for item in reversed(data):
+        for item in reversed(rounds):
             has_range = any(get_range(n) == label for n in item['numbers'])
             if has_range:
                 break
@@ -55,15 +56,16 @@ def calc_cold_range(data):
         if count > 0:
             cold[label] = count
     if cold:
-        return max(cold, key=cold.get), cold[max(cold, key=cold.get)]
+        top = max(cold, key=cold.get)
+        return top, cold[top]
     return None, 0
 
-def calc_streak(data):
-    if not data:
+def calc_streak(rounds):
+    if not rounds:
         return {"range": "", "count": 0}
-    latest_range = get_top_range(data[-1]['numbers'])
+    latest_range = get_top_range(rounds[-1]['numbers'])
     count = 0
-    for item in reversed(data):
+    for item in reversed(rounds):
         if get_top_range(item['numbers']) == latest_range:
             count += 1
         else:
@@ -102,14 +104,11 @@ def calc_period_stats(data, label, months):
     bottom_range = min(range_counts, key=range_counts.get)
     max_count = max(range_counts.values())
 
-    # avg text
     avg_per_round = round(range_counts[top_range] / total, 1)
     avg_text = f"회차당 평균 {avg_per_round}개 번호가 {top_range} 구간에서 나왔어요"
 
-    # cold range
     cold_range, cold_rounds = calc_cold_range(rounds)
 
-    # ranges
     ranges = []
     for range_label, _, _ in RANGES:
         count = range_counts[range_label]
@@ -122,7 +121,6 @@ def calc_period_stats(data, label, months):
             "value": value
         })
 
-    # recent 5
     recent_5 = []
     for item in reversed(rounds[-5:]):
         recent_5.append({
