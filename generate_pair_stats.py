@@ -31,6 +31,20 @@ def calc_latest_pairs(latest, all_data):
     pairs.sort(key=lambda x: x['total_count'], reverse=True)
     return pairs[:3]
 
+def calc_recent_5_top_pair(data):
+    """역대 기준 최근 5회차 가장 자주 함께 나온 쌍"""
+    all_pair_counts = calc_pair_counts(data)
+    recent = data[-5:]
+    result = []
+    for item in reversed(recent):
+        pairs = list(combinations(sorted(item['numbers']), 2))
+        top_pair = max(pairs, key=lambda p: all_pair_counts[p])
+        result.append({
+            "round": item['draw_no'],
+            "top_pair": list(top_pair)
+        })
+    return result
+
 def calc_prev_diff(data, months):
     cutoff_now = datetime.now() - timedelta(days=months * 30)
     cutoff_prev = datetime.now() - timedelta(days=months * 60)
@@ -43,19 +57,6 @@ def calc_prev_diff(data, months):
     prev_counts = calc_pair_counts(previous)
     diff = cur_counts[top_pair] - prev_counts[top_pair]
     return {"pair": list(top_pair), "diff": diff}
-
-def calc_recent_5_top_pair(rounds):
-    recent = rounds[-5:]
-    result = []
-    all_pair_counts = calc_pair_counts(rounds)
-    for item in reversed(recent):
-        pairs = list(combinations(sorted(item['numbers']), 2))
-        top_pair = max(pairs, key=lambda p: all_pair_counts[p])
-        result.append({
-            "round": item['draw_no'],
-            "top_pair": list(top_pair)
-        })
-    return result
 
 def calc_period_stats(data, label, months):
     rounds = get_rounds_for_period(data, months)
@@ -91,8 +92,7 @@ def calc_period_stats(data, label, months):
         "pairs_3plus_count": pairs_3plus,
         "top10_avg": top10_avg,
         "prev_period_diff": calc_prev_diff(data, months),
-        "top10": top10_list,
-        "recent_5": calc_recent_5_top_pair(rounds)
+        "top10": top10_list
     }
 
 def generate_pair_stats():
@@ -115,6 +115,7 @@ def generate_pair_stats():
             "draw_no": latest['draw_no'],
             "pairs": calc_latest_pairs(latest, data)
         },
+        "recent_5": calc_recent_5_top_pair(data),
         "periods": []
     }
 
