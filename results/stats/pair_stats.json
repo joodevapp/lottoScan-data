@@ -1,0 +1,767 @@
+{
+  "generated_at": "2026-04-11",
+  "total_rounds": 1219,
+  "latest_round": {
+    "draw_no": 1219,
+    "pairs": [
+      {
+        "numbers": [
+          1,
+          28
+        ],
+        "total_count": 30
+      },
+      {
+        "numbers": [
+          1,
+          2
+        ],
+        "total_count": 24
+      },
+      {
+        "numbers": [
+          2,
+          15
+        ],
+        "total_count": 23
+      }
+    ]
+  },
+  "periods": [
+    {
+      "label": "2개월",
+      "round_count": 9,
+      "top_pair": [
+        10,
+        15
+      ],
+      "top_pair_count": 3,
+      "pairs_3plus_count": 1,
+      "top10_avg": 1.8,
+      "prev_period_diff": {
+        "pair": [
+          10,
+          15
+        ],
+        "diff": 3
+      },
+      "top10": [
+        {
+          "rank": 1,
+          "numbers": [
+            10,
+            15
+          ],
+          "count": 3,
+          "pct": 33.3
+        },
+        {
+          "rank": 2,
+          "numbers": [
+            27,
+            38
+          ],
+          "count": 2,
+          "pct": 22.2
+        },
+        {
+          "rank": 3,
+          "numbers": [
+            5,
+            25
+          ],
+          "count": 2,
+          "pct": 22.2
+        },
+        {
+          "rank": 4,
+          "numbers": [
+            8,
+            31
+          ],
+          "count": 2,
+          "pct": 22.2
+        },
+        {
+          "rank": 5,
+          "numbers": [
+            15,
+            19
+          ],
+          "count": 2,
+          "pct": 22.2
+        },
+        {
+          "rank": 6,
+          "numbers": [
+            15,
+            45
+          ],
+          "count": 2,
+          "pct": 22.2
+        },
+        {
+          "rank": 7,
+          "numbers": [
+            28,
+            45
+          ],
+          "count": 2,
+          "pct": 22.2
+        },
+        {
+          "rank": 8,
+          "numbers": [
+            23,
+            26
+          ],
+          "count": 1,
+          "pct": 11.1
+        },
+        {
+          "rank": 9,
+          "numbers": [
+            23,
+            27
+          ],
+          "count": 1,
+          "pct": 11.1
+        },
+        {
+          "rank": 10,
+          "numbers": [
+            23,
+            35
+          ],
+          "count": 1,
+          "pct": 11.1
+        }
+      ],
+      "recent_5": [
+        {
+          "round": 1219,
+          "top_pair": [
+            15,
+            45
+          ]
+        },
+        {
+          "round": 1218,
+          "top_pair": [
+            28,
+            45
+          ]
+        },
+        {
+          "round": 1217,
+          "top_pair": [
+            10,
+            15
+          ]
+        },
+        {
+          "round": 1216,
+          "top_pair": [
+            10,
+            15
+          ]
+        },
+        {
+          "round": 1215,
+          "top_pair": [
+            15,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "label": "6개월",
+      "round_count": 26,
+      "top_pair": [
+        27,
+        38
+      ],
+      "top_pair_count": 5,
+      "pairs_3plus_count": 8,
+      "top10_avg": 3.1,
+      "prev_period_diff": {
+        "pair": [
+          27,
+          38
+        ],
+        "diff": 5
+      },
+      "top10": [
+        {
+          "rank": 1,
+          "numbers": [
+            27,
+            38
+          ],
+          "count": 5,
+          "pct": 19.2
+        },
+        {
+          "rank": 2,
+          "numbers": [
+            27,
+            36
+          ],
+          "count": 4,
+          "pct": 15.4
+        },
+        {
+          "rank": 3,
+          "numbers": [
+            3,
+            15
+          ],
+          "count": 3,
+          "pct": 11.5
+        },
+        {
+          "rank": 4,
+          "numbers": [
+            15,
+            33
+          ],
+          "count": 3,
+          "pct": 11.5
+        },
+        {
+          "rank": 5,
+          "numbers": [
+            15,
+            45
+          ],
+          "count": 3,
+          "pct": 11.5
+        },
+        {
+          "rank": 6,
+          "numbers": [
+            16,
+            31
+          ],
+          "count": 3,
+          "pct": 11.5
+        },
+        {
+          "rank": 7,
+          "numbers": [
+            8,
+            31
+          ],
+          "count": 3,
+          "pct": 11.5
+        },
+        {
+          "rank": 8,
+          "numbers": [
+            10,
+            15
+          ],
+          "count": 3,
+          "pct": 11.5
+        },
+        {
+          "rank": 9,
+          "numbers": [
+            3,
+            24
+          ],
+          "count": 2,
+          "pct": 7.7
+        },
+        {
+          "rank": 10,
+          "numbers": [
+            3,
+            33
+          ],
+          "count": 2,
+          "pct": 7.7
+        }
+      ],
+      "recent_5": [
+        {
+          "round": 1219,
+          "top_pair": [
+            15,
+            45
+          ]
+        },
+        {
+          "round": 1218,
+          "top_pair": [
+            3,
+            42
+          ]
+        },
+        {
+          "round": 1217,
+          "top_pair": [
+            8,
+            31
+          ]
+        },
+        {
+          "round": 1216,
+          "top_pair": [
+            3,
+            15
+          ]
+        },
+        {
+          "round": 1215,
+          "top_pair": [
+            15,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "label": "1년",
+      "round_count": 52,
+      "top_pair": [
+        7,
+        9
+      ],
+      "top_pair_count": 5,
+      "pairs_3plus_count": 33,
+      "top10_avg": 4.2,
+      "prev_period_diff": {
+        "pair": [
+          7,
+          9
+        ],
+        "diff": 4
+      },
+      "top10": [
+        {
+          "rank": 1,
+          "numbers": [
+            7,
+            9
+          ],
+          "count": 5,
+          "pct": 9.6
+        },
+        {
+          "rank": 2,
+          "numbers": [
+            27,
+            36
+          ],
+          "count": 5,
+          "pct": 9.6
+        },
+        {
+          "rank": 3,
+          "numbers": [
+            27,
+            38
+          ],
+          "count": 5,
+          "pct": 9.6
+        },
+        {
+          "rank": 4,
+          "numbers": [
+            9,
+            24
+          ],
+          "count": 4,
+          "pct": 7.7
+        },
+        {
+          "rank": 5,
+          "numbers": [
+            3,
+            42
+          ],
+          "count": 4,
+          "pct": 7.7
+        },
+        {
+          "rank": 6,
+          "numbers": [
+            3,
+            15
+          ],
+          "count": 4,
+          "pct": 7.7
+        },
+        {
+          "rank": 7,
+          "numbers": [
+            25,
+            31
+          ],
+          "count": 4,
+          "pct": 7.7
+        },
+        {
+          "rank": 8,
+          "numbers": [
+            16,
+            23
+          ],
+          "count": 4,
+          "pct": 7.7
+        },
+        {
+          "rank": 9,
+          "numbers": [
+            16,
+            31
+          ],
+          "count": 4,
+          "pct": 7.7
+        },
+        {
+          "rank": 10,
+          "numbers": [
+            30,
+            33
+          ],
+          "count": 3,
+          "pct": 5.8
+        }
+      ],
+      "recent_5": [
+        {
+          "round": 1219,
+          "top_pair": [
+            1,
+            28
+          ]
+        },
+        {
+          "round": 1218,
+          "top_pair": [
+            3,
+            42
+          ]
+        },
+        {
+          "round": 1217,
+          "top_pair": [
+            8,
+            31
+          ]
+        },
+        {
+          "round": 1216,
+          "top_pair": [
+            3,
+            15
+          ]
+        },
+        {
+          "round": 1215,
+          "top_pair": [
+            15,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "label": "3년",
+      "round_count": 155,
+      "top_pair": [
+        27,
+        38
+      ],
+      "top_pair_count": 10,
+      "pairs_3plus_count": 403,
+      "top10_avg": 7.9,
+      "prev_period_diff": {
+        "pair": [
+          27,
+          38
+        ],
+        "diff": 8
+      },
+      "top10": [
+        {
+          "rank": 1,
+          "numbers": [
+            27,
+            38
+          ],
+          "count": 10,
+          "pct": 6.5
+        },
+        {
+          "rank": 2,
+          "numbers": [
+            7,
+            26
+          ],
+          "count": 9,
+          "pct": 5.8
+        },
+        {
+          "rank": 3,
+          "numbers": [
+            7,
+            19
+          ],
+          "count": 8,
+          "pct": 5.2
+        },
+        {
+          "rank": 4,
+          "numbers": [
+            16,
+            23
+          ],
+          "count": 8,
+          "pct": 5.2
+        },
+        {
+          "rank": 5,
+          "numbers": [
+            3,
+            15
+          ],
+          "count": 8,
+          "pct": 5.2
+        },
+        {
+          "rank": 6,
+          "numbers": [
+            30,
+            31
+          ],
+          "count": 8,
+          "pct": 5.2
+        },
+        {
+          "rank": 7,
+          "numbers": [
+            16,
+            19
+          ],
+          "count": 7,
+          "pct": 4.5
+        },
+        {
+          "rank": 8,
+          "numbers": [
+            19,
+            21
+          ],
+          "count": 7,
+          "pct": 4.5
+        },
+        {
+          "rank": 9,
+          "numbers": [
+            19,
+            33
+          ],
+          "count": 7,
+          "pct": 4.5
+        },
+        {
+          "rank": 10,
+          "numbers": [
+            21,
+            35
+          ],
+          "count": 7,
+          "pct": 4.5
+        }
+      ],
+      "recent_5": [
+        {
+          "round": 1219,
+          "top_pair": [
+            1,
+            28
+          ]
+        },
+        {
+          "round": 1218,
+          "top_pair": [
+            3,
+            42
+          ]
+        },
+        {
+          "round": 1217,
+          "top_pair": [
+            10,
+            31
+          ]
+        },
+        {
+          "round": 1216,
+          "top_pair": [
+            3,
+            15
+          ]
+        },
+        {
+          "round": 1215,
+          "top_pair": [
+            19,
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "label": "10년",
+      "round_count": 515,
+      "top_pair": [
+        19,
+        21
+      ],
+      "top_pair_count": 19,
+      "pairs_3plus_count": 979,
+      "top10_avg": 16.3,
+      "prev_period_diff": {
+        "pair": [
+          19,
+          21
+        ],
+        "diff": 14
+      },
+      "top10": [
+        {
+          "rank": 1,
+          "numbers": [
+            19,
+            21
+          ],
+          "count": 19,
+          "pct": 3.7
+        },
+        {
+          "rank": 2,
+          "numbers": [
+            12,
+            42
+          ],
+          "count": 17,
+          "pct": 3.3
+        },
+        {
+          "rank": 3,
+          "numbers": [
+            30,
+            33
+          ],
+          "count": 16,
+          "pct": 3.1
+        },
+        {
+          "rank": 4,
+          "numbers": [
+            7,
+            19
+          ],
+          "count": 16,
+          "pct": 3.1
+        },
+        {
+          "rank": 5,
+          "numbers": [
+            11,
+            21
+          ],
+          "count": 16,
+          "pct": 3.1
+        },
+        {
+          "rank": 6,
+          "numbers": [
+            6,
+            38
+          ],
+          "count": 16,
+          "pct": 3.1
+        },
+        {
+          "rank": 7,
+          "numbers": [
+            27,
+            38
+          ],
+          "count": 16,
+          "pct": 3.1
+        },
+        {
+          "rank": 8,
+          "numbers": [
+            34,
+            42
+          ],
+          "count": 16,
+          "pct": 3.1
+        },
+        {
+          "rank": 9,
+          "numbers": [
+            21,
+            35
+          ],
+          "count": 16,
+          "pct": 3.1
+        },
+        {
+          "rank": 10,
+          "numbers": [
+            30,
+            34
+          ],
+          "count": 15,
+          "pct": 2.9
+        }
+      ],
+      "recent_5": [
+        {
+          "round": 1219,
+          "top_pair": [
+            1,
+            28
+          ]
+        },
+        {
+          "round": 1218,
+          "top_pair": [
+            28,
+            42
+          ]
+        },
+        {
+          "round": 1217,
+          "top_pair": [
+            10,
+            31
+          ]
+        },
+        {
+          "round": 1216,
+          "top_pair": [
+            3,
+            24
+          ]
+        },
+        {
+          "round": 1215,
+          "top_pair": [
+            19,
+            21
+          ]
+        }
+      ]
+    }
+  ]
+}
