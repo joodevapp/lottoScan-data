@@ -397,13 +397,13 @@
     },
     {
       "label": "3년",
-      "round_count": 155,
+      "round_count": 154,
       "top_pair": [
         27,
         38
       ],
       "top_pair_count": 10,
-      "pairs_3plus_count": 403,
+      "pairs_3plus_count": 397,
       "top10_avg": 7.9,
       "prev_period_diff": {
         "pair": [
@@ -507,7 +507,7 @@
     },
     {
       "label": "10년",
-      "round_count": 515,
+      "round_count": 514,
       "top_pair": [
         19,
         21

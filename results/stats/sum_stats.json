@@ -246,13 +246,13 @@
     },
     {
       "label": "3년",
-      "round_count": 155,
+      "round_count": 154,
       "avg_sum": 137,
       "top_range": "101~150",
-      "top_range_count": 87,
+      "top_range_count": 86,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": 2
+        "diff": 0
       },
       "streak": {
         "range": "101~150",
@@ -269,25 +269,25 @@
           "range": "51~100",
           "count": 19,
           "pct": 12.3,
-          "value": 0.2184
+          "value": 0.2209
         },
         {
           "range": "101~150",
-          "count": 87,
-          "pct": 56.1,
+          "count": 86,
+          "pct": 55.8,
           "value": 1.0
         },
         {
           "range": "151~200",
           "count": 45,
-          "pct": 29.0,
-          "value": 0.5172
+          "pct": 29.2,
+          "value": 0.5233
         },
         {
           "range": "201~257",
           "count": 4,
           "pct": 2.6,
-          "value": 0.046
+          "value": 0.0465
         }
       ],
       "recent_5": [
@@ -320,13 +320,13 @@
     },
     {
       "label": "10년",
-      "round_count": 515,
+      "round_count": 514,
       "avg_sum": 139,
       "top_range": "101~150",
-      "top_range_count": 282,
+      "top_range_count": 281,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": 4
+        "diff": 2
       },
       "streak": {
         "range": "101~150",
@@ -337,31 +337,31 @@
           "range": "21~50",
           "count": 1,
           "pct": 0.2,
-          "value": 0.0035
+          "value": 0.0036
         },
         {
           "range": "51~100",
           "count": 57,
           "pct": 11.1,
-          "value": 0.2021
+          "value": 0.2028
         },
         {
           "range": "101~150",
-          "count": 282,
-          "pct": 54.8,
+          "count": 281,
+          "pct": 54.7,
           "value": 1.0
         },
         {
           "range": "151~200",
           "count": 163,
           "pct": 31.7,
-          "value": 0.578
+          "value": 0.5801
         },
         {
           "range": "201~257",
           "count": 12,
           "pct": 2.3,
-          "value": 0.0426
+          "value": 0.0427
         }
       ],
       "recent_5": [
