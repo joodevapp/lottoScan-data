@@ -45,13 +45,12 @@ def calc_period_stats(data, label, months):
     sorted_desc = sorted(stats, key=lambda x: x['count'], reverse=True)
     sorted_asc = sorted(stats, key=lambda x: x['count'])
 
-    top6 = [x['number'] for x in sorted_desc[:6]]
-    bottom6 = [x['number'] for x in sorted_asc[:6]]
+    top6 = [{"number": x['number'], "count": x['count']} for x in sorted_desc[:6]]
+    bottom6 = [{"number": x['number'], "count": x['count']} for x in sorted_asc[:6]]
     top_number = sorted_desc[0]['number']
     top_count = sorted_desc[0]['count']
     max_count = sorted_desc[0]['count']
 
-    # value 추가 (ProgressBar용)
     for s in stats:
         s['value'] = round(s['count'] / max_count, 4) if max_count > 0 else 0
 
