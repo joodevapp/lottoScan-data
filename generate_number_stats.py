@@ -54,6 +54,13 @@ def calc_period_stats(data, label, months):
     for s in stats:
         s['value'] = round(s['count'] / max_count, 4) if max_count > 0 else 0
 
+    # 횟수 높은순
+    stats_by_count = sorted(
+        [{"number": s['number'], "count": s['count'], "value": s['value']} for s in stats],
+        key=lambda x: x['count'],
+        reverse=True
+    )
+
     return {
         "label": label,
         "round_count": total,
@@ -62,7 +69,8 @@ def calc_period_stats(data, label, months):
         "top6": top6,
         "bottom6": bottom6,
         "prev_period_diff": calc_prev_diff(data, months),
-        "stats": stats
+        "stats": stats,
+        "stats_by_count": stats_by_count
     }
 
 def generate_number_stats():
