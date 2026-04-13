@@ -67,21 +67,20 @@ def generate_recommendation(stats):
 - reason은 한국어로 통계 기반 설명 (5~6문장, 어떤 번호를 왜 선택했는지, 최근 패턴이 어떤지, 합계와 구간 분포도 설명)"""
 
     response = requests.post(
-        "https://api.anthropic.com/v1/messages",
+        "https://api.openai.com/v1/chat/completions",
         headers={
-            "x-api-key": os.environ.get("ANTHROPIC_API_KEY"),
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json"
+            "Authorization": f"Bearer {os.environ.get('OPENAI_API_KEY')}",
+            "Content-Type": "application/json"
         },
         json={
-            "model": "claude-sonnet-4-20250514",
-            "max_tokens": 800,
-            "messages": [{"role": "user", "content": prompt}]
+            "model": "gpt-4o",
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 800
         }
     )
     
     result = response.json()
-    text = result['content'][0]['text']
+    text = result['choices'][0]['message']['content']
     text = text.replace('```json', '').replace('```', '').strip()
     return json.loads(text)
 
@@ -113,7 +112,6 @@ def generate_daily_recommendation():
             "reason": existing["reason"]
         })
     
-    # 최대 14개 유지 (2주)
     history = history[:14]
     
     result = {
