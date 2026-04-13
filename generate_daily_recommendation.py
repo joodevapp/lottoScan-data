@@ -1,16 +1,18 @@
 import json
 import os
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from collections import defaultdict
+
+KST = timezone(timedelta(hours=9))
 
 def load_lotto_data():
     with open("results/All_Lotto_Data.json", "r", encoding="utf-8") as f:
         return json.load(f)
 
 def get_rounds_for_period(data, months):
-    cutoff = datetime.now() - timedelta(days=months * 30)
-    return [item for item in data if datetime.strptime(item['date'][:10], '%Y-%m-%d') >= cutoff]
+    cutoff = datetime.now(KST) - timedelta(days=months * 30)
+    return [item for item in data if datetime.strptime(item['date'][:10], '%Y-%m-%d').replace(tzinfo=KST) >= cutoff]
 
 def build_stats_summary(data):
     rounds = get_rounds_for_period(data, 12)
@@ -86,7 +88,7 @@ def generate_recommendation(stats):
 
 def generate_daily_recommendation():
     data = load_lotto_data()
-    today = datetime.now().strftime('%Y-%m-%d')
+    today = datetime.now(KST).strftime('%Y-%m-%d')
     
     ai_path = "results/ai/daily_recommendation.json"
     if os.path.exists(ai_path):
