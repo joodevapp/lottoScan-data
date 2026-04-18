@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-11",
-  "total_rounds": 1219,
+  "generated_at": "2026-04-18",
+  "total_rounds": 1220,
   "periods": [
     {
       "label": "2개월",
@@ -17,7 +17,11 @@
           "count": 3
         },
         {
-          "number": 27,
+          "number": 25,
+          "count": 3
+        },
+        {
+          "number": 28,
           "count": 3
         },
         {
@@ -27,10 +31,6 @@
         {
           "number": 45,
           "count": 3
-        },
-        {
-          "number": 3,
-          "count": 2
         }
       ],
       "bottom6": [
@@ -71,8 +71,8 @@
         },
         {
           "number": 2,
-          "count": 1,
-          "value": 0.2
+          "count": 2,
+          "value": 0.4
         },
         {
           "number": 3,
@@ -171,13 +171,13 @@
         },
         {
           "number": 22,
-          "count": 0,
-          "value": 0.0
+          "count": 1,
+          "value": 0.2
         },
         {
           "number": 23,
-          "count": 2,
-          "value": 0.4
+          "count": 1,
+          "value": 0.2
         },
         {
           "number": 24,
@@ -186,23 +186,23 @@
         },
         {
           "number": 25,
-          "count": 2,
-          "value": 0.4
-        },
-        {
-          "number": 26,
-          "count": 1,
-          "value": 0.2
-        },
-        {
-          "number": 27,
           "count": 3,
           "value": 0.6
         },
         {
-          "number": 28,
+          "number": 26,
+          "count": 0,
+          "value": 0.0
+        },
+        {
+          "number": 27,
           "count": 2,
           "value": 0.4
+        },
+        {
+          "number": 28,
+          "count": 3,
+          "value": 0.6
         },
         {
           "number": 29,
@@ -231,13 +231,13 @@
         },
         {
           "number": 34,
-          "count": 0,
-          "value": 0.0
+          "count": 1,
+          "value": 0.2
         },
         {
           "number": 35,
-          "count": 1,
-          "value": 0.2
+          "count": 0,
+          "value": 0.0
         },
         {
           "number": 36,
@@ -251,8 +251,8 @@
         },
         {
           "number": 38,
-          "count": 2,
-          "value": 0.4
+          "count": 1,
+          "value": 0.2
         },
         {
           "number": 39,
@@ -261,8 +261,8 @@
         },
         {
           "number": 40,
-          "count": 1,
-          "value": 0.2
+          "count": 0,
+          "value": 0.0
         },
         {
           "number": 41,
@@ -276,8 +276,8 @@
         },
         {
           "number": 43,
-          "count": 0,
-          "value": 0.0
+          "count": 1,
+          "value": 0.2
         },
         {
           "number": 44,
@@ -302,7 +302,12 @@
           "value": 0.6
         },
         {
-          "number": 27,
+          "number": 25,
+          "count": 3,
+          "value": 0.6
+        },
+        {
+          "number": 28,
           "count": 3,
           "value": 0.6
         },
@@ -315,6 +320,11 @@
           "number": 45,
           "count": 3,
           "value": 0.6
+        },
+        {
+          "number": 2,
+          "count": 2,
+          "value": 0.4
         },
         {
           "number": 3,
@@ -337,22 +347,7 @@
           "value": 0.4
         },
         {
-          "number": 23,
-          "count": 2,
-          "value": 0.4
-        },
-        {
-          "number": 25,
-          "count": 2,
-          "value": 0.4
-        },
-        {
-          "number": 28,
-          "count": 2,
-          "value": 0.4
-        },
-        {
-          "number": 38,
+          "number": 27,
           "count": 2,
           "value": 0.4
         },
@@ -363,11 +358,6 @@
         },
         {
           "number": 1,
-          "count": 1,
-          "value": 0.2
-        },
-        {
-          "number": 2,
           "count": 1,
           "value": 0.2
         },
@@ -397,12 +387,17 @@
           "value": 0.2
         },
         {
-          "number": 24,
+          "number": 22,
           "count": 1,
           "value": 0.2
         },
         {
-          "number": 26,
+          "number": 23,
+          "count": 1,
+          "value": 0.2
+        },
+        {
+          "number": 24,
           "count": 1,
           "value": 0.2
         },
@@ -427,7 +422,7 @@
           "value": 0.2
         },
         {
-          "number": 35,
+          "number": 34,
           "count": 1,
           "value": 0.2
         },
@@ -437,12 +432,12 @@
           "value": 0.2
         },
         {
-          "number": 39,
+          "number": 38,
           "count": 1,
           "value": 0.2
         },
         {
-          "number": 40,
+          "number": 39,
           "count": 1,
           "value": 0.2
         },
@@ -453,6 +448,11 @@
         },
         {
           "number": 42,
+          "count": 1,
+          "value": 0.2
+        },
+        {
+          "number": 43,
           "count": 1,
           "value": 0.2
         },
@@ -497,12 +497,12 @@
           "value": 0.0
         },
         {
-          "number": 22,
+          "number": 26,
           "count": 0,
           "value": 0.0
         },
         {
-          "number": 34,
+          "number": 35,
           "count": 0,
           "value": 0.0
         },
@@ -512,7 +512,7 @@
           "value": 0.0
         },
         {
-          "number": 43,
+          "number": 40,
           "count": 0,
           "value": 0.0
         }
@@ -530,14 +530,10 @@
         },
         {
           "number": 15,
-          "count": 8
+          "count": 7
         },
         {
           "number": 1,
-          "count": 6
-        },
-        {
-          "number": 3,
           "count": 6
         },
         {
@@ -547,11 +543,19 @@
         {
           "number": 38,
           "count": 6
+        },
+        {
+          "number": 3,
+          "count": 5
         }
       ],
       "bottom6": [
         {
           "number": 11,
+          "count": 1
+        },
+        {
+          "number": 13,
           "count": 1
         },
         {
@@ -563,16 +567,12 @@
           "count": 1
         },
         {
-          "number": 22,
-          "count": 1
+          "number": 4,
+          "count": 2
         },
         {
-          "number": 34,
-          "count": 1
-        },
-        {
-          "number": 43,
-          "count": 1
+          "number": 6,
+          "count": 2
         }
       ],
       "prev_period_diff": {
@@ -587,13 +587,13 @@
         },
         {
           "number": 2,
-          "count": 3,
-          "value": 0.3333
+          "count": 4,
+          "value": 0.4444
         },
         {
           "number": 3,
-          "count": 6,
-          "value": 0.6667
+          "count": 5,
+          "value": 0.5556
         },
         {
           "number": 4,
@@ -642,8 +642,8 @@
         },
         {
           "number": 13,
-          "count": 2,
-          "value": 0.2222
+          "count": 1,
+          "value": 0.1111
         },
         {
           "number": 14,
@@ -652,8 +652,8 @@
         },
         {
           "number": 15,
-          "count": 8,
-          "value": 0.8889
+          "count": 7,
+          "value": 0.7778
         },
         {
           "number": 16,
@@ -687,8 +687,8 @@
         },
         {
           "number": 22,
-          "count": 1,
-          "value": 0.1111
+          "count": 2,
+          "value": 0.2222
         },
         {
           "number": 23,
@@ -697,13 +697,13 @@
         },
         {
           "number": 24,
-          "count": 5,
-          "value": 0.5556
+          "count": 4,
+          "value": 0.4444
         },
         {
           "number": 25,
-          "count": 3,
-          "value": 0.3333
+          "count": 4,
+          "value": 0.4444
         },
         {
           "number": 26,
@@ -717,8 +717,8 @@
         },
         {
           "number": 28,
-          "count": 4,
-          "value": 0.4444
+          "count": 5,
+          "value": 0.5556
         },
         {
           "number": 29,
@@ -742,13 +742,13 @@
         },
         {
           "number": 33,
-          "count": 5,
-          "value": 0.5556
+          "count": 4,
+          "value": 0.4444
         },
         {
           "number": 34,
-          "count": 1,
-          "value": 0.1111
+          "count": 2,
+          "value": 0.2222
         },
         {
           "number": 35,
@@ -762,8 +762,8 @@
         },
         {
           "number": 37,
-          "count": 3,
-          "value": 0.3333
+          "count": 2,
+          "value": 0.2222
         },
         {
           "number": 38,
@@ -792,8 +792,8 @@
         },
         {
           "number": 43,
-          "count": 1,
-          "value": 0.1111
+          "count": 2,
+          "value": 0.2222
         },
         {
           "number": 44,
@@ -814,16 +814,11 @@
         },
         {
           "number": 15,
-          "count": 8,
-          "value": 0.8889
+          "count": 7,
+          "value": 0.7778
         },
         {
           "number": 1,
-          "count": 6,
-          "value": 0.6667
-        },
-        {
-          "number": 3,
           "count": 6,
           "value": 0.6667
         },
@@ -838,7 +833,12 @@
           "value": 0.6667
         },
         {
-          "number": 24,
+          "number": 3,
+          "count": 5,
+          "value": 0.5556
+        },
+        {
+          "number": 28,
           "count": 5,
           "value": 0.5556
         },
@@ -848,14 +848,14 @@
           "value": 0.5556
         },
         {
-          "number": 33,
+          "number": 45,
           "count": 5,
           "value": 0.5556
         },
         {
-          "number": 45,
-          "count": 5,
-          "value": 0.5556
+          "number": 2,
+          "count": 4,
+          "value": 0.4444
         },
         {
           "number": 5,
@@ -878,12 +878,22 @@
           "value": 0.4444
         },
         {
+          "number": 24,
+          "count": 4,
+          "value": 0.4444
+        },
+        {
+          "number": 25,
+          "count": 4,
+          "value": 0.4444
+        },
+        {
           "number": 26,
           "count": 4,
           "value": 0.4444
         },
         {
-          "number": 28,
+          "number": 33,
           "count": 4,
           "value": 0.4444
         },
@@ -901,11 +911,6 @@
           "number": 39,
           "count": 4,
           "value": 0.4444
-        },
-        {
-          "number": 2,
-          "count": 3,
-          "value": 0.3333
         },
         {
           "number": 7,
@@ -928,22 +933,12 @@
           "value": 0.3333
         },
         {
-          "number": 25,
-          "count": 3,
-          "value": 0.3333
-        },
-        {
           "number": 29,
           "count": 3,
           "value": 0.3333
         },
         {
           "number": 32,
-          "count": 3,
-          "value": 0.3333
-        },
-        {
-          "number": 37,
           "count": 3,
           "value": 0.3333
         },
@@ -988,11 +983,6 @@
           "value": 0.2222
         },
         {
-          "number": 13,
-          "count": 2,
-          "value": 0.2222
-        },
-        {
           "number": 19,
           "count": 2,
           "value": 0.2222
@@ -1003,7 +993,32 @@
           "value": 0.2222
         },
         {
+          "number": 22,
+          "count": 2,
+          "value": 0.2222
+        },
+        {
+          "number": 34,
+          "count": 2,
+          "value": 0.2222
+        },
+        {
+          "number": 37,
+          "count": 2,
+          "value": 0.2222
+        },
+        {
+          "number": 43,
+          "count": 2,
+          "value": 0.2222
+        },
+        {
           "number": 11,
+          "count": 1,
+          "value": 0.1111
+        },
+        {
+          "number": 13,
           "count": 1,
           "value": 0.1111
         },
@@ -1014,21 +1029,6 @@
         },
         {
           "number": 18,
-          "count": 1,
-          "value": 0.1111
-        },
-        {
-          "number": 22,
-          "count": 1,
-          "value": 0.1111
-        },
-        {
-          "number": 34,
-          "count": 1,
-          "value": 0.1111
-        },
-        {
-          "number": 43,
           "count": 1,
           "value": 0.1111
         }
@@ -1057,7 +1057,7 @@
           "count": 10
         },
         {
-          "number": 24,
+          "number": 28,
           "count": 10
         },
         {
@@ -1068,19 +1068,7 @@
       "bottom6": [
         {
           "number": 34,
-          "count": 2
-        },
-        {
-          "number": 22,
           "count": 3
-        },
-        {
-          "number": 43,
-          "count": 3
-        },
-        {
-          "number": 2,
-          "count": 4
         },
         {
           "number": 14,
@@ -1089,11 +1077,23 @@
         {
           "number": 18,
           "count": 4
+        },
+        {
+          "number": 21,
+          "count": 4
+        },
+        {
+          "number": 22,
+          "count": 4
+        },
+        {
+          "number": 43,
+          "count": 4
         }
       ],
       "prev_period_diff": {
         "number": 3,
-        "diff": 4
+        "diff": 5
       },
       "stats": [
         {
@@ -1103,8 +1103,8 @@
         },
         {
           "number": 2,
-          "count": 4,
-          "value": 0.3333
+          "count": 5,
+          "value": 0.4167
         },
         {
           "number": 3,
@@ -1138,8 +1138,8 @@
         },
         {
           "number": 9,
-          "count": 8,
-          "value": 0.6667
+          "count": 7,
+          "value": 0.5833
         },
         {
           "number": 10,
@@ -1198,13 +1198,13 @@
         },
         {
           "number": 21,
-          "count": 5,
-          "value": 0.4167
+          "count": 4,
+          "value": 0.3333
         },
         {
           "number": 22,
-          "count": 3,
-          "value": 0.25
+          "count": 4,
+          "value": 0.3333
         },
         {
           "number": 23,
@@ -1213,13 +1213,13 @@
         },
         {
           "number": 24,
-          "count": 10,
-          "value": 0.8333
+          "count": 9,
+          "value": 0.75
         },
         {
           "number": 25,
-          "count": 5,
-          "value": 0.4167
+          "count": 6,
+          "value": 0.5
         },
         {
           "number": 26,
@@ -1233,8 +1233,8 @@
         },
         {
           "number": 28,
-          "count": 9,
-          "value": 0.75
+          "count": 10,
+          "value": 0.8333
         },
         {
           "number": 29,
@@ -1243,8 +1243,8 @@
         },
         {
           "number": 30,
-          "count": 8,
-          "value": 0.6667
+          "count": 7,
+          "value": 0.5833
         },
         {
           "number": 31,
@@ -1258,13 +1258,13 @@
         },
         {
           "number": 33,
-          "count": 7,
-          "value": 0.5833
+          "count": 6,
+          "value": 0.5
         },
         {
           "number": 34,
-          "count": 2,
-          "value": 0.1667
+          "count": 3,
+          "value": 0.25
         },
         {
           "number": 35,
@@ -1278,8 +1278,8 @@
         },
         {
           "number": 37,
-          "count": 8,
-          "value": 0.6667
+          "count": 7,
+          "value": 0.5833
         },
         {
           "number": 38,
@@ -1308,8 +1308,8 @@
         },
         {
           "number": 43,
-          "count": 3,
-          "value": 0.25
+          "count": 4,
+          "value": 0.3333
         },
         {
           "number": 44,
@@ -1344,7 +1344,7 @@
           "value": 0.8333
         },
         {
-          "number": 24,
+          "number": 28,
           "count": 10,
           "value": 0.8333
         },
@@ -1354,7 +1354,7 @@
           "value": 0.75
         },
         {
-          "number": 28,
+          "number": 24,
           "count": 9,
           "value": 0.75
         },
@@ -1379,27 +1379,12 @@
           "value": 0.6667
         },
         {
-          "number": 9,
-          "count": 8,
-          "value": 0.6667
-        },
-        {
           "number": 23,
           "count": 8,
           "value": 0.6667
         },
         {
-          "number": 30,
-          "count": 8,
-          "value": 0.6667
-        },
-        {
           "number": 31,
-          "count": 8,
-          "value": 0.6667
-        },
-        {
-          "number": 37,
           "count": 8,
           "value": 0.6667
         },
@@ -1412,6 +1397,11 @@
           "number": 40,
           "count": 8,
           "value": 0.6667
+        },
+        {
+          "number": 9,
+          "count": 7,
+          "value": 0.5833
         },
         {
           "number": 12,
@@ -1434,7 +1424,7 @@
           "value": 0.5833
         },
         {
-          "number": 33,
+          "number": 30,
           "count": 7,
           "value": 0.5833
         },
@@ -1445,6 +1435,11 @@
         },
         {
           "number": 36,
+          "count": 7,
+          "value": 0.5833
+        },
+        {
+          "number": 37,
           "count": 7,
           "value": 0.5833
         },
@@ -1484,7 +1479,17 @@
           "value": 0.5
         },
         {
+          "number": 25,
+          "count": 6,
+          "value": 0.5
+        },
+        {
           "number": 29,
+          "count": 6,
+          "value": 0.5
+        },
+        {
+          "number": 33,
           "count": 6,
           "value": 0.5
         },
@@ -1504,12 +1509,7 @@
           "value": 0.5
         },
         {
-          "number": 21,
-          "count": 5,
-          "value": 0.4167
-        },
-        {
-          "number": 25,
+          "number": 2,
           "count": 5,
           "value": 0.4167
         },
@@ -1517,11 +1517,6 @@
           "number": 32,
           "count": 5,
           "value": 0.4167
-        },
-        {
-          "number": 2,
-          "count": 4,
-          "value": 0.3333
         },
         {
           "number": 14,
@@ -1534,25 +1529,30 @@
           "value": 0.3333
         },
         {
+          "number": 21,
+          "count": 4,
+          "value": 0.3333
+        },
+        {
           "number": 22,
-          "count": 3,
-          "value": 0.25
+          "count": 4,
+          "value": 0.3333
         },
         {
           "number": 43,
-          "count": 3,
-          "value": 0.25
+          "count": 4,
+          "value": 0.3333
         },
         {
           "number": 34,
-          "count": 2,
-          "value": 0.1667
+          "count": 3,
+          "value": 0.25
         }
       ]
     },
     {
       "label": "3년",
-      "round_count": 154,
+      "round_count": 155,
       "top_number": 7,
       "top_count": 28,
       "top6": [
@@ -1584,26 +1584,26 @@
       "bottom6": [
         {
           "number": 2,
-          "count": 12
+          "count": 13
         },
         {
           "number": 5,
           "count": 13
         },
         {
-          "number": 25,
-          "count": 14
-        },
-        {
-          "number": 43,
-          "count": 14
-        },
-        {
           "number": 18,
           "count": 15
         },
         {
-          "number": 22,
+          "number": 25,
+          "count": 15
+        },
+        {
+          "number": 41,
+          "count": 15
+        },
+        {
+          "number": 43,
           "count": 15
         }
       ],
@@ -1619,8 +1619,8 @@
         },
         {
           "number": 2,
-          "count": 12,
-          "value": 0.4286
+          "count": 13,
+          "value": 0.4643
         },
         {
           "number": 3,
@@ -1719,8 +1719,8 @@
         },
         {
           "number": 22,
-          "count": 15,
-          "value": 0.5357
+          "count": 16,
+          "value": 0.5714
         },
         {
           "number": 23,
@@ -1734,8 +1734,8 @@
         },
         {
           "number": 25,
-          "count": 14,
-          "value": 0.5
+          "count": 15,
+          "value": 0.5357
         },
         {
           "number": 26,
@@ -1749,8 +1749,8 @@
         },
         {
           "number": 28,
-          "count": 26,
-          "value": 0.9286
+          "count": 27,
+          "value": 0.9643
         },
         {
           "number": 29,
@@ -1779,8 +1779,8 @@
         },
         {
           "number": 34,
-          "count": 18,
-          "value": 0.6429
+          "count": 19,
+          "value": 0.6786
         },
         {
           "number": 35,
@@ -1824,8 +1824,8 @@
         },
         {
           "number": 43,
-          "count": 14,
-          "value": 0.5
+          "count": 15,
+          "value": 0.5357
         },
         {
           "number": 44,
@@ -1870,12 +1870,12 @@
           "value": 0.9643
         },
         {
-          "number": 19,
-          "count": 26,
-          "value": 0.9286
+          "number": 28,
+          "count": 27,
+          "value": 0.9643
         },
         {
-          "number": 28,
+          "number": 19,
           "count": 26,
           "value": 0.9286
         },
@@ -1985,6 +1985,11 @@
           "value": 0.6786
         },
         {
+          "number": 34,
+          "count": 19,
+          "value": 0.6786
+        },
+        {
           "number": 36,
           "count": 19,
           "value": 0.6786
@@ -1996,11 +2001,6 @@
         },
         {
           "number": 14,
-          "count": 18,
-          "value": 0.6429
-        },
-        {
-          "number": 34,
           "count": 18,
           "value": 0.6429
         },
@@ -2020,6 +2020,11 @@
           "value": 0.6071
         },
         {
+          "number": 22,
+          "count": 16,
+          "value": 0.5714
+        },
+        {
           "number": 39,
           "count": 16,
           "value": 0.5714
@@ -2035,7 +2040,7 @@
           "value": 0.5357
         },
         {
-          "number": 22,
+          "number": 25,
           "count": 15,
           "value": 0.5357
         },
@@ -2045,30 +2050,25 @@
           "value": 0.5357
         },
         {
-          "number": 25,
-          "count": 14,
-          "value": 0.5
+          "number": 43,
+          "count": 15,
+          "value": 0.5357
         },
         {
-          "number": 43,
-          "count": 14,
-          "value": 0.5
+          "number": 2,
+          "count": 13,
+          "value": 0.4643
         },
         {
           "number": 5,
           "count": 13,
           "value": 0.4643
-        },
-        {
-          "number": 2,
-          "count": 12,
-          "value": 0.4286
         }
       ]
     },
     {
       "label": "10년",
-      "round_count": 514,
+      "round_count": 515,
       "top_number": 12,
       "top_count": 86,
       "top6": [
@@ -2104,7 +2104,7 @@
         },
         {
           "number": 25,
-          "count": 53
+          "count": 54
         },
         {
           "number": 8,
@@ -2135,8 +2135,8 @@
         },
         {
           "number": 2,
-          "count": 65,
-          "value": 0.7558
+          "count": 66,
+          "value": 0.7674
         },
         {
           "number": 3,
@@ -2235,8 +2235,8 @@
         },
         {
           "number": 22,
-          "count": 61,
-          "value": 0.7093
+          "count": 62,
+          "value": 0.7209
         },
         {
           "number": 23,
@@ -2250,8 +2250,8 @@
         },
         {
           "number": 25,
-          "count": 53,
-          "value": 0.6163
+          "count": 54,
+          "value": 0.6279
         },
         {
           "number": 26,
@@ -2265,8 +2265,8 @@
         },
         {
           "number": 28,
-          "count": 71,
-          "value": 0.8256
+          "count": 72,
+          "value": 0.8372
         },
         {
           "number": 29,
@@ -2295,8 +2295,8 @@
         },
         {
           "number": 34,
-          "count": 72,
-          "value": 0.8372
+          "count": 73,
+          "value": 0.8488
         },
         {
           "number": 35,
@@ -2340,8 +2340,8 @@
         },
         {
           "number": 43,
-          "count": 65,
-          "value": 0.7558
+          "count": 66,
+          "value": 0.7674
         },
         {
           "number": 44,
@@ -2416,6 +2416,11 @@
           "value": 0.8721
         },
         {
+          "number": 34,
+          "count": 73,
+          "value": 0.8488
+        },
+        {
           "number": 35,
           "count": 73,
           "value": 0.8488
@@ -2431,17 +2436,12 @@
           "value": 0.8372
         },
         {
-          "number": 34,
+          "number": 28,
           "count": 72,
           "value": 0.8372
         },
         {
           "number": 15,
-          "count": 71,
-          "value": 0.8256
-        },
-        {
-          "number": 28,
           "count": 71,
           "value": 0.8256
         },
@@ -2496,14 +2496,19 @@
           "value": 0.7791
         },
         {
+          "number": 2,
+          "count": 66,
+          "value": 0.7674
+        },
+        {
           "number": 17,
           "count": 66,
           "value": 0.7674
         },
         {
-          "number": 2,
-          "count": 65,
-          "value": 0.7558
+          "number": 43,
+          "count": 66,
+          "value": 0.7674
         },
         {
           "number": 26,
@@ -2512,11 +2517,6 @@
         },
         {
           "number": 41,
-          "count": 65,
-          "value": 0.7558
-        },
-        {
-          "number": 43,
           "count": 65,
           "value": 0.7558
         },
@@ -2537,8 +2537,8 @@
         },
         {
           "number": 22,
-          "count": 61,
-          "value": 0.7093
+          "count": 62,
+          "value": 0.7209
         },
         {
           "number": 23,
@@ -2572,8 +2572,8 @@
         },
         {
           "number": 25,
-          "count": 53,
-          "value": 0.6163
+          "count": 54,
+          "value": 0.6279
         },
         {
           "number": 5,
