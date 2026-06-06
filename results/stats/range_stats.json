@@ -1,42 +1,43 @@
 {
-  "generated_at": "2026-05-30",
-  "total_rounds": 1226,
+  "generated_at": "2026-06-06",
+  "total_rounds": 1227,
   "latest_round": {
-    "draw_no": 1226,
+    "draw_no": 1227,
     "distribution": [
       {
         "range": "1~10",
         "numbers": [
-          4,
-          6
+          1
         ],
-        "count": 2
+        "count": 1
       },
       {
         "range": "11~20",
         "numbers": [
-          13,
-          17
+          14,
+          16
         ],
         "count": 2
       },
       {
         "range": "21~30",
-        "numbers": [
-          26,
-          28
-        ],
-        "count": 2
+        "numbers": [],
+        "count": 0
       },
       {
         "range": "31~40",
-        "numbers": [],
-        "count": 0
+        "numbers": [
+          34
+        ],
+        "count": 1
       },
       {
         "range": "41~45",
-        "numbers": [],
-        "count": 0
+        "numbers": [
+          41,
+          44
+        ],
+        "count": 2
       }
     ]
   },
@@ -44,54 +45,58 @@
     {
       "label": "2개월",
       "round_count": 9,
-      "top_range": "21~30",
-      "top_range_count": 13,
+      "top_range": "11~20",
+      "top_range_count": 14,
       "bottom_range": "31~40",
-      "bottom_range_count": 9,
-      "avg_text": "회차당 평균 1.4개 번호가 21~30 구간에서 나왔어요",
-      "cold_range": "31~40",
-      "cold_rounds": 3,
+      "bottom_range_count": 8,
+      "avg_text": "회차당 평균 1.6개 번호가 11~20 구간에서 나왔어요",
+      "cold_range": "21~30",
+      "cold_rounds": 1,
       "prev_period_diff": {
-        "range": "1~10",
-        "diff": -1
+        "range": "11~20",
+        "diff": 2
       },
       "streak": {
-        "range": "1~10",
-        "count": 2
+        "range": "11~20",
+        "count": 1
       },
       "ranges": [
         {
           "range": "1~10",
           "count": 11,
           "pct": 20.4,
-          "value": 0.8462
+          "value": 0.7857
         },
         {
           "range": "11~20",
-          "count": 12,
-          "pct": 22.2,
-          "value": 0.9231
-        },
-        {
-          "range": "21~30",
-          "count": 13,
-          "pct": 24.1,
+          "count": 14,
+          "pct": 25.9,
           "value": 1.0
         },
         {
+          "range": "21~30",
+          "count": 12,
+          "pct": 22.2,
+          "value": 0.8571
+        },
+        {
           "range": "31~40",
-          "count": 9,
-          "pct": 16.7,
-          "value": 0.6923
+          "count": 8,
+          "pct": 14.8,
+          "value": 0.5714
         },
         {
           "range": "41~45",
           "count": 9,
           "pct": 16.7,
-          "value": 0.6923
+          "value": 0.6429
         }
       ],
       "recent_5": [
+        {
+          "round": 1227,
+          "top_range": "11~20"
+        },
         {
           "round": 1226,
           "top_range": "1~10"
@@ -106,10 +111,6 @@
         },
         {
           "round": 1223,
-          "top_range": "11~20"
-        },
-        {
-          "round": 1222,
           "top_range": "11~20"
         }
       ]
@@ -118,53 +119,57 @@
       "label": "6개월",
       "round_count": 26,
       "top_range": "21~30",
-      "top_range_count": 40,
+      "top_range_count": 38,
       "bottom_range": "41~45",
-      "bottom_range_count": 18,
+      "bottom_range_count": 20,
       "avg_text": "회차당 평균 1.5개 번호가 21~30 구간에서 나왔어요",
-      "cold_range": "31~40",
-      "cold_rounds": 3,
+      "cold_range": "21~30",
+      "cold_rounds": 1,
       "prev_period_diff": {
         "range": "1~10",
-        "diff": 1
+        "diff": 0
       },
       "streak": {
-        "range": "1~10",
-        "count": 2
+        "range": "11~20",
+        "count": 1
       },
       "ranges": [
         {
           "range": "1~10",
-          "count": 35,
-          "pct": 22.4,
-          "value": 0.875
+          "count": 34,
+          "pct": 21.8,
+          "value": 0.8947
         },
         {
           "range": "11~20",
-          "count": 30,
-          "pct": 19.2,
-          "value": 0.75
+          "count": 32,
+          "pct": 20.5,
+          "value": 0.8421
         },
         {
           "range": "21~30",
-          "count": 40,
-          "pct": 25.6,
+          "count": 38,
+          "pct": 24.4,
           "value": 1.0
         },
         {
           "range": "31~40",
-          "count": 33,
-          "pct": 21.2,
-          "value": 0.825
+          "count": 32,
+          "pct": 20.5,
+          "value": 0.8421
         },
         {
           "range": "41~45",
-          "count": 18,
-          "pct": 11.5,
-          "value": 0.45
+          "count": 20,
+          "pct": 12.8,
+          "value": 0.5263
         }
       ],
       "recent_5": [
+        {
+          "round": 1227,
+          "top_range": "11~20"
+        },
         {
           "round": 1226,
           "top_range": "1~10"
@@ -179,10 +184,6 @@
         },
         {
           "round": 1223,
-          "top_range": "11~20"
-        },
-        {
-          "round": 1222,
           "top_range": "11~20"
         }
       ]
@@ -193,30 +194,30 @@
       "top_range": "21~30",
       "top_range_count": 76,
       "bottom_range": "41~45",
-      "bottom_range_count": 30,
+      "bottom_range_count": 31,
       "avg_text": "회차당 평균 1.5개 번호가 21~30 구간에서 나왔어요",
-      "cold_range": "31~40",
-      "cold_rounds": 3,
+      "cold_range": "21~30",
+      "cold_rounds": 1,
       "prev_period_diff": {
         "range": "1~10",
-        "diff": -1
+        "diff": -2
       },
       "streak": {
-        "range": "1~10",
-        "count": 2
+        "range": "11~20",
+        "count": 1
       },
       "ranges": [
         {
           "range": "1~10",
-          "count": 74,
-          "pct": 23.7,
-          "value": 0.9737
+          "count": 71,
+          "pct": 22.8,
+          "value": 0.9342
         },
         {
           "range": "11~20",
-          "count": 68,
-          "pct": 21.8,
-          "value": 0.8947
+          "count": 70,
+          "pct": 22.4,
+          "value": 0.9211
         },
         {
           "range": "21~30",
@@ -232,12 +233,16 @@
         },
         {
           "range": "41~45",
-          "count": 30,
-          "pct": 9.6,
-          "value": 0.3947
+          "count": 31,
+          "pct": 9.9,
+          "value": 0.4079
         }
       ],
       "recent_5": [
+        {
+          "round": 1227,
+          "top_range": "11~20"
+        },
         {
           "round": 1226,
           "top_range": "1~10"
@@ -252,10 +257,6 @@
         },
         {
           "round": 1223,
-          "top_range": "11~20"
-        },
-        {
-          "round": 1222,
           "top_range": "11~20"
         }
       ]
@@ -266,36 +267,36 @@
       "top_range": "31~40",
       "top_range_count": 215,
       "bottom_range": "41~45",
-      "bottom_range_count": 89,
+      "bottom_range_count": 90,
       "avg_text": "회차당 평균 1.4개 번호가 31~40 구간에서 나왔어요",
-      "cold_range": "31~40",
-      "cold_rounds": 3,
+      "cold_range": "21~30",
+      "cold_rounds": 1,
       "prev_period_diff": {
         "range": "1~10",
         "diff": 7
       },
       "streak": {
-        "range": "1~10",
-        "count": 2
+        "range": "11~20",
+        "count": 1
       },
       "ranges": [
         {
           "range": "1~10",
-          "count": 200,
-          "pct": 21.5,
-          "value": 0.9302
+          "count": 201,
+          "pct": 21.6,
+          "value": 0.9349
         },
         {
           "range": "11~20",
-          "count": 214,
-          "pct": 23.0,
-          "value": 0.9953
+          "count": 213,
+          "pct": 22.9,
+          "value": 0.9907
         },
         {
           "range": "21~30",
-          "count": 212,
-          "pct": 22.8,
-          "value": 0.986
+          "count": 211,
+          "pct": 22.7,
+          "value": 0.9814
         },
         {
           "range": "31~40",
@@ -305,12 +306,16 @@
         },
         {
           "range": "41~45",
-          "count": 89,
-          "pct": 9.6,
-          "value": 0.414
+          "count": 90,
+          "pct": 9.7,
+          "value": 0.4186
         }
       ],
       "recent_5": [
+        {
+          "round": 1227,
+          "top_range": "11~20"
+        },
         {
           "round": 1226,
           "top_range": "1~10"
@@ -325,10 +330,6 @@
         },
         {
           "round": 1223,
-          "top_range": "11~20"
-        },
-        {
-          "round": 1222,
           "top_range": "11~20"
         }
       ]
@@ -339,24 +340,24 @@
       "top_range": "11~20",
       "top_range_count": 724,
       "bottom_range": "41~45",
-      "bottom_range_count": 346,
+      "bottom_range_count": 347,
       "avg_text": "회차당 평균 1.4개 번호가 11~20 구간에서 나왔어요",
-      "cold_range": "31~40",
-      "cold_rounds": 3,
+      "cold_range": "21~30",
+      "cold_rounds": 1,
       "prev_period_diff": {
         "range": "1~10",
         "diff": -8
       },
       "streak": {
-        "range": "1~10",
-        "count": 2
+        "range": "11~20",
+        "count": 1
       },
       "ranges": [
         {
           "range": "1~10",
-          "count": 647,
-          "pct": 20.9,
-          "value": 0.8936
+          "count": 648,
+          "pct": 21.0,
+          "value": 0.895
         },
         {
           "range": "11~20",
@@ -366,24 +367,28 @@
         },
         {
           "range": "21~30",
-          "count": 676,
-          "pct": 21.9,
-          "value": 0.9337
+          "count": 675,
+          "pct": 21.8,
+          "value": 0.9323
         },
         {
           "range": "31~40",
-          "count": 697,
-          "pct": 22.6,
-          "value": 0.9627
+          "count": 696,
+          "pct": 22.5,
+          "value": 0.9613
         },
         {
           "range": "41~45",
-          "count": 346,
+          "count": 347,
           "pct": 11.2,
-          "value": 0.4779
+          "value": 0.4793
         }
       ],
       "recent_5": [
+        {
+          "round": 1227,
+          "top_range": "11~20"
+        },
         {
           "round": 1226,
           "top_range": "1~10"
@@ -398,10 +403,6 @@
         },
         {
           "round": 1223,
-          "top_range": "11~20"
-        },
-        {
-          "round": 1222,
           "top_range": "11~20"
         }
       ]
