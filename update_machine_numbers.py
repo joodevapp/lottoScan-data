@@ -15,34 +15,28 @@ def get_machine_numbers_from_lottotapa(start_round, end_round):
         )
         page = context.new_page()
         
-        batch_size = 50
-        for batch_start in range(start_round, end_round + 1, batch_size):
-            batch_end = min(batch_start + batch_size - 1, end_round)
-            print(f"{batch_start}~{batch_end}회차 크롤링중...")
+        print(f"{start_round}~{end_round}회차 크롤링중...")
+        
+        try:
+            url = f"https://lottotapa.com/stat/result_hogi.php?s_draw={start_round}&e_draw={end_round}"
+            page.goto(url, timeout=60000)
+            page.wait_for_load_state('domcontentloaded')
+            time.sleep(3)
+            text = page.inner_text('body')
             
-            try:
-                url = f"https://lottotapa.com/stat/result_hogi.php?s_draw={batch_start}&e_draw={batch_end}"
-                page.goto(url, timeout=60000)
-                page.wait_for_load_state('domcontentloaded')
-                time.sleep(3)
-                text = page.inner_text('body')
-                
-                matches = re.findall(r'(\d+)회 로또 당첨번호 \((\d+)호기\)', text)
-                for draw_no, machine_no in matches:
-                    machine_dict[int(draw_no)] = int(machine_no)
-                
-                no_machine = re.findall(r'(\d+)회 로또 당첨번호\n', text)
-                for draw_no in no_machine:
-                    if int(draw_no) not in machine_dict:
-                        machine_dict[int(draw_no)] = "미정"
-                
-                print(f"  → {len(matches)}개 호기 정보 수집")
-                
-            except Exception as e:
-                print(f"  → 에러: {e}, 건너뜀")
-                continue
+            matches = re.findall(r'(\d+)회 로또 당첨번호 \((\d+)호기\)', text)
+            for draw_no, machine_no in matches:
+                machine_dict[int(draw_no)] = int(machine_no)
             
-            time.sleep(2)
+            no_machine = re.findall(r'(\d+)회 로또 당첨번호\n', text)
+            for draw_no in no_machine:
+                if int(draw_no) not in machine_dict:
+                    machine_dict[int(draw_no)] = "미정"
+            
+            print(f"  → {len(matches)}개 호기 정보 수집")
+            
+        except Exception as e:
+            print(f"  → 에러: {e}")
         
         browser.close()
     
@@ -58,7 +52,7 @@ def update_machine_numbers():
     with open(all_json_path, "r", encoding="utf-8") as f:
         all_data = json.load(f)
     
-    needs_update = [item for item in all_data if 'machine_no' not in item]
+    needs_update = [item for item in all_data if 'machine_no' not in item or item['machine_no'] == "미정"]
     
     if not needs_update:
         print("모든 회차에 machine_no 있음")
@@ -79,7 +73,7 @@ def update_machine_numbers():
     
     updated = 0
     for item in all_data:
-        if 'machine_no' not in item:
+        if 'machine_no' not in item or item['machine_no'] == "미정":
             draw_no = item['draw_no']
             if draw_no < 262:
                 item['machine_no'] = "미정"
