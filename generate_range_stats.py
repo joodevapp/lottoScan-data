@@ -1,180 +1,89 @@
 import json
 import os
-from datetime import datetime, timedelta
-from collections import defaultdict
+import re
+import time
+from playwright.sync_api import sync_playwright
 
-RANGES = [
-    ("1~10", 1, 10),
-    ("11~20", 11, 20),
-    ("21~30", 21, 30),
-    ("31~40", 31, 40),
-    ("41~45", 41, 45)
-]
+def get_machine_numbers_from_lottotapa(start_round, end_round):
+    machine_dict = {}
+    
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            locale='ko-KR'
+        )
+        page = context.new_page()
+        
+        print(f"{start_round}~{end_round}회차 크롤링중...")
+        
+        try:
+            url = f"https://lottotapa.com/stat/result_hogi.php?s_draw={start_round}&e_draw={end_round}"
+            page.goto(url, timeout=60000)
+            page.wait_for_load_state('domcontentloaded')
+            time.sleep(3)
+            text = page.inner_text('body')
+            
+            matches = re.findall(r'(\d+)회 로또 당첨번호 \((\d+)호기\)', text)
+            for draw_no, machine_no in matches:
+                machine_dict[int(draw_no)] = int(machine_no)
+            
+            no_machine = re.findall(r'(\d+)회 로또 당첨번호\n', text)
+            for draw_no in no_machine:
+                if int(draw_no) not in machine_dict:
+                    machine_dict[int(draw_no)] = "미정"
+            
+            print(f"  → {len(matches)}개 호기 정보 수집")
+            
+        except Exception as e:
+            print(f"  → 에러: {e}")
+        
+        browser.close()
+    
+    return machine_dict
 
-def load_lotto_data():
-    with open("results/All_Lotto_Data.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def update_machine_numbers():
+    all_json_path = "results/All_Lotto_Data.json"
+    
+    if not os.path.exists(all_json_path):
+        print("All_Lotto_Data.json 없음")
+        return
+    
+    with open(all_json_path, "r", encoding="utf-8") as f:
+        all_data = json.load(f)
+    
+    needs_update = [item for item in all_data if 'machine_no' not in item or item['machine_no'] == "미정"]
+    
+    if not needs_update:
+        print("모든 회차에 machine_no 있음")
+        return
+    
+    print(f"machine_no 업데이트 필요: {len(needs_update)}회차")
+    
+    rounds_to_fetch = [item['draw_no'] for item in needs_update if item['draw_no'] >= 262]
+    
+    if rounds_to_fetch:
+        min_round = min(rounds_to_fetch)
+        max_round = max(rounds_to_fetch)
+        print(f"로또타파 크롤링: {min_round}~{max_round}회차")
+        machine_dict = get_machine_numbers_from_lottotapa(min_round, max_round)
+        print(f"크롤링 완료: {len(machine_dict)}회차")
+    else:
+        machine_dict = {}
+    
+    updated = 0
+    for item in all_data:
+        if 'machine_no' not in item or item['machine_no'] == "미정":
+            draw_no = item['draw_no']
+            if draw_no < 262:
+                item['machine_no'] = "미정"
+            else:
+                item['machine_no'] = machine_dict.get(draw_no, "미정")
+            updated += 1
+    
+    with open(all_json_path, "w", encoding="utf-8") as f:
+        json.dump(all_data, f, ensure_ascii=False, indent=2)
+    
+    print(f"총 {updated}회차 업데이트 완료!")
 
-def get_range(number):
-    for label, start, end in RANGES:
-        if start <= number <= end:
-            return label
-    return ""
-
-def get_top_range(numbers):
-    counts = defaultdict(int)
-    for n in numbers:
-        counts[get_range(n)] += 1
-    if not counts:
-        return ""
-    return max(counts, key=counts.get)
-
-def get_rounds_for_period(data, months):
-    cutoff = datetime.now() - timedelta(days=months * 30)
-    return [item for item in data if datetime.strptime(item['date'][:10], '%Y-%m-%d') >= cutoff]
-
-def calc_latest_distribution(latest):
-    distribution = []
-    for label, start, end in RANGES:
-        nums = [n for n in latest['numbers'] if start <= n <= end]
-        distribution.append({
-            "range": label,
-            "numbers": sorted(nums),
-            "count": len(nums)
-        })
-    return distribution
-
-def calc_cold_range(rounds):
-    cold = {}
-    for label, _, _ in RANGES:
-        count = 0
-        for item in reversed(rounds):
-            has_range = any(get_range(n) == label for n in item['numbers'])
-            if has_range:
-                break
-            count += 1
-        if count > 0:
-            cold[label] = count
-    if cold:
-        top = max(cold, key=cold.get)
-        return top, cold[top]
-    return None, 0
-
-def calc_streak(rounds):
-    if not rounds:
-        return {"range": "", "count": 0}
-    latest_range = get_top_range(rounds[-1]['numbers'])
-    count = 0
-    for item in reversed(rounds):
-        if get_top_range(item['numbers']) == latest_range:
-            count += 1
-        else:
-            break
-    return {"range": latest_range, "count": count}
-
-def calc_prev_diff(data, months):
-    cutoff_now = datetime.now() - timedelta(days=months * 30)
-    cutoff_prev = datetime.now() - timedelta(days=months * 60)
-    current = [item for item in data if datetime.strptime(item['date'][:10], '%Y-%m-%d') >= cutoff_now]
-    previous = [item for item in data if cutoff_prev <= datetime.strptime(item['date'][:10], '%Y-%m-%d') < cutoff_now]
-    if not current or not previous:
-        return {"range": "", "diff": 0}
-    cur_counts = defaultdict(int)
-    for item in current:
-        cur_counts[get_top_range(item['numbers'])] += 1
-    top_range = max(cur_counts, key=cur_counts.get)
-    prev_counts = defaultdict(int)
-    for item in previous:
-        prev_counts[get_top_range(item['numbers'])] += 1
-    diff = cur_counts[top_range] - prev_counts[top_range]
-    return {"range": top_range, "diff": diff}
-
-def calc_period_stats(data, label, months):
-    rounds = get_rounds_for_period(data, months)
-    if not rounds:
-        return None
-
-    total = len(rounds)
-    range_counts = defaultdict(int)
-    for item in rounds:
-        for n in item['numbers']:
-            range_counts[get_range(n)] += 1
-
-    top_range = max(range_counts, key=range_counts.get)
-    bottom_range = min(range_counts, key=range_counts.get)
-    max_count = max(range_counts.values())
-
-    avg_per_round = round(range_counts[top_range] / total, 1)
-    avg_text = f"회차당 평균 {avg_per_round}개 번호가 {top_range} 구간에서 나왔어요"
-
-    cold_range, cold_rounds = calc_cold_range(rounds)
-
-    ranges = []
-    for range_label, _, _ in RANGES:
-        count = range_counts[range_label]
-        pct = round(count / (total * 6) * 100, 1)
-        value = round(count / max_count, 4)
-        ranges.append({
-            "range": range_label,
-            "count": count,
-            "pct": pct,
-            "value": value
-        })
-
-    recent_5 = []
-    for item in reversed(rounds[-5:]):
-        recent_5.append({
-            "round": item['draw_no'],
-            "top_range": get_top_range(item['numbers'])
-        })
-
-    return {
-        "label": label,
-        "round_count": total,
-        "top_range": top_range,
-        "top_range_count": range_counts[top_range],
-        "bottom_range": bottom_range,
-        "bottom_range_count": range_counts[bottom_range],
-        "avg_text": avg_text,
-        "cold_range": cold_range,
-        "cold_rounds": cold_rounds,
-        "prev_period_diff": calc_prev_diff(data, months),
-        "streak": calc_streak(rounds),
-        "ranges": ranges,
-        "recent_5": recent_5
-    }
-
-def generate_range_stats():
-    data = load_lotto_data()
-    total_rounds = len(data)
-    latest = data[-1]
-
-    periods = [
-        ("2개월", 2),
-        ("6개월", 6),
-        ("1년", 12),
-        ("3년", 36),
-        ("10년", 120)
-    ]
-
-    result = {
-        "generated_at": latest['date'][:10],
-        "total_rounds": total_rounds,
-        "latest_round": {
-            "draw_no": latest['draw_no'],
-            "distribution": calc_latest_distribution(latest)
-        },
-        "periods": []
-    }
-
-    for label, months in periods:
-        print(f"{label} 계산중...")
-        result["periods"].append(calc_period_stats(data, label, months))
-
-    os.makedirs("results/stats", exist_ok=True)
-    with open("results/stats/range_stats.json", "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-
-    print(f"range_stats.json 생성완료! (총 {total_rounds}회차)")
-
-generate_range_stats()
+update_machine_numbers()
