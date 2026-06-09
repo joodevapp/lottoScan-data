@@ -14,9 +14,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: 패키지 설치
-        run: |
-          pip install playwright
-          playwright install chromium
+        run: pip install requests
       - name: 호기 정보 업데이트
         run: python update_machine_numbers.py
       - name: 변경사항 커밋
