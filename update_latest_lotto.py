@@ -96,6 +96,7 @@ def get_lotto_data_from_page(draw_no):
                 "total_sales_amount": total,
                 "divisions": divisions,
                 "winners_combination": winners_combination
+                "machine_no": "미정"
             }
         except Exception as e:
             print(f"Error: {e}")
