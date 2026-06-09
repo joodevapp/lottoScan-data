@@ -18,20 +18,27 @@ def get_machine_numbers_from_lottotapa(start_round, end_round):
         print(f"{start_round}~{end_round}회차 크롤링중...")
         
         try:
-            url = f"https://lottotapa.com/stat/result_hogi.php?s_draw={start_round}&e_draw={end_round}"
-            page.goto(url, timeout=60000)
+            page.goto('https://lottotapa.com/stat/result_hogi.php', timeout=60000)
             page.wait_for_load_state('domcontentloaded')
+            time.sleep(2)
+            
+            # 시작회차 드롭다운 선택
+            page.select_option('select[name="s_draw"]', str(start_round))
+            time.sleep(1)
+            
+            # 마지막회차 드롭다운 선택
+            page.select_option('select[name="e_draw"]', str(end_round))
+            time.sleep(1)
+            
+            # 검색 버튼 클릭
+            page.click('input[type="submit"], button[type="submit"]')
             time.sleep(3)
+            
             text = page.inner_text('body')
             
             matches = re.findall(r'(\d+)회 로또 당첨번호 \((\d+)호기\)', text)
             for draw_no, machine_no in matches:
                 machine_dict[int(draw_no)] = int(machine_no)
-            
-            no_machine = re.findall(r'(\d+)회 로또 당첨번호\n', text)
-            for draw_no in no_machine:
-                if int(draw_no) not in machine_dict:
-                    machine_dict[int(draw_no)] = "미정"
             
             print(f"  → {len(matches)}개 호기 정보 수집")
             
