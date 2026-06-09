@@ -1,53 +1,42 @@
 import json
 import os
 import re
+import requests
 import time
-from playwright.sync_api import sync_playwright
 
 def get_machine_numbers_from_lottotapa():
     machine_dict = {}
     
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            locale='ko-KR'
-        )
-        page = context.new_page()
-        
-        print("전체 회차 크롤링중...")
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Referer': 'https://lottotapa.com/stat/result_hogi.php'
+    }
+    
+    for start in range(262, 1300, 50):
+        end = start + 49
+        print(f"{start}~{end}회차 크롤링중...")
         
         try:
-            page.goto('https://lottotapa.com/stat/result_hogi.php', timeout=60000)
-            page.wait_for_load_state('domcontentloaded')
-            time.sleep(2)
-            
-            page.select_option('select[name="s_draw"]', '1')
-            time.sleep(1)
-            
-            options = page.query_selector_all('select[name="e_draw"] option')
-            last_value = options[-1].get_attribute('value')
-            page.select_option('select[name="e_draw"]', last_value)
-            time.sleep(1)
-            
-            page.click('input[type="submit"], button[type="submit"]')
-            time.sleep(5)
-            
-            text = page.inner_text('body')
-            
-            print(f"텍스트 길이: {len(text)}")
-            print(f"샘플:\n{text[:1000]}")
-            
+            r = requests.post(
+                'https://lottotapa.com/stat/result_hogi.php',
+                headers=headers,
+                data={'s_draw': str(start), 'e_draw': str(end)},
+                timeout=30
+            )
+            text = r.text
             matches = re.findall(r'(\d+)회 로또 당첨번호 \((\d+)호기\)', text)
-            print(f"매칭: {len(matches)}개")
-            
             for draw_no, machine_no in matches:
                 machine_dict[int(draw_no)] = int(machine_no)
+            print(f"  → {len(matches)}개 수집")
             
+            if not matches and start > 1250:
+                break
+                
         except Exception as e:
-            print(f"에러: {e}")
+            print(f"  → 에러: {e}")
         
-        browser.close()
+        time.sleep(1)
     
     return machine_dict
 
@@ -67,7 +56,7 @@ def update_machine_numbers():
         print("모든 회차에 machine_no 있음")
         return
     
-    print(f"machine_no 업데이트 필요: {len(needs_update)}회차")
+    print(f"업데이트 필요: {len(needs_update)}회차")
     
     machine_dict = get_machine_numbers_from_lottotapa()
     print(f"크롤링 완료: {len(machine_dict)}회차")
@@ -76,10 +65,7 @@ def update_machine_numbers():
     for item in all_data:
         if 'machine_no' not in item or item['machine_no'] == "미정":
             draw_no = item['draw_no']
-            if draw_no < 262:
-                item['machine_no'] = "미정"
-            else:
-                item['machine_no'] = machine_dict.get(draw_no, "미정")
+            item['machine_no'] = "미정" if draw_no < 262 else machine_dict.get(draw_no, "미정")
             updated += 1
     
     with open(all_json_path, "w", encoding="utf-8") as f:
