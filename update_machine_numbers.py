@@ -4,7 +4,7 @@ import re
 import time
 from playwright.sync_api import sync_playwright
 
-def get_machine_numbers_from_lottotapa(start_round, end_round):
+def get_machine_numbers_from_lottotapa():
     machine_dict = {}
     
     with sync_playwright() as p:
@@ -15,35 +15,37 @@ def get_machine_numbers_from_lottotapa(start_round, end_round):
         )
         page = context.new_page()
         
-        print(f"{start_round}~{end_round}회차 크롤링중...")
+        print("전체 회차 크롤링중...")
         
         try:
             page.goto('https://lottotapa.com/stat/result_hogi.php', timeout=60000)
             page.wait_for_load_state('domcontentloaded')
             time.sleep(2)
             
-            # 시작회차 드롭다운 선택
-            page.select_option('select[name="s_draw"]', str(start_round))
+            page.select_option('select[name="s_draw"]', '1')
             time.sleep(1)
             
-            # 마지막회차 드롭다운 선택
-            page.select_option('select[name="e_draw"]', str(end_round))
+            options = page.query_selector_all('select[name="e_draw"] option')
+            last_value = options[-1].get_attribute('value')
+            page.select_option('select[name="e_draw"]', last_value)
             time.sleep(1)
             
-            # 검색 버튼 클릭
             page.click('input[type="submit"], button[type="submit"]')
-            time.sleep(3)
+            time.sleep(5)
             
             text = page.inner_text('body')
             
+            print(f"텍스트 길이: {len(text)}")
+            print(f"샘플:\n{text[:1000]}")
+            
             matches = re.findall(r'(\d+)회 로또 당첨번호 \((\d+)호기\)', text)
+            print(f"매칭: {len(matches)}개")
+            
             for draw_no, machine_no in matches:
                 machine_dict[int(draw_no)] = int(machine_no)
             
-            print(f"  → {len(matches)}개 호기 정보 수집")
-            
         except Exception as e:
-            print(f"  → 에러: {e}")
+            print(f"에러: {e}")
         
         browser.close()
     
@@ -67,16 +69,8 @@ def update_machine_numbers():
     
     print(f"machine_no 업데이트 필요: {len(needs_update)}회차")
     
-    rounds_to_fetch = [item['draw_no'] for item in needs_update if item['draw_no'] >= 262]
-    
-    if rounds_to_fetch:
-        min_round = min(rounds_to_fetch)
-        max_round = max(rounds_to_fetch)
-        print(f"로또타파 크롤링: {min_round}~{max_round}회차")
-        machine_dict = get_machine_numbers_from_lottotapa(min_round, max_round)
-        print(f"크롤링 완료: {len(machine_dict)}회차")
-    else:
-        machine_dict = {}
+    machine_dict = get_machine_numbers_from_lottotapa()
+    print(f"크롤링 완료: {len(machine_dict)}회차")
     
     updated = 0
     for item in all_data:
