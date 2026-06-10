@@ -1,14 +1,14 @@
 {
   "summary": {
-    "1": {
+    "machine1": {
       "count": 274,
       "pct": 28.4
     },
-    "2": {
+    "machine2": {
       "count": 290,
       "pct": 30.1
     },
-    "3": {
+    "machine3": {
       "count": 401,
       "pct": 41.6
     }
@@ -550,7 +550,7 @@
       }
     ]
   },
-  "1": {
+  "machine1": {
     "total_draws": 274,
     "top6": [
       {
@@ -1087,7 +1087,7 @@
       }
     ]
   },
-  "2": {
+  "machine2": {
     "total_draws": 290,
     "top6": [
       {
@@ -1624,7 +1624,7 @@
       }
     ]
   },
-  "3": {
+  "machine3": {
     "total_draws": 401,
     "top6": [
       {
