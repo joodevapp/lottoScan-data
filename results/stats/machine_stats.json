@@ -362,7 +362,7 @@
         "range": "1~9",
         "count": 1117,
         "pct": 19.3,
-        "value": 0.915
+        "value": 0.5
       },
       {
         "range": "10~19",
@@ -374,19 +374,19 @@
         "range": "20~29",
         "count": 1140,
         "pct": 19.7,
-        "value": 0.934
+        "value": 0.611
       },
       {
         "range": "30~39",
         "count": 1146,
         "pct": 19.8,
-        "value": 0.938
+        "value": 0.639
       },
       {
         "range": "40~45",
         "count": 1163,
         "pct": 20.1,
-        "value": 0.953
+        "value": 0.722
       }
     ],
     "avg_sum": 138.2,
@@ -904,25 +904,25 @@
         "range": "1~9",
         "count": 317,
         "pct": 19.3,
-        "value": 0.919
+        "value": 0.595
       },
       {
         "range": "10~19",
         "count": 310,
         "pct": 18.9,
-        "value": 0.9
+        "value": 0.5
       },
       {
         "range": "20~29",
         "count": 328,
         "pct": 20.0,
-        "value": 0.952
+        "value": 0.762
       },
       {
         "range": "30~39",
         "count": 344,
         "pct": 20.9,
-        "value": 0.995
+        "value": 0.976
       },
       {
         "range": "40~45",
@@ -1448,7 +1448,7 @@
         "range": "1~9",
         "count": 359,
         "pct": 20.6,
-        "value": 0.972
+        "value": 0.87
       },
       {
         "range": "10~19",
@@ -1460,19 +1460,19 @@
         "range": "20~29",
         "count": 329,
         "pct": 18.9,
-        "value": 0.892
+        "value": 0.5
       },
       {
         "range": "30~39",
         "count": 340,
         "pct": 19.5,
-        "value": 0.92
+        "value": 0.63
       },
       {
         "range": "40~45",
         "count": 343,
         "pct": 19.7,
-        "value": 0.929
+        "value": 0.674
       }
     ],
     "avg_sum": 136.5,
@@ -1992,7 +1992,7 @@
         "range": "1~9",
         "count": 441,
         "pct": 18.3,
-        "value": 0.806
+        "value": 0.5
       },
       {
         "range": "10~19",
@@ -2004,19 +2004,19 @@
         "range": "20~29",
         "count": 483,
         "pct": 20.1,
-        "value": 0.885
+        "value": 0.705
       },
       {
         "range": "30~39",
         "count": 462,
         "pct": 19.2,
-        "value": 0.846
+        "value": 0.602
       },
       {
         "range": "40~45",
         "count": 475,
         "pct": 19.7,
-        "value": 0.868
+        "value": 0.659
       }
     ],
     "avg_sum": 137.4,
