@@ -55,10 +55,15 @@ def generate_stats_for_group(data):
             "count": range_total[i],
             "pct": round(range_total[i] / (total_draws * 6) * 100, 1)
         })
+    min_pct = min(r["pct"] for r in range_stats_raw)
     max_pct = max(r["pct"] for r in range_stats_raw)
+    pct_range = max_pct - min_pct
     range_stats = []
     for r in range_stats_raw:
-        r["value"] = round(r["pct"] / max_pct, 3)
+        if pct_range == 0:
+            r["value"] = 1.0
+        else:
+            r["value"] = round(0.5 + (r["pct"] - min_pct) / pct_range * 0.5, 3)
         range_stats.append(r)
     avg_sum = round(sum(sums) / len(sums), 1)
     sum_counter = Counter()
