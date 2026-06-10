@@ -48,13 +48,18 @@ def generate_stats_for_group(data):
     for r in range_counts:
         for i in range(5):
             range_total[i] += r[i]
-    range_stats = []
+    range_stats_raw = []
     for i, label in enumerate(range_labels):
-        range_stats.append({
+        range_stats_raw.append({
             "range": label,
             "count": range_total[i],
             "pct": round(range_total[i] / (total_draws * 6) * 100, 1)
         })
+    max_pct = max(r["pct"] for r in range_stats_raw)
+    range_stats = []
+    for r in range_stats_raw:
+        r["value"] = round(r["pct"] / max_pct, 3)
+        range_stats.append(r)
     avg_sum = round(sum(sums) / len(sums), 1)
     sum_counter = Counter()
     for s in sums:
@@ -119,10 +124,8 @@ def main():
         summary["machine1"]["pct"] = round(summary["machine1"]["count"] / total * 100, 1)
         summary["machine2"]["pct"] = round(summary["machine2"]["count"] / total * 100, 1)
         summary["machine3"]["pct"] = round(summary["machine3"]["count"] / total * 100, 1)
-
     all_stats = generate_stats_for_group(groups["all"])
     all_avg_sum = all_stats["avg_sum"] if all_stats else 0
-
     def add_diff(stats):
         if stats is None:
             return None
@@ -131,7 +134,6 @@ def main():
         stats["avg_sum_diff"] = diff_str
         stats["avg_sum_compare"] = f"전체 평균 {all_avg_sum} 대비 {diff_str}"
         return stats
-
     result = {
         "summary": summary,
         "all": all_stats,
