@@ -1085,7 +1085,9 @@
         ],
         "bonus_no": 37
       }
-    ]
+    ],
+    "avg_sum_diff": "+2.9",
+    "avg_sum_compare": "전체 평균 138.2 대비 +2.9"
   },
   "machine2": {
     "total_draws": 290,
@@ -1622,7 +1624,9 @@
         ],
         "bonus_no": 45
       }
-    ]
+    ],
+    "avg_sum_diff": "-1.7",
+    "avg_sum_compare": "전체 평균 138.2 대비 -1.7"
   },
   "machine3": {
     "total_draws": 401,
@@ -2159,6 +2163,8 @@
         ],
         "bonus_no": 33
       }
-    ]
+    ],
+    "avg_sum_diff": "-0.8",
+    "avg_sum_compare": "전체 평균 138.2 대비 -0.8"
   }
 }
