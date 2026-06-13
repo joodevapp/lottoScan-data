@@ -1,5 +1,66 @@
 [
   {
+    "round": 1228,
+    "date": "2026-06-13",
+    "stores": [
+      {
+        "name": "감만정보통신",
+        "address": "부산 남구 우암로 150 복권판매점",
+        "combination": "자동"
+      },
+      {
+        "name": "일등복권방",
+        "address": "부산 남구 고동골로 3",
+        "combination": "자동"
+      },
+      {
+        "name": "나라복권",
+        "address": "인천 남동구 인주대로676번길 22 상가동 101호",
+        "combination": "자동"
+      },
+      {
+        "name": "복돼지복권방",
+        "address": "경기 화성시 3.1만세로 43",
+        "combination": "자동"
+      },
+      {
+        "name": "바른",
+        "address": "경기 하남시 신장로 68",
+        "combination": "자동"
+      },
+      {
+        "name": "돈벼락",
+        "address": "경기 군포시 금당로 112 101호(당동)",
+        "combination": "자동"
+      },
+      {
+        "name": "이마트24 백석동문점",
+        "address": "경기 고양시 일산동구 호수로 358-26 1층 편의점",
+        "combination": "자동"
+      },
+      {
+        "name": "중앙복권방",
+        "address": "충북 청주시 청원구 율량로189번길 25",
+        "combination": "수동"
+      },
+      {
+        "name": "복권나라",
+        "address": "전남 여수시 중앙로 62 1층",
+        "combination": "자동"
+      },
+      {
+        "name": "동네복권",
+        "address": "경북 울진군 울진중앙로 27 1층",
+        "combination": "자동"
+      },
+      {
+        "name": "로또명당",
+        "address": "경남 하동군 진교중앙길 22",
+        "combination": "자동"
+      }
+    ]
+  },
+  {
     "round": 1227,
     "date": "2026-06-06",
     "stores": [
