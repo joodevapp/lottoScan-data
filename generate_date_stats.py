@@ -189,15 +189,9 @@ def calc_stats_for_group(draws):
             "count": count,
             "pct": round(count / total_draws * 100, 1)
         })
-    max_sum_pct = max(r["pct"] for r in sum_stats_raw) if sum_stats_raw else 1
-    min_sum_pct = min(r["pct"] for r in sum_stats_raw) if sum_stats_raw else 0
-    sum_pct_range = max_sum_pct - min_sum_pct
     sum_stats = []
     for r in sum_stats_raw:
-        if sum_pct_range == 0:
-            r["value"] = 1.0
-        else:
-            r["value"] = round(0.5 + (r["pct"] - min_sum_pct) / sum_pct_range * 0.5, 3)
+        r["value"] = round(r["pct"] / 100, 3)
         sum_stats.append(r)
 
     # AC값 통계
