@@ -139,6 +139,10 @@ def main():
         stats["avg_sum_diff"] = diff_str
         stats["avg_sum_compare"] = f"전체 평균 {all_avg_sum} 대비 {diff_str}"
         return stats
+    if all_stats:
+        all_stats["avg_sum_diff"] = "+0.0"
+        all_stats["avg_sum_compare"] = f"전체 평균 {all_avg_sum}"
+
     result = {
         "summary": summary,
         "all": all_stats,
