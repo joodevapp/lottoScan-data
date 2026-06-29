@@ -250,8 +250,9 @@ def calc_stats_for_group(draws):
 
     # 페어 top10
     top_pairs = []
-    for pair, count in pair_counter.most_common(10):
+    for rank, (pair, count) in enumerate(pair_counter.most_common(10), start=1):
         top_pairs.append({
+            "rank": rank,
             "numbers": list(pair),
             "count": count,
             "pct": round(count / total_draws * 100, 1)
