@@ -174,13 +174,13 @@ def calc_stats_for_group(draws):
     avg_sum = round(sum(sums) / total_draws, 1)
     sum_counter = Counter()
     for s in sums:
-        if s <= 80: sum_counter["~80"] += 1
+        if s <= 80: sum_counter["1~80"] += 1
         elif s <= 100: sum_counter["81~100"] += 1
         elif s <= 120: sum_counter["101~120"] += 1
         elif s <= 140: sum_counter["121~140"] += 1
         elif s <= 160: sum_counter["141~160"] += 1
-        else: sum_counter["161~"] += 1
-    sum_ranges = ["~80", "81~100", "101~120", "121~140", "141~160", "161~"]
+        else: sum_counter["161~175"] += 1
+    sum_ranges = ["1~80", "81~100", "101~120", "121~140", "141~160", "161~175"]
     sum_stats_raw = []
     for label in sum_ranges:
         count = sum_counter.get(label, 0)
