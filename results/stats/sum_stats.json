@@ -30,7 +30,7 @@
       "top_range_count": 4,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": -1
+        "diff": 0
       },
       "streak": {
         "range": "101~150",
@@ -246,13 +246,13 @@
     },
     {
       "label": "3년",
-      "round_count": 155,
+      "round_count": 154,
       "avg_sum": 138,
       "top_range": "101~150",
-      "top_range_count": 85,
+      "top_range_count": 84,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": 1
+        "diff": -1
       },
       "streak": {
         "range": "101~150",
@@ -269,25 +269,25 @@
           "range": "51~100",
           "count": 19,
           "pct": 12.3,
-          "value": 0.2235
+          "value": 0.2262
         },
         {
           "range": "101~150",
-          "count": 85,
-          "pct": 54.8,
+          "count": 84,
+          "pct": 54.5,
           "value": 1.0
         },
         {
           "range": "151~200",
           "count": 47,
-          "pct": 30.3,
-          "value": 0.5529
+          "pct": 30.5,
+          "value": 0.5595
         },
         {
           "range": "201~257",
           "count": 4,
           "pct": 2.6,
-          "value": 0.0471
+          "value": 0.0476
         }
       ],
       "recent_5": [
@@ -320,7 +320,7 @@
     },
     {
       "label": "10년",
-      "round_count": 515,
+      "round_count": 514,
       "avg_sum": 139,
       "top_range": "101~150",
       "top_range_count": 283,
@@ -341,20 +341,20 @@
         },
         {
           "range": "51~100",
-          "count": 55,
-          "pct": 10.7,
-          "value": 0.1943
+          "count": 54,
+          "pct": 10.5,
+          "value": 0.1908
         },
         {
           "range": "101~150",
           "count": 283,
-          "pct": 55.0,
+          "pct": 55.1,
           "value": 1.0
         },
         {
           "range": "151~200",
           "count": 164,
-          "pct": 31.8,
+          "pct": 31.9,
           "value": 0.5795
         },
         {

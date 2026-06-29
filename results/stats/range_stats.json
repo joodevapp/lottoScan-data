@@ -262,17 +262,17 @@
     },
     {
       "label": "3년",
-      "round_count": 155,
-      "top_range": "31~40",
-      "top_range_count": 216,
+      "round_count": 154,
+      "top_range": "11~20",
+      "top_range_count": 213,
       "bottom_range": "41~45",
       "bottom_range_count": 90,
-      "avg_text": "회차당 평균 1.4개 번호가 31~40 구간에서 나왔어요",
+      "avg_text": "회차당 평균 1.4개 번호가 11~20 구간에서 나왔어요",
       "cold_range": "11~20",
       "cold_rounds": 1,
       "prev_period_diff": {
         "range": "1~10",
-        "diff": 8
+        "diff": 6
       },
       "streak": {
         "range": "1~10",
@@ -281,33 +281,33 @@
       "ranges": [
         {
           "range": "1~10",
-          "count": 200,
-          "pct": 21.5,
-          "value": 0.9259
+          "count": 197,
+          "pct": 21.3,
+          "value": 0.9249
         },
         {
           "range": "11~20",
           "count": 213,
-          "pct": 22.9,
-          "value": 0.9861
+          "pct": 23.1,
+          "value": 1.0
         },
         {
           "range": "21~30",
           "count": 211,
-          "pct": 22.7,
-          "value": 0.9769
+          "pct": 22.8,
+          "value": 0.9906
         },
         {
           "range": "31~40",
-          "count": 216,
-          "pct": 23.2,
+          "count": 213,
+          "pct": 23.1,
           "value": 1.0
         },
         {
           "range": "41~45",
           "count": 90,
           "pct": 9.7,
-          "value": 0.4167
+          "value": 0.4225
         }
       ],
       "recent_5": [
@@ -335,9 +335,9 @@
     },
     {
       "label": "10년",
-      "round_count": 515,
+      "round_count": 514,
       "top_range": "11~20",
-      "top_range_count": 723,
+      "top_range_count": 721,
       "bottom_range": "41~45",
       "bottom_range_count": 348,
       "avg_text": "회차당 평균 1.4개 번호가 11~20 구간에서 나왔어요",
@@ -345,7 +345,7 @@
       "cold_rounds": 1,
       "prev_period_diff": {
         "range": "1~10",
-        "diff": -9
+        "diff": -11
       },
       "streak": {
         "range": "1~10",
@@ -354,33 +354,33 @@
       "ranges": [
         {
           "range": "1~10",
-          "count": 645,
-          "pct": 20.9,
-          "value": 0.8921
+          "count": 643,
+          "pct": 20.8,
+          "value": 0.8918
         },
         {
           "range": "11~20",
-          "count": 723,
+          "count": 721,
           "pct": 23.4,
           "value": 1.0
         },
         {
           "range": "21~30",
-          "count": 678,
+          "count": 676,
           "pct": 21.9,
-          "value": 0.9378
+          "value": 0.9376
         },
         {
           "range": "31~40",
           "count": 696,
-          "pct": 22.5,
-          "value": 0.9627
+          "pct": 22.6,
+          "value": 0.9653
         },
         {
           "range": "41~45",
           "count": 348,
           "pct": 11.3,
-          "value": 0.4813
+          "value": 0.4827
         }
       ],
       "recent_5": [

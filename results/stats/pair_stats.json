@@ -397,13 +397,13 @@
     },
     {
       "label": "3년",
-      "round_count": 155,
+      "round_count": 154,
       "top_pair": [
         27,
         38
       ],
       "top_pair_count": 10,
-      "pairs_3plus_count": 402,
+      "pairs_3plus_count": 398,
       "top10_avg": 7.7,
       "prev_period_diff": {
         "pair": [
@@ -452,15 +452,6 @@
         {
           "rank": 5,
           "numbers": [
-            7,
-            9
-          ],
-          "count": 7,
-          "pct": 4.5
-        },
-        {
-          "rank": 6,
-          "numbers": [
             16,
             23
           ],
@@ -468,7 +459,7 @@
           "pct": 4.5
         },
         {
-          "rank": 7,
+          "rank": 6,
           "numbers": [
             31,
             44
@@ -477,7 +468,7 @@
           "pct": 4.5
         },
         {
-          "rank": 8,
+          "rank": 7,
           "numbers": [
             27,
             36
@@ -486,7 +477,7 @@
           "pct": 4.5
         },
         {
-          "rank": 9,
+          "rank": 8,
           "numbers": [
             12,
             40
@@ -495,10 +486,19 @@
           "pct": 4.5
         },
         {
-          "rank": 10,
+          "rank": 9,
           "numbers": [
             6,
             28
+          ],
+          "count": 7,
+          "pct": 4.5
+        },
+        {
+          "rank": 10,
+          "numbers": [
+            30,
+            35
           ],
           "count": 7,
           "pct": 4.5
@@ -507,7 +507,7 @@
     },
     {
       "label": "10년",
-      "round_count": 515,
+      "round_count": 514,
       "top_pair": [
         19,
         21
