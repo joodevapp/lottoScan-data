@@ -2,7 +2,7 @@ import json
 import os
 import requests
 from datetime import datetime, timedelta, timezone
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 KST = timezone(timedelta(hours=9))
 
@@ -50,6 +50,10 @@ def build_stats_summary(data):
 
 def generate_recommendation(stats, history):
     recent_numbers = [h['numbers'] for h in history[:7]]
+    
+    all_hist_nums = [n for nums in recent_numbers for n in nums]
+    overused = [n for n, c in Counter(all_hist_nums).items() if c >= 3]
+
     prompt = f"""당신은 로또 번호 추천 AI입니다. 아래 통계를 바탕으로 번호를 추천해주세요.
 최근 1년({stats['round_count']}회차) 통계:
 - 자주 나온 번호 TOP 6: {stats['top6']}
@@ -57,6 +61,7 @@ def generate_recommendation(stats, history):
 - 평균 합계: {stats['avg_sum']}
 - 가장 많이 나온 구간: {stats['top_range']}
 - 최근 7일 추천 번호 (이 번호들과 최대한 다르게 추천해주세요): {recent_numbers}
+- 아래 번호들은 최근 추천에 너무 자주 등장했으니 반드시 제외해주세요: {overused}
 다음 JSON 형식으로만 응답해주세요. 다른 텍스트는 절대 포함하지 마세요:
 {{
   "numbers": [번호1, 번호2, 번호3, 번호4, 번호5, 번호6],
@@ -66,6 +71,7 @@ def generate_recommendation(stats, history):
 - 번호는 1~45 사이 서로 다른 6개
 - 오름차순 정렬
 - reason은 한국어로 통계 기반 설명 (5~6문장, 어떤 번호를 왜 선택했는지, 최근 패턴이 어떤지, 합계와 구간 분포도 설명)"""
+
     response = requests.post(
         "https://api.openai.com/v1/chat/completions",
         headers={
@@ -103,11 +109,11 @@ def generate_daily_recommendation():
     
     history = existing.get("history", [])
     if existing.get("date") and existing.get("numbers"):
-        history.insert(0, {
-            "date": existing["date"],
-            "numbers": existing["numbers"],
-            "reason": existing["reason"]
-        })
+        if existing["numbers"] not in [h["numbers"] for h in history]:
+            history.insert(0, {
+                "date": existing["date"],
+                "numbers": existing["numbers"]
+            })
     
     stats = build_stats_summary(data)
     recommendation = generate_recommendation(stats, history)
