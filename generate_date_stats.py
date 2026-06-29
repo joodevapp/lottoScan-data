@@ -200,10 +200,12 @@ def calc_stats_for_group(draws):
     ac_stats = []
     for ac_val in sorted(ac_counter.keys()):
         count = ac_counter[ac_val]
+        pct = round(count / total_draws * 100, 1)
         ac_stats.append({
             "ac": ac_val,
             "count": count,
-            "pct": round(count / total_draws * 100, 1)
+            "pct": pct,
+            "value": round(pct / 100, 3)
         })
 
     # 소수 개수 분포
@@ -211,10 +213,12 @@ def calc_stats_for_group(draws):
     prime_stats = []
     for prime_count in sorted(prime_counter.keys()):
         count = prime_counter[prime_count]
+        pct = round(count / total_draws * 100, 1)
         prime_stats.append({
             "count": prime_count,
             "draws": count,
-            "pct": round(count / total_draws * 100, 1)
+            "pct": pct,
+            "value": round(pct / 100, 3)
         })
 
     # 색상별 통계
@@ -236,10 +240,12 @@ def calc_stats_for_group(draws):
     multiple3_stats = []
     for m3_count in sorted(multiple3_counter.keys()):
         count = multiple3_counter[m3_count]
+        pct = round(count / total_draws * 100, 1)
         multiple3_stats.append({
             "count": m3_count,
             "draws": count,
-            "pct": round(count / total_draws * 100, 1)
+            "pct": pct,
+            "value": round(pct / 100, 3)
         })
 
     # 페어 top10
