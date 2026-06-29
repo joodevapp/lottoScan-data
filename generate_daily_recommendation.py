@@ -112,7 +112,8 @@ def generate_daily_recommendation():
         if existing["numbers"] not in [h["numbers"] for h in history]:
             history.insert(0, {
                 "date": existing["date"],
-                "numbers": existing["numbers"]
+                "numbers": existing["numbers"],
+                "reason": existing["reason"]
             })
     
     stats = build_stats_summary(data)
