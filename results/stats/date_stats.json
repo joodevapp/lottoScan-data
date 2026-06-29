@@ -181,37 +181,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.5,
-        "value": 0.5
+        "value": 0.025
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 5.0,
-        "value": 0.545
+        "value": 0.05
       },
       {
         "range": "101~120",
         "count": 7,
         "pct": 17.5,
-        "value": 0.773
+        "value": 0.175
       },
       {
         "range": "121~140",
         "count": 12,
         "pct": 30.0,
-        "value": 1.0
+        "value": 0.3
       },
       {
         "range": "141~160",
         "count": 7,
         "pct": 17.5,
-        "value": 0.773
+        "value": 0.175
       },
       {
         "range": "161~",
         "count": 11,
         "pct": 27.5,
-        "value": 0.955
+        "value": 0.275
       }
     ],
     "avg_tens_sum": 11.2,
@@ -615,37 +615,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 5,
         "pct": 12.5,
-        "value": 0.679
+        "value": 0.125
       },
       {
         "range": "101~120",
         "count": 7,
         "pct": 17.5,
-        "value": 0.75
+        "value": 0.175
       },
       {
         "range": "121~140",
         "count": 14,
         "pct": 35.0,
-        "value": 1.0
+        "value": 0.35
       },
       {
         "range": "141~160",
         "count": 5,
         "pct": 12.5,
-        "value": 0.679
+        "value": 0.125
       },
       {
         "range": "161~",
         "count": 9,
         "pct": 22.5,
-        "value": 0.821
+        "value": 0.225
       }
     ],
     "avg_tens_sum": 10.9,
@@ -1047,37 +1047,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.5,
-        "value": 0.5
+        "value": 0.025
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 5.0,
-        "value": 0.55
+        "value": 0.05
       },
       {
         "range": "101~120",
         "count": 8,
         "pct": 20.0,
-        "value": 0.85
+        "value": 0.2
       },
       {
         "range": "121~140",
         "count": 11,
         "pct": 27.5,
-        "value": 1.0
+        "value": 0.275
       },
       {
         "range": "141~160",
         "count": 10,
         "pct": 25.0,
-        "value": 0.95
+        "value": 0.25
       },
       {
         "range": "161~",
         "count": 8,
         "pct": 20.0,
-        "value": 0.85
+        "value": 0.2
       }
     ],
     "avg_tens_sum": 11.2,
@@ -1466,37 +1466,37 @@
         "range": "~80",
         "count": 2,
         "pct": 4.9,
-        "value": 0.591
+        "value": 0.049
       },
       {
         "range": "81~100",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "101~120",
         "count": 8,
         "pct": 19.5,
-        "value": 0.864
+        "value": 0.195
       },
       {
         "range": "121~140",
         "count": 11,
         "pct": 26.8,
-        "value": 1.0
+        "value": 0.268
       },
       {
         "range": "141~160",
         "count": 9,
         "pct": 22.0,
-        "value": 0.91
+        "value": 0.22
       },
       {
         "range": "161~",
         "count": 11,
         "pct": 26.8,
-        "value": 1.0
+        "value": 0.268
       }
     ],
     "avg_tens_sum": 11.3,
@@ -1900,37 +1900,37 @@
         "range": "~80",
         "count": 4,
         "pct": 10.0,
-        "value": 0.5
+        "value": 0.1
       },
       {
         "range": "81~100",
         "count": 6,
         "pct": 15.0,
-        "value": 0.7
+        "value": 0.15
       },
       {
         "range": "101~120",
         "count": 9,
         "pct": 22.5,
-        "value": 1.0
+        "value": 0.225
       },
       {
         "range": "121~140",
         "count": 9,
         "pct": 22.5,
-        "value": 1.0
+        "value": 0.225
       },
       {
         "range": "141~160",
         "count": 6,
         "pct": 15.0,
-        "value": 0.7
+        "value": 0.15
       },
       {
         "range": "161~",
         "count": 6,
         "pct": 15.0,
-        "value": 0.7
+        "value": 0.15
       }
     ],
     "avg_tens_sum": 9.8,
@@ -2327,37 +2327,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.5,
-        "value": 0.5
+        "value": 0.025
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 5.0,
-        "value": 0.533
+        "value": 0.05
       },
       {
         "range": "101~120",
         "count": 5,
         "pct": 12.5,
-        "value": 0.633
+        "value": 0.125
       },
       {
         "range": "121~140",
         "count": 16,
         "pct": 40.0,
-        "value": 1.0
+        "value": 0.4
       },
       {
         "range": "141~160",
         "count": 8,
         "pct": 20.0,
-        "value": 0.733
+        "value": 0.2
       },
       {
         "range": "161~",
         "count": 8,
         "pct": 20.0,
-        "value": 0.733
+        "value": 0.2
       }
     ],
     "avg_tens_sum": 11.0,
@@ -2749,37 +2749,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 11,
         "pct": 26.2,
-        "value": 0.893
+        "value": 0.262
       },
       {
         "range": "101~120",
         "count": 4,
         "pct": 9.5,
-        "value": 0.643
+        "value": 0.095
       },
       {
         "range": "121~140",
         "count": 14,
         "pct": 33.3,
-        "value": 1.0
+        "value": 0.333
       },
       {
         "range": "141~160",
         "count": 5,
         "pct": 11.9,
-        "value": 0.679
+        "value": 0.119
       },
       {
         "range": "161~",
         "count": 8,
         "pct": 19.0,
-        "value": 0.785
+        "value": 0.19
       }
     ],
     "avg_tens_sum": 10.6,
@@ -3171,37 +3171,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 3,
         "pct": 7.5,
-        "value": 0.6
+        "value": 0.075
       },
       {
         "range": "101~120",
         "count": 7,
         "pct": 17.5,
-        "value": 0.733
+        "value": 0.175
       },
       {
         "range": "121~140",
         "count": 5,
         "pct": 12.5,
-        "value": 0.667
+        "value": 0.125
       },
       {
         "range": "141~160",
         "count": 10,
         "pct": 25.0,
-        "value": 0.833
+        "value": 0.25
       },
       {
         "range": "161~",
         "count": 15,
         "pct": 37.5,
-        "value": 1.0
+        "value": 0.375
       }
     ],
     "avg_tens_sum": 12.3,
@@ -3593,37 +3593,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 3,
         "pct": 7.5,
-        "value": 0.6
+        "value": 0.075
       },
       {
         "range": "101~120",
         "count": 6,
         "pct": 15.0,
-        "value": 0.7
+        "value": 0.15
       },
       {
         "range": "121~140",
         "count": 15,
         "pct": 37.5,
-        "value": 1.0
+        "value": 0.375
       },
       {
         "range": "141~160",
         "count": 11,
         "pct": 27.5,
-        "value": 0.867
+        "value": 0.275
       },
       {
         "range": "161~",
         "count": 5,
         "pct": 12.5,
-        "value": 0.667
+        "value": 0.125
       }
     ],
     "avg_tens_sum": 11.0,
@@ -4022,37 +4022,37 @@
         "range": "~80",
         "count": 2,
         "pct": 5.0,
-        "value": 0.5
+        "value": 0.05
       },
       {
         "range": "81~100",
         "count": 6,
         "pct": 15.0,
-        "value": 0.722
+        "value": 0.15
       },
       {
         "range": "101~120",
         "count": 10,
         "pct": 25.0,
-        "value": 0.944
+        "value": 0.25
       },
       {
         "range": "121~140",
         "count": 11,
         "pct": 27.5,
-        "value": 1.0
+        "value": 0.275
       },
       {
         "range": "141~160",
         "count": 3,
         "pct": 7.5,
-        "value": 0.556
+        "value": 0.075
       },
       {
         "range": "161~",
         "count": 8,
         "pct": 20.0,
-        "value": 0.833
+        "value": 0.2
       }
     ],
     "avg_tens_sum": 10.2,
@@ -4453,37 +4453,37 @@
         "range": "~80",
         "count": 2,
         "pct": 4.9,
-        "value": 0.5
+        "value": 0.049
       },
       {
         "range": "81~100",
         "count": 5,
         "pct": 12.2,
-        "value": 0.65
+        "value": 0.122
       },
       {
         "range": "101~120",
         "count": 7,
         "pct": 17.1,
-        "value": 0.75
+        "value": 0.171
       },
       {
         "range": "121~140",
         "count": 7,
         "pct": 17.1,
-        "value": 0.75
+        "value": 0.171
       },
       {
         "range": "141~160",
         "count": 8,
         "pct": 19.5,
-        "value": 0.799
+        "value": 0.195
       },
       {
         "range": "161~",
         "count": 12,
         "pct": 29.3,
-        "value": 1.0
+        "value": 0.293
       }
     ],
     "avg_tens_sum": 10.9,
@@ -4882,37 +4882,37 @@
         "range": "~80",
         "count": 3,
         "pct": 7.5,
-        "value": 0.562
+        "value": 0.075
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 5.0,
-        "value": 0.5
+        "value": 0.05
       },
       {
         "range": "101~120",
         "count": 8,
         "pct": 20.0,
-        "value": 0.875
+        "value": 0.2
       },
       {
         "range": "121~140",
         "count": 8,
         "pct": 20.0,
-        "value": 0.875
+        "value": 0.2
       },
       {
         "range": "141~160",
         "count": 9,
         "pct": 22.5,
-        "value": 0.938
+        "value": 0.225
       },
       {
         "range": "161~",
         "count": 10,
         "pct": 25.0,
-        "value": 1.0
+        "value": 0.25
       }
     ],
     "avg_tens_sum": 11.1,
@@ -5321,37 +5321,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 8,
         "pct": 20.0,
-        "value": 0.9
+        "value": 0.2
       },
       {
         "range": "101~120",
         "count": 7,
         "pct": 17.5,
-        "value": 0.85
+        "value": 0.175
       },
       {
         "range": "121~140",
         "count": 6,
         "pct": 15.0,
-        "value": 0.8
+        "value": 0.15
       },
       {
         "range": "141~160",
         "count": 9,
         "pct": 22.5,
-        "value": 0.95
+        "value": 0.225
       },
       {
         "range": "161~",
         "count": 10,
         "pct": 25.0,
-        "value": 1.0
+        "value": 0.25
       }
     ],
     "avg_tens_sum": 10.9,
@@ -5750,37 +5750,37 @@
         "range": "~80",
         "count": 2,
         "pct": 4.8,
-        "value": 0.572
+        "value": 0.048
       },
       {
         "range": "81~100",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "101~120",
         "count": 7,
         "pct": 16.7,
-        "value": 0.751
+        "value": 0.167
       },
       {
         "range": "121~140",
         "count": 8,
         "pct": 19.0,
-        "value": 0.785
+        "value": 0.19
       },
       {
         "range": "141~160",
         "count": 14,
         "pct": 33.3,
-        "value": 1.0
+        "value": 0.333
       },
       {
         "range": "161~",
         "count": 11,
         "pct": 26.2,
-        "value": 0.893
+        "value": 0.262
       }
     ],
     "avg_tens_sum": 11.5,
@@ -6162,37 +6162,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 1,
         "pct": 2.5,
-        "value": 0.542
+        "value": 0.025
       },
       {
         "range": "101~120",
         "count": 11,
         "pct": 27.5,
-        "value": 0.958
+        "value": 0.275
       },
       {
         "range": "121~140",
         "count": 7,
         "pct": 17.5,
-        "value": 0.792
+        "value": 0.175
       },
       {
         "range": "141~160",
         "count": 9,
         "pct": 22.5,
-        "value": 0.875
+        "value": 0.225
       },
       {
         "range": "161~",
         "count": 12,
         "pct": 30.0,
-        "value": 1.0
+        "value": 0.3
       }
     ],
     "avg_tens_sum": 11.6,
@@ -6581,37 +6581,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 3,
         "pct": 7.5,
-        "value": 0.636
+        "value": 0.075
       },
       {
         "range": "101~120",
         "count": 8,
         "pct": 20.0,
-        "value": 0.864
+        "value": 0.2
       },
       {
         "range": "121~140",
         "count": 11,
         "pct": 27.5,
-        "value": 1.0
+        "value": 0.275
       },
       {
         "range": "141~160",
         "count": 7,
         "pct": 17.5,
-        "value": 0.818
+        "value": 0.175
       },
       {
         "range": "161~",
         "count": 11,
         "pct": 27.5,
-        "value": 1.0
+        "value": 0.275
       }
     ],
     "avg_tens_sum": 11.3,
@@ -7015,37 +7015,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.5,
-        "value": 0.5
+        "value": 0.025
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 5.0,
-        "value": 0.533
+        "value": 0.05
       },
       {
         "range": "101~120",
         "count": 5,
         "pct": 12.5,
-        "value": 0.633
+        "value": 0.125
       },
       {
         "range": "121~140",
         "count": 6,
         "pct": 15.0,
-        "value": 0.667
+        "value": 0.15
       },
       {
         "range": "141~160",
         "count": 10,
         "pct": 25.0,
-        "value": 0.8
+        "value": 0.25
       },
       {
         "range": "161~",
         "count": 16,
         "pct": 40.0,
-        "value": 1.0
+        "value": 0.4
       }
     ],
     "avg_tens_sum": 12.4,
@@ -7432,37 +7432,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.4,
-        "value": 0.5
+        "value": 0.024
       },
       {
         "range": "81~100",
         "count": 5,
         "pct": 12.2,
-        "value": 0.701
+        "value": 0.122
       },
       {
         "range": "101~120",
         "count": 3,
         "pct": 7.3,
-        "value": 0.6
+        "value": 0.073
       },
       {
         "range": "121~140",
         "count": 11,
         "pct": 26.8,
-        "value": 1.0
+        "value": 0.268
       },
       {
         "range": "141~160",
         "count": 11,
         "pct": 26.8,
-        "value": 1.0
+        "value": 0.268
       },
       {
         "range": "161~",
         "count": 10,
         "pct": 24.4,
-        "value": 0.951
+        "value": 0.244
       }
     ],
     "avg_tens_sum": 11.8,
@@ -7864,37 +7864,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.5,
-        "value": 0.5
+        "value": 0.025
       },
       {
         "range": "81~100",
         "count": 5,
         "pct": 12.5,
-        "value": 0.722
+        "value": 0.125
       },
       {
         "range": "101~120",
         "count": 7,
         "pct": 17.5,
-        "value": 0.833
+        "value": 0.175
       },
       {
         "range": "121~140",
         "count": 8,
         "pct": 20.0,
-        "value": 0.889
+        "value": 0.2
       },
       {
         "range": "141~160",
         "count": 9,
         "pct": 22.5,
-        "value": 0.944
+        "value": 0.225
       },
       {
         "range": "161~",
         "count": 10,
         "pct": 25.0,
-        "value": 1.0
+        "value": 0.25
       }
     ],
     "avg_tens_sum": 11.1,
@@ -8305,37 +8305,37 @@
         "range": "~80",
         "count": 2,
         "pct": 5.0,
-        "value": 0.542
+        "value": 0.05
       },
       {
         "range": "81~100",
         "count": 1,
         "pct": 2.5,
-        "value": 0.5
+        "value": 0.025
       },
       {
         "range": "101~120",
         "count": 3,
         "pct": 7.5,
-        "value": 0.583
+        "value": 0.075
       },
       {
         "range": "121~140",
         "count": 13,
         "pct": 32.5,
-        "value": 1.0
+        "value": 0.325
       },
       {
         "range": "141~160",
         "count": 8,
         "pct": 20.0,
-        "value": 0.792
+        "value": 0.2
       },
       {
         "range": "161~",
         "count": 13,
         "pct": 32.5,
-        "value": 1.0
+        "value": 0.325
       }
     ],
     "avg_tens_sum": 11.9,
@@ -8727,37 +8727,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 4,
         "pct": 9.5,
-        "value": 0.681
+        "value": 0.095
       },
       {
         "range": "101~120",
         "count": 7,
         "pct": 16.7,
-        "value": 0.819
+        "value": 0.167
       },
       {
         "range": "121~140",
         "count": 11,
         "pct": 26.2,
-        "value": 1.0
+        "value": 0.262
       },
       {
         "range": "141~160",
         "count": 9,
         "pct": 21.4,
-        "value": 0.908
+        "value": 0.214
       },
       {
         "range": "161~",
         "count": 11,
         "pct": 26.2,
-        "value": 1.0
+        "value": 0.262
       }
     ],
     "avg_tens_sum": 11.2,
@@ -9161,37 +9161,37 @@
         "range": "~80",
         "count": 3,
         "pct": 7.5,
-        "value": 0.5
+        "value": 0.075
       },
       {
         "range": "81~100",
         "count": 5,
         "pct": 12.5,
-        "value": 0.6
+        "value": 0.125
       },
       {
         "range": "101~120",
         "count": 4,
         "pct": 10.0,
-        "value": 0.55
+        "value": 0.1
       },
       {
         "range": "121~140",
         "count": 5,
         "pct": 12.5,
-        "value": 0.6
+        "value": 0.125
       },
       {
         "range": "141~160",
         "count": 13,
         "pct": 32.5,
-        "value": 1.0
+        "value": 0.325
       },
       {
         "range": "161~",
         "count": 10,
         "pct": 25.0,
-        "value": 0.85
+        "value": 0.25
       }
     ],
     "avg_tens_sum": 11.1,
@@ -9578,37 +9578,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 3,
         "pct": 7.5,
-        "value": 0.625
+        "value": 0.075
       },
       {
         "range": "101~120",
         "count": 6,
         "pct": 15.0,
-        "value": 0.75
+        "value": 0.15
       },
       {
         "range": "121~140",
         "count": 12,
         "pct": 30.0,
-        "value": 1.0
+        "value": 0.3
       },
       {
         "range": "141~160",
         "count": 10,
         "pct": 25.0,
-        "value": 0.917
+        "value": 0.25
       },
       {
         "range": "161~",
         "count": 9,
         "pct": 22.5,
-        "value": 0.875
+        "value": 0.225
       }
     ],
     "avg_tens_sum": 11.4,
@@ -9997,37 +9997,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.5,
-        "value": 0.5
+        "value": 0.025
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 5.0,
-        "value": 0.542
+        "value": 0.05
       },
       {
         "range": "101~120",
         "count": 5,
         "pct": 12.5,
-        "value": 0.667
+        "value": 0.125
       },
       {
         "range": "121~140",
         "count": 12,
         "pct": 30.0,
-        "value": 0.958
+        "value": 0.3
       },
       {
         "range": "141~160",
         "count": 7,
         "pct": 17.5,
-        "value": 0.75
+        "value": 0.175
       },
       {
         "range": "161~",
         "count": 13,
         "pct": 32.5,
-        "value": 1.0
+        "value": 0.325
       }
     ],
     "avg_tens_sum": 11.9,
@@ -10436,37 +10436,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.4,
-        "value": 0.5
+        "value": 0.024
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 4.9,
-        "value": 0.546
+        "value": 0.049
       },
       {
         "range": "101~120",
         "count": 5,
         "pct": 12.2,
-        "value": 0.682
+        "value": 0.122
       },
       {
         "range": "121~140",
         "count": 10,
         "pct": 24.4,
-        "value": 0.909
+        "value": 0.244
       },
       {
         "range": "141~160",
         "count": 11,
         "pct": 26.8,
-        "value": 0.954
+        "value": 0.268
       },
       {
         "range": "161~",
         "count": 12,
         "pct": 29.3,
-        "value": 1.0
+        "value": 0.293
       }
     ],
     "avg_tens_sum": 11.7,
@@ -10858,37 +10858,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 5,
         "pct": 12.5,
-        "value": 0.667
+        "value": 0.125
       },
       {
         "range": "101~120",
         "count": 4,
         "pct": 10.0,
-        "value": 0.633
+        "value": 0.1
       },
       {
         "range": "121~140",
         "count": 9,
         "pct": 22.5,
-        "value": 0.8
+        "value": 0.225
       },
       {
         "range": "141~160",
         "count": 7,
         "pct": 17.5,
-        "value": 0.733
+        "value": 0.175
       },
       {
         "range": "161~",
         "count": 15,
         "pct": 37.5,
-        "value": 1.0
+        "value": 0.375
       }
     ],
     "avg_tens_sum": 12.0,
@@ -11277,37 +11277,37 @@
         "range": "~80",
         "count": 0,
         "pct": 0.0,
-        "value": 0.5
+        "value": 0.0
       },
       {
         "range": "81~100",
         "count": 5,
         "pct": 12.5,
-        "value": 0.692
+        "value": 0.125
       },
       {
         "range": "101~120",
         "count": 9,
         "pct": 22.5,
-        "value": 0.846
+        "value": 0.225
       },
       {
         "range": "121~140",
         "count": 13,
         "pct": 32.5,
-        "value": 1.0
+        "value": 0.325
       },
       {
         "range": "141~160",
         "count": 5,
         "pct": 12.5,
-        "value": 0.692
+        "value": 0.125
       },
       {
         "range": "161~",
         "count": 8,
         "pct": 20.0,
-        "value": 0.808
+        "value": 0.2
       }
     ],
     "avg_tens_sum": 11.2,
@@ -11716,37 +11716,37 @@
         "range": "~80",
         "count": 1,
         "pct": 2.4,
-        "value": 0.5
+        "value": 0.024
       },
       {
         "range": "81~100",
         "count": 3,
         "pct": 7.1,
-        "value": 0.599
+        "value": 0.071
       },
       {
         "range": "101~120",
         "count": 8,
         "pct": 19.0,
-        "value": 0.849
+        "value": 0.19
       },
       {
         "range": "121~140",
         "count": 10,
         "pct": 23.8,
-        "value": 0.95
+        "value": 0.238
       },
       {
         "range": "141~160",
         "count": 9,
         "pct": 21.4,
-        "value": 0.899
+        "value": 0.214
       },
       {
         "range": "161~",
         "count": 11,
         "pct": 26.2,
-        "value": 1.0
+        "value": 0.262
       }
     ],
     "avg_tens_sum": 11.5,
@@ -12140,37 +12140,37 @@
         "range": "~80",
         "count": 3,
         "pct": 8.1,
-        "value": 0.556
+        "value": 0.081
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 5.4,
-        "value": 0.5
+        "value": 0.054
       },
       {
         "range": "101~120",
         "count": 8,
         "pct": 21.6,
-        "value": 0.833
+        "value": 0.216
       },
       {
         "range": "121~140",
         "count": 11,
         "pct": 29.7,
-        "value": 1.0
+        "value": 0.297
       },
       {
         "range": "141~160",
         "count": 8,
         "pct": 21.6,
-        "value": 0.833
+        "value": 0.216
       },
       {
         "range": "161~",
         "count": 5,
         "pct": 13.5,
-        "value": 0.667
+        "value": 0.135
       }
     ],
     "avg_tens_sum": 10.2,
@@ -12574,37 +12574,37 @@
         "range": "~80",
         "count": 3,
         "pct": 8.1,
-        "value": 0.5
+        "value": 0.081
       },
       {
         "range": "81~100",
         "count": 4,
         "pct": 10.8,
-        "value": 0.583
+        "value": 0.108
       },
       {
         "range": "101~120",
         "count": 6,
         "pct": 16.2,
-        "value": 0.75
+        "value": 0.162
       },
       {
         "range": "121~140",
         "count": 8,
         "pct": 21.6,
-        "value": 0.917
+        "value": 0.216
       },
       {
         "range": "141~160",
         "count": 9,
         "pct": 24.3,
-        "value": 1.0
+        "value": 0.243
       },
       {
         "range": "161~",
         "count": 7,
         "pct": 18.9,
-        "value": 0.833
+        "value": 0.189
       }
     ],
     "avg_tens_sum": 10.6,
@@ -12998,37 +12998,37 @@
         "range": "~80",
         "count": 2,
         "pct": 8.3,
-        "value": 0.5
+        "value": 0.083
       },
       {
         "range": "81~100",
         "count": 2,
         "pct": 8.3,
-        "value": 0.5
+        "value": 0.083
       },
       {
         "range": "101~120",
         "count": 3,
         "pct": 12.5,
-        "value": 0.6
+        "value": 0.125
       },
       {
         "range": "121~140",
         "count": 7,
         "pct": 29.2,
-        "value": 1.0
+        "value": 0.292
       },
       {
         "range": "141~160",
         "count": 7,
         "pct": 29.2,
-        "value": 1.0
+        "value": 0.292
       },
       {
         "range": "161~",
         "count": 3,
         "pct": 12.5,
-        "value": 0.6
+        "value": 0.125
       }
     ],
     "avg_tens_sum": 10.6,
