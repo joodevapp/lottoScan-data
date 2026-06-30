@@ -6,6 +6,23 @@ from collections import defaultdict, Counter
 
 KST = timezone(timedelta(hours=9))
 
+def is_valid_recommendation(new_numbers, history):
+    new_set = set(new_numbers)
+
+    for h in history[:5]:  # 최근 5일치만 비교
+        hist_set = set(h['numbers'])
+
+        # 중복 2개 이상 체크
+        if len(new_set & hist_set) >= 2:
+            return False
+
+        # 연번 체크: 히스토리 번호의 ±1이 새 추천에 2개 이상이면 거절
+        serial_count = sum(1 for n in new_numbers if (n - 1) in hist_set or (n + 1) in hist_set)
+        if serial_count >= 2:
+            return False
+
+    return True
+
 def load_lotto_data():
     with open("results/All_Lotto_Data.json", "r", encoding="utf-8") as f:
         return json.load(f)
@@ -16,21 +33,21 @@ def get_rounds_for_period(data, months):
 
 def build_stats_summary(data):
     rounds = get_rounds_for_period(data, 12)
-    
+
     counts = defaultdict(int)
     for item in rounds:
         for n in item['numbers']:
             counts[n] += 1
     top6 = sorted(counts, key=counts.get, reverse=True)[:6]
-    
+
     pattern_counts = defaultdict(int)
     for item in rounds:
         odd = sum(1 for n in item['numbers'] if n % 2 == 1)
         pattern_counts[f"홀{odd}짝{6-odd}"] += 1
     top_pattern = max(pattern_counts, key=pattern_counts.get) if pattern_counts else "홀3짝3"
-    
+
     avg_sum = round(sum(sum(item['numbers']) for item in rounds) / len(rounds)) if rounds else 129
-    
+
     range_counts = defaultdict(int)
     ranges = [("1~10",1,10),("11~20",11,20),("21~30",21,30),("31~40",31,40),("41~45",41,45)]
     for item in rounds:
@@ -39,7 +56,7 @@ def build_stats_summary(data):
                 if s <= n <= e:
                     range_counts[label] += 1
     top_range = max(range_counts, key=range_counts.get) if range_counts else "31~40"
-    
+
     return {
         "top6": top6,
         "top_pattern": top_pattern,
@@ -49,9 +66,8 @@ def build_stats_summary(data):
     }
 
 def generate_recommendation(stats, history):
-    recent_numbers = [h['numbers'] for h in history[:7]]
-    
-    all_hist_nums = [n for nums in recent_numbers for n in nums]
+    all_numbers = [h['numbers'] for h in history]
+    all_hist_nums = [n for nums in all_numbers for n in nums]
     overused = [n for n, c in Counter(all_hist_nums).items() if c >= 3]
 
     prompt = f"""당신은 로또 번호 추천 AI입니다. 아래 통계를 바탕으로 번호를 추천해주세요.
@@ -60,8 +76,8 @@ def generate_recommendation(stats, history):
 - 가장 많은 홀짝 패턴: {stats['top_pattern']}
 - 평균 합계: {stats['avg_sum']}
 - 가장 많이 나온 구간: {stats['top_range']}
-- 최근 7일 추천 번호 (이 번호들과 최대한 다르게 추천해주세요): {recent_numbers}
-- 아래 번호들은 최근 추천에 너무 자주 등장했으니 반드시 제외해주세요: {overused}
+- 지금까지 추천한 번호 전체 (이 번호 조합들과 겹치지 않게 추천해주세요): {all_numbers}
+- 아래 번호들은 너무 자주 등장했으니 반드시 제외해주세요: {overused}
 다음 JSON 형식으로만 응답해주세요. 다른 텍스트는 절대 포함하지 마세요:
 {{
   "numbers": [번호1, 번호2, 번호3, 번호4, 번호5, 번호6],
@@ -79,12 +95,12 @@ def generate_recommendation(stats, history):
             "Content-Type": "application/json"
         },
         json={
-            "model": "gpt-4o",
+            "model": "gpt-4o-mini",
             "messages": [{"role": "user", "content": prompt}],
             "max_tokens": 800
         }
     )
-    
+
     result = response.json()
     text = result['choices'][0]['message']['content']
     text = text.replace('```json', '').replace('```', '').strip()
@@ -93,20 +109,20 @@ def generate_recommendation(stats, history):
 def generate_daily_recommendation():
     data = load_lotto_data()
     today = datetime.now(KST).strftime('%Y-%m-%d')
-    
+
     ai_path = "results/ai/daily_recommendation.json"
     if os.path.exists(ai_path):
         with open(ai_path, "r", encoding="utf-8") as f:
             existing = json.load(f)
     else:
         existing = {"date": "", "numbers": [], "reason": "", "history": []}
-    
+
     if existing.get("date") == today:
         print(f"오늘({today}) 추천 이미 생성됨")
         return
-    
+
     print(f"{today} 추천 번호 생성중...")
-    
+
     history = existing.get("history", [])
     if existing.get("date") and existing.get("numbers"):
         if existing["numbers"] not in [h["numbers"] for h in history]:
@@ -115,23 +131,30 @@ def generate_daily_recommendation():
                 "numbers": existing["numbers"],
                 "reason": existing["reason"]
             })
-    
+
     stats = build_stats_summary(data)
-    recommendation = generate_recommendation(stats, history)
-    
+
+    max_retries = 5
+    recommendation = None
+    for i in range(max_retries):
+        recommendation = generate_recommendation(stats, history)
+        if is_valid_recommendation(recommendation["numbers"], history):
+            break
+        print(f"유효하지 않은 추천, 재시도 ({i+1}/{max_retries})...")
+
     history = history[:14]
-    
+
     result = {
         "date": today,
         "numbers": recommendation["numbers"],
         "reason": recommendation["reason"],
         "history": history
     }
-    
+
     os.makedirs("results/ai", exist_ok=True)
     with open(ai_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
-    
+
     print(f"추천 완료! {recommendation['numbers']}")
 
 generate_daily_recommendation()
