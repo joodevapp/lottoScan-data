@@ -553,7 +553,9 @@
         ],
         "bonus_no": 9
       }
-    ]
+    ],
+    "avg_sum_diff": "+0.0",
+    "avg_sum_compare": "전체 평균 138.2"
   },
   "machine1": {
     "total_draws": 274,
