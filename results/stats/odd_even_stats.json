@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-01",
-  "total_rounds": 1235,
+  "generated_at": "2026-08-08",
+  "total_rounds": 1236,
   "periods": [
     {
       "label": "2개월",
@@ -11,10 +11,10 @@
       "avg_even": 2.9,
       "prev_period_diff": {
         "pattern": "홀2짝4",
-        "diff": 1
+        "diff": 0
       },
       "streak": {
-        "pattern": "홀5짝1",
+        "pattern": "홀2짝4",
         "count": 1
       },
       "patterns": [
@@ -63,6 +63,10 @@
       ],
       "recent_5": [
         {
+          "round": 1236,
+          "pattern": "홀2짝4"
+        },
+        {
           "round": 1235,
           "pattern": "홀5짝1"
         },
@@ -77,10 +81,6 @@
         {
           "round": 1232,
           "pattern": "홀2짝4"
-        },
-        {
-          "round": 1231,
-          "pattern": "홀2짝4"
         }
       ]
     },
@@ -89,14 +89,14 @@
       "round_count": 26,
       "most_pattern": "홀3짝3",
       "most_pattern_count": 8,
-      "avg_odd": 3.2,
-      "avg_even": 2.8,
+      "avg_odd": 3.1,
+      "avg_even": 2.9,
       "prev_period_diff": {
         "pattern": "홀3짝3",
         "diff": 4
       },
       "streak": {
-        "pattern": "홀5짝1",
+        "pattern": "홀2짝4",
         "count": 1
       },
       "patterns": [
@@ -114,9 +114,9 @@
         },
         {
           "pattern": "홀2짝4",
-          "count": 7,
-          "pct": 26.9,
-          "value": 0.875
+          "count": 8,
+          "pct": 30.8,
+          "value": 1.0
         },
         {
           "pattern": "홀3짝3",
@@ -132,9 +132,9 @@
         },
         {
           "pattern": "홀5짝1",
-          "count": 3,
-          "pct": 11.5,
-          "value": 0.375
+          "count": 2,
+          "pct": 7.7,
+          "value": 0.25
         },
         {
           "pattern": "홀6짝0",
@@ -144,6 +144,10 @@
         }
       ],
       "recent_5": [
+        {
+          "round": 1236,
+          "pattern": "홀2짝4"
+        },
         {
           "round": 1235,
           "pattern": "홀5짝1"
@@ -159,10 +163,6 @@
         {
           "round": 1232,
           "pattern": "홀2짝4"
-        },
-        {
-          "round": 1231,
-          "pattern": "홀2짝4"
         }
       ]
     },
@@ -170,15 +170,15 @@
       "label": "1년",
       "round_count": 52,
       "most_pattern": "홀4짝2",
-      "most_pattern_count": 16,
+      "most_pattern_count": 15,
       "avg_odd": 3.2,
       "avg_even": 2.8,
       "prev_period_diff": {
         "pattern": "홀4짝2",
-        "diff": -4
+        "diff": -6
       },
       "streak": {
-        "pattern": "홀5짝1",
+        "pattern": "홀2짝4",
         "count": 1
       },
       "patterns": [
@@ -192,40 +192,44 @@
           "pattern": "홀1짝5",
           "count": 4,
           "pct": 7.7,
-          "value": 0.25
+          "value": 0.2667
         },
         {
           "pattern": "홀2짝4",
-          "count": 13,
-          "pct": 25.0,
-          "value": 0.8125
+          "count": 14,
+          "pct": 26.9,
+          "value": 0.9333
         },
         {
           "pattern": "홀3짝3",
           "count": 12,
           "pct": 23.1,
-          "value": 0.75
+          "value": 0.8
         },
         {
           "pattern": "홀4짝2",
-          "count": 16,
-          "pct": 30.8,
+          "count": 15,
+          "pct": 28.8,
           "value": 1.0
         },
         {
           "pattern": "홀5짝1",
           "count": 6,
           "pct": 11.5,
-          "value": 0.375
+          "value": 0.4
         },
         {
           "pattern": "홀6짝0",
           "count": 1,
           "pct": 1.9,
-          "value": 0.0625
+          "value": 0.0667
         }
       ],
       "recent_5": [
+        {
+          "round": 1236,
+          "pattern": "홀2짝4"
+        },
         {
           "round": 1235,
           "pattern": "홀5짝1"
@@ -240,10 +244,6 @@
         },
         {
           "round": 1232,
-          "pattern": "홀2짝4"
-        },
-        {
-          "round": 1231,
           "pattern": "홀2짝4"
         }
       ]
@@ -260,7 +260,7 @@
         "diff": 8
       },
       "streak": {
-        "pattern": "홀5짝1",
+        "pattern": "홀2짝4",
         "count": 1
       },
       "patterns": [
@@ -278,15 +278,15 @@
         },
         {
           "pattern": "홀2짝4",
-          "count": 37,
-          "pct": 23.9,
-          "value": 0.74
+          "count": 38,
+          "pct": 24.5,
+          "value": 0.76
         },
         {
           "pattern": "홀3짝3",
-          "count": 41,
-          "pct": 26.5,
-          "value": 0.82
+          "count": 40,
+          "pct": 25.8,
+          "value": 0.8
         },
         {
           "pattern": "홀4짝2",
@@ -309,6 +309,10 @@
       ],
       "recent_5": [
         {
+          "round": 1236,
+          "pattern": "홀2짝4"
+        },
+        {
           "round": 1235,
           "pattern": "홀5짝1"
         },
@@ -322,10 +326,6 @@
         },
         {
           "round": 1232,
-          "pattern": "홀2짝4"
-        },
-        {
-          "round": 1231,
           "pattern": "홀2짝4"
         }
       ]
@@ -342,7 +342,7 @@
         "diff": -14
       },
       "streak": {
-        "pattern": "홀5짝1",
+        "pattern": "홀2짝4",
         "count": 1
       },
       "patterns": [
@@ -360,9 +360,9 @@
         },
         {
           "pattern": "홀2짝4",
-          "count": 111,
-          "pct": 21.6,
-          "value": 0.6894
+          "count": 112,
+          "pct": 21.7,
+          "value": 0.6957
         },
         {
           "pattern": "홀3짝3",
@@ -372,9 +372,9 @@
         },
         {
           "pattern": "홀4짝2",
-          "count": 144,
-          "pct": 28.0,
-          "value": 0.8944
+          "count": 143,
+          "pct": 27.8,
+          "value": 0.8882
         },
         {
           "pattern": "홀5짝1",
@@ -391,6 +391,10 @@
       ],
       "recent_5": [
         {
+          "round": 1236,
+          "pattern": "홀2짝4"
+        },
+        {
           "round": 1235,
           "pattern": "홀5짝1"
         },
@@ -404,10 +408,6 @@
         },
         {
           "round": 1232,
-          "pattern": "홀2짝4"
-        },
-        {
-          "round": 1231,
           "pattern": "홀2짝4"
         }
       ]
