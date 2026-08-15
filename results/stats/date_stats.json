@@ -6362,70 +6362,70 @@
   },
   "15": {
     "has_data": true,
-    "total_draws": 40,
-    "latest_draw_no": 1198,
+    "total_draws": 41,
+    "latest_draw_no": 1237,
     "top6": [
       {
         "number": 33,
         "count": 13,
-        "pct": 32.5
+        "pct": 31.7
       },
       {
         "number": 37,
-        "count": 11,
-        "pct": 27.5
+        "count": 12,
+        "pct": 29.3
       },
       {
         "number": 3,
         "count": 10,
-        "pct": 25.0
+        "pct": 24.4
+      },
+      {
+        "number": 34,
+        "count": 10,
+        "pct": 24.4
       },
       {
         "number": 7,
         "count": 9,
-        "pct": 22.5
-      },
-      {
-        "number": 34,
-        "count": 9,
-        "pct": 22.5
+        "pct": 22.0
       },
       {
         "number": 28,
         "count": 8,
-        "pct": 20.0
+        "pct": 19.5
       }
     ],
     "bottom6": [
       {
         "number": 5,
         "count": 1,
-        "pct": 2.5
+        "pct": 2.4
       },
       {
         "number": 13,
         "count": 2,
-        "pct": 5.0
-      },
-      {
-        "number": 40,
-        "count": 2,
-        "pct": 5.0
+        "pct": 4.9
       },
       {
         "number": 9,
         "count": 3,
-        "pct": 7.5
+        "pct": 7.3
       },
       {
         "number": 11,
         "count": 3,
-        "pct": 7.5
+        "pct": 7.3
       },
       {
         "number": 12,
         "count": 3,
-        "pct": 7.5
+        "pct": 7.3
+      },
+      {
+        "number": 17,
+        "count": 3,
+        "pct": 7.3
       }
     ],
     "odd_stats": [
@@ -6434,35 +6434,35 @@
         "odd": 3,
         "even": 3,
         "count": 18,
-        "pct": 45.0
+        "pct": 43.9
       },
       {
         "pattern": "2:4",
         "odd": 2,
         "even": 4,
-        "count": 8,
-        "pct": 20.0
+        "count": 9,
+        "pct": 22.0
       },
       {
         "pattern": "4:2",
         "odd": 4,
         "even": 2,
         "count": 7,
-        "pct": 17.5
+        "pct": 17.1
       },
       {
         "pattern": "5:1",
         "odd": 5,
         "even": 1,
         "count": 5,
-        "pct": 12.5
+        "pct": 12.2
       },
       {
         "pattern": "1:5",
         "odd": 1,
         "even": 5,
         "count": 2,
-        "pct": 5.0
+        "pct": 4.9
       }
     ],
     "low_high_stats": [
@@ -6470,73 +6470,73 @@
         "pattern": "2:4",
         "low": 2,
         "high": 4,
-        "count": 15,
-        "pct": 37.5
+        "count": 16,
+        "pct": 39.0
       },
       {
         "pattern": "3:3",
         "low": 3,
         "high": 3,
         "count": 10,
-        "pct": 25.0
+        "pct": 24.4
       },
       {
         "pattern": "4:2",
         "low": 4,
         "high": 2,
         "count": 9,
-        "pct": 22.5
+        "pct": 22.0
       },
       {
         "pattern": "1:5",
         "low": 1,
         "high": 5,
         "count": 3,
-        "pct": 7.5
+        "pct": 7.3
       },
       {
         "pattern": "0:6",
         "low": 0,
         "high": 6,
         "count": 2,
-        "pct": 5.0
+        "pct": 4.9
       },
       {
         "pattern": "5:1",
         "low": 5,
         "high": 1,
         "count": 1,
-        "pct": 2.5
+        "pct": 2.4
       }
     ],
     "range_stats": [
       {
         "range": "1~9",
         "count": 52,
-        "pct": 21.7
+        "pct": 21.1
       },
       {
         "range": "10~19",
-        "count": 37,
+        "count": 38,
         "pct": 15.4
       },
       {
         "range": "20~29",
-        "count": 39,
-        "pct": 16.2
+        "count": 41,
+        "pct": 16.7
       },
       {
         "range": "30~39",
-        "count": 58,
-        "pct": 24.2
+        "count": 59,
+        "pct": 24.0
       },
       {
         "range": "40~45",
-        "count": 54,
-        "pct": 22.5
+        "count": 56,
+        "pct": 22.8
       }
     ],
-    "avg_sum": 143.0,
+    "avg_sum": 143.5,
     "sum_stats": [
       {
         "range": "1~80",
@@ -6547,163 +6547,163 @@
       {
         "range": "81~100",
         "count": 1,
-        "pct": 2.5,
-        "value": 0.025
+        "pct": 2.4,
+        "value": 0.024
       },
       {
         "range": "101~120",
         "count": 11,
-        "pct": 27.5,
-        "value": 0.275
+        "pct": 26.8,
+        "value": 0.268
       },
       {
         "range": "121~140",
         "count": 7,
-        "pct": 17.5,
-        "value": 0.175
+        "pct": 17.1,
+        "value": 0.171
       },
       {
         "range": "141~160",
         "count": 9,
-        "pct": 22.5,
-        "value": 0.225
+        "pct": 22.0,
+        "value": 0.22
       },
       {
         "range": "161~175",
-        "count": 12,
-        "pct": 30.0,
-        "value": 0.3
+        "count": 13,
+        "pct": 31.7,
+        "value": 0.317
       }
     ],
-    "avg_tens_sum": 11.6,
-    "avg_units_sum": 27.3,
-    "avg_ac": 8.5,
+    "avg_tens_sum": 11.7,
+    "avg_units_sum": 27.0,
+    "avg_ac": 8.4,
     "ac_stats": [
       {
         "ac": 6,
-        "count": 2,
-        "pct": 5.0,
-        "value": 0.05
+        "count": 3,
+        "pct": 7.3,
+        "value": 0.073
       },
       {
         "ac": 7,
         "count": 5,
-        "pct": 12.5,
-        "value": 0.125
+        "pct": 12.2,
+        "value": 0.122
       },
       {
         "ac": 8,
         "count": 15,
-        "pct": 37.5,
-        "value": 0.375
+        "pct": 36.6,
+        "value": 0.366
       },
       {
         "ac": 9,
         "count": 8,
-        "pct": 20.0,
-        "value": 0.2
+        "pct": 19.5,
+        "value": 0.195
       },
       {
         "ac": 10,
         "count": 10,
-        "pct": 25.0,
-        "value": 0.25
+        "pct": 24.4,
+        "value": 0.244
       }
     ],
     "prime_stats": [
       {
         "count": 0,
         "draws": 2,
-        "pct": 5.0,
-        "value": 0.05
+        "pct": 4.9,
+        "value": 0.049
       },
       {
         "count": 1,
         "draws": 12,
-        "pct": 30.0,
-        "value": 0.3
+        "pct": 29.3,
+        "value": 0.293
       },
       {
         "count": 2,
-        "draws": 15,
-        "pct": 37.5,
-        "value": 0.375
+        "draws": 16,
+        "pct": 39.0,
+        "value": 0.39
       },
       {
         "count": 3,
         "draws": 10,
-        "pct": 25.0,
-        "value": 0.25
+        "pct": 24.4,
+        "value": 0.244
       },
       {
         "count": 4,
         "draws": 1,
-        "pct": 2.5,
-        "value": 0.025
+        "pct": 2.4,
+        "value": 0.024
       }
     ],
     "color_stats": [
       {
         "color": "노랑(1~10)",
-        "total": 56,
-        "avg": 1.4
+        "total": 57,
+        "avg": 1.39
       },
       {
         "color": "파랑(11~20)",
-        "total": 41,
+        "total": 42,
         "avg": 1.02
       },
       {
         "color": "빨강(21~30)",
-        "total": 49,
-        "avg": 1.23
+        "total": 50,
+        "avg": 1.22
       },
       {
         "color": "회색(31~40)",
-        "total": 67,
-        "avg": 1.68
+        "total": 70,
+        "avg": 1.71
       },
       {
         "color": "초록(41~45)",
         "total": 27,
-        "avg": 0.68
+        "avg": 0.66
       }
     ],
-    "avg_max_gap": 15.7,
-    "consecutive_pct": 52.5,
+    "avg_max_gap": 15.5,
+    "consecutive_pct": 51.2,
     "multiple3_stats": [
       {
         "count": 0,
-        "draws": 2,
-        "pct": 5.0,
-        "value": 0.05
+        "draws": 3,
+        "pct": 7.3,
+        "value": 0.073
       },
       {
         "count": 1,
         "draws": 9,
-        "pct": 22.5,
-        "value": 0.225
+        "pct": 22.0,
+        "value": 0.22
       },
       {
         "count": 2,
         "draws": 13,
-        "pct": 32.5,
-        "value": 0.325
+        "pct": 31.7,
+        "value": 0.317
       },
       {
         "count": 3,
         "draws": 13,
-        "pct": 32.5,
-        "value": 0.325
+        "pct": 31.7,
+        "value": 0.317
       },
       {
         "count": 4,
         "draws": 3,
-        "pct": 7.5,
-        "value": 0.075
+        "pct": 7.3,
+        "value": 0.073
       }
     ],
-    "duplicate_units_pct": 82.5,
+    "duplicate_units_pct": 82.9,
     "top_pairs": [
       {
         "rank": 1,
@@ -6712,7 +6712,7 @@
           37
         ],
         "count": 4,
-        "pct": 10.0
+        "pct": 9.8
       },
       {
         "rank": 2,
@@ -6721,7 +6721,7 @@
           15
         ],
         "count": 4,
-        "pct": 10.0
+        "pct": 9.8
       },
       {
         "rank": 3,
@@ -6730,7 +6730,7 @@
           39
         ],
         "count": 4,
-        "pct": 10.0
+        "pct": 9.8
       },
       {
         "rank": 4,
@@ -6739,7 +6739,7 @@
           33
         ],
         "count": 4,
-        "pct": 10.0
+        "pct": 9.8
       },
       {
         "rank": 5,
@@ -6748,7 +6748,7 @@
           33
         ],
         "count": 4,
-        "pct": 10.0
+        "pct": 9.8
       },
       {
         "rank": 6,
@@ -6757,7 +6757,7 @@
           33
         ],
         "count": 4,
-        "pct": 10.0
+        "pct": 9.8
       },
       {
         "rank": 7,
@@ -6766,7 +6766,7 @@
           7
         ],
         "count": 3,
-        "pct": 7.5
+        "pct": 7.3
       },
       {
         "rank": 8,
@@ -6775,7 +6775,7 @@
           36
         ],
         "count": 3,
-        "pct": 7.5
+        "pct": 7.3
       },
       {
         "rank": 9,
@@ -6784,7 +6784,7 @@
           37
         ],
         "count": 3,
-        "pct": 7.5
+        "pct": 7.3
       },
       {
         "rank": 10,
@@ -6793,7 +6793,7 @@
           37
         ],
         "count": 3,
-        "pct": 7.5
+        "pct": 7.3
       }
     ]
   },
