@@ -1,5 +1,91 @@
 [
   {
+    "round": 1240,
+    "date": "2026-09-05",
+    "stores": [
+      {
+        "name": "어썸위크",
+        "address": "서울 중구 퇴계로87길 41 1층",
+        "combination": "자동"
+      },
+      {
+        "name": "대박복권방",
+        "address": "서울 용산구 효창원로 262 1층",
+        "combination": "수동"
+      },
+      {
+        "name": "잠실매점",
+        "address": "서울 송파구 올림픽로 269 잠실역 8번출구 앞 가판",
+        "combination": "자동"
+      },
+      {
+        "name": "규림",
+        "address": "서울 서초구 방배로 81 1층",
+        "combination": "자동"
+      },
+      {
+        "name": "천하명당로또복권",
+        "address": "서울 서대문구 세무서길 12",
+        "combination": "자동"
+      },
+      {
+        "name": "배산임수 로또명당",
+        "address": "부산 금정구 장전로 2",
+        "combination": "자동"
+      },
+      {
+        "name": "메트로센터점",
+        "address": "대구 중구 달구벌대로 지하 2100 메트로센터C412호",
+        "combination": "자동"
+      },
+      {
+        "name": "수암완구",
+        "address": "울산 남구 수암로 118",
+        "combination": "자동"
+      },
+      {
+        "name": "행복충전소",
+        "address": "경기 평택시 탄현로 332-2",
+        "combination": "자동"
+      },
+      {
+        "name": "홈런복권판매점",
+        "address": "경기 오산시 내삼미로 93 제1층 109호",
+        "combination": "자동"
+      },
+      {
+        "name": "행복로또",
+        "address": "경기 오산시 경기대로 703 1층",
+        "combination": "자동"
+      },
+      {
+        "name": "웅진",
+        "address": "경기 수원시 영통구 효원로 393 101호(매탄동 밀래니엄프라자)",
+        "combination": "자동"
+      },
+      {
+        "name": "복권(일등복권)",
+        "address": "경기 광주시 경안로41번길 6 a120호",
+        "combination": "자동"
+      },
+      {
+        "name": "행운복권방 보생당건강원",
+        "address": "전북 익산시 무왕로 1268",
+        "combination": "자동"
+      },
+      {
+        "name": "노다지복권판매점",
+        "address": "전북 익산시 군익로 439-1",
+        "combination": "자동"
+      },
+      {
+        "name": "파랑새",
+        "address": "경남 밀양시 수월3길 19",
+        "combination": "수동"
+      }
+    ]
+  },
+  {
     "round": 1239,
     "date": "2026-08-29",
     "stores": [
