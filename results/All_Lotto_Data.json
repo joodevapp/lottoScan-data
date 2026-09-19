@@ -50103,5 +50103,47 @@
       "semi_auto": 0
     },
     "machine_no": "업데이트 예정"
+  },
+  {
+    "draw_no": 1242,
+    "numbers": [
+      2,
+      4,
+      10,
+      16,
+      31,
+      41
+    ],
+    "bonus_no": 9,
+    "date": "2026-09-19T00:00:00Z",
+    "total_sales_amount": 122573852000,
+    "divisions": [
+      {
+        "prize": 3281029250,
+        "winners": 9
+      },
+      {
+        "prize": 47322538,
+        "winners": 104
+      },
+      {
+        "prize": 1535105,
+        "winners": 3206
+      },
+      {
+        "prize": 50000,
+        "winners": 165377
+      },
+      {
+        "prize": 5000,
+        "winners": 2729145
+      }
+    ],
+    "winners_combination": {
+      "auto": 8,
+      "manual": 1,
+      "semi_auto": 0
+    },
+    "machine_no": "업데이트 예정"
   }
 ]
