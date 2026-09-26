@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19",
-  "total_rounds": 1242,
+  "generated_at": "2026-09-26",
+  "total_rounds": 1243,
   "all_time": {
     "min_sum": 48,
     "min_sum_round": 312,
@@ -9,32 +9,32 @@
     "median": 138
   },
   "latest_round": {
-    "draw_no": 1242,
-    "sum": 104,
+    "draw_no": 1243,
+    "sum": 176,
     "numbers": [
-      2,
-      4,
-      10,
-      16,
-      31,
-      41
+      9,
+      18,
+      24,
+      38,
+      43,
+      44
     ],
-    "range": "101~150"
+    "range": "151~200"
   },
   "periods": [
     {
       "label": "2개월",
       "round_count": 9,
-      "avg_sum": 138,
+      "avg_sum": 141,
       "top_range": "101~150",
-      "top_range_count": 7,
+      "top_range_count": 6,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": 1
+        "diff": 0
       },
       "streak": {
-        "range": "101~150",
-        "count": 5
+        "range": "151~200",
+        "count": 1
       },
       "ranges": [
         {
@@ -51,15 +51,15 @@
         },
         {
           "range": "101~150",
-          "count": 7,
-          "pct": 77.8,
+          "count": 6,
+          "pct": 66.7,
           "value": 1.0
         },
         {
           "range": "151~200",
-          "count": 2,
-          "pct": 22.2,
-          "value": 0.2857
+          "count": 3,
+          "pct": 33.3,
+          "value": 0.5
         },
         {
           "range": "201~257",
@@ -69,6 +69,11 @@
         }
       ],
       "recent_5": [
+        {
+          "round": 1243,
+          "sum": 176,
+          "range": "151~200"
+        },
         {
           "round": 1242,
           "sum": 104,
@@ -88,27 +93,22 @@
           "round": 1239,
           "sum": 147,
           "range": "101~150"
-        },
-        {
-          "round": 1238,
-          "sum": 145,
-          "range": "101~150"
         }
       ]
     },
     {
       "label": "6개월",
       "round_count": 26,
-      "avg_sum": 140,
+      "avg_sum": 142,
       "top_range": "101~150",
-      "top_range_count": 17,
+      "top_range_count": 16,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": 4
+        "diff": 2
       },
       "streak": {
-        "range": "101~150",
-        "count": 5
+        "range": "151~200",
+        "count": 1
       },
       "ranges": [
         {
@@ -121,19 +121,19 @@
           "range": "51~100",
           "count": 1,
           "pct": 3.8,
-          "value": 0.0588
+          "value": 0.0625
         },
         {
           "range": "101~150",
-          "count": 17,
-          "pct": 65.4,
+          "count": 16,
+          "pct": 61.5,
           "value": 1.0
         },
         {
           "range": "151~200",
-          "count": 8,
-          "pct": 30.8,
-          "value": 0.4706
+          "count": 9,
+          "pct": 34.6,
+          "value": 0.5625
         },
         {
           "range": "201~257",
@@ -143,6 +143,11 @@
         }
       ],
       "recent_5": [
+        {
+          "round": 1243,
+          "sum": 176,
+          "range": "151~200"
+        },
         {
           "round": 1242,
           "sum": 104,
@@ -162,27 +167,22 @@
           "round": 1239,
           "sum": 147,
           "range": "101~150"
-        },
-        {
-          "round": 1238,
-          "sum": 145,
-          "range": "101~150"
         }
       ]
     },
     {
       "label": "1년",
       "round_count": 52,
-      "avg_sum": 139,
+      "avg_sum": 141,
       "top_range": "101~150",
       "top_range_count": 30,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": 2
+        "diff": 3
       },
       "streak": {
-        "range": "101~150",
-        "count": 5
+        "range": "151~200",
+        "count": 1
       },
       "ranges": [
         {
@@ -193,9 +193,9 @@
         },
         {
           "range": "51~100",
-          "count": 5,
-          "pct": 9.6,
-          "value": 0.1667
+          "count": 4,
+          "pct": 7.7,
+          "value": 0.1333
         },
         {
           "range": "101~150",
@@ -205,9 +205,9 @@
         },
         {
           "range": "151~200",
-          "count": 16,
-          "pct": 30.8,
-          "value": 0.5333
+          "count": 17,
+          "pct": 32.7,
+          "value": 0.5667
         },
         {
           "range": "201~257",
@@ -217,6 +217,11 @@
         }
       ],
       "recent_5": [
+        {
+          "round": 1243,
+          "sum": 176,
+          "range": "151~200"
+        },
         {
           "round": 1242,
           "sum": 104,
@@ -235,11 +240,6 @@
         {
           "round": 1239,
           "sum": 147,
-          "range": "101~150"
-        },
-        {
-          "round": 1238,
-          "sum": 145,
           "range": "101~150"
         }
       ]
@@ -252,11 +252,11 @@
       "top_range_count": 86,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": -2
+        "diff": -1
       },
       "streak": {
-        "range": "101~150",
-        "count": 5
+        "range": "151~200",
+        "count": 1
       },
       "ranges": [
         {
@@ -292,6 +292,11 @@
       ],
       "recent_5": [
         {
+          "round": 1243,
+          "sum": 176,
+          "range": "151~200"
+        },
+        {
           "round": 1242,
           "sum": 104,
           "range": "101~150"
@@ -310,11 +315,6 @@
           "round": 1239,
           "sum": 147,
           "range": "101~150"
-        },
-        {
-          "round": 1238,
-          "sum": 145,
-          "range": "101~150"
         }
       ]
     },
@@ -323,14 +323,14 @@
       "round_count": 515,
       "avg_sum": 139,
       "top_range": "101~150",
-      "top_range_count": 287,
+      "top_range_count": 286,
       "prev_period_diff": {
         "range": "101~150",
-        "diff": 12
+        "diff": 11
       },
       "streak": {
-        "range": "101~150",
-        "count": 5
+        "range": "151~200",
+        "count": 1
       },
       "ranges": [
         {
@@ -343,28 +343,33 @@
           "range": "51~100",
           "count": 53,
           "pct": 10.3,
-          "value": 0.1847
+          "value": 0.1853
         },
         {
           "range": "101~150",
-          "count": 287,
-          "pct": 55.7,
+          "count": 286,
+          "pct": 55.5,
           "value": 1.0
         },
         {
           "range": "151~200",
-          "count": 162,
-          "pct": 31.5,
-          "value": 0.5645
+          "count": 163,
+          "pct": 31.7,
+          "value": 0.5699
         },
         {
           "range": "201~257",
           "count": 12,
           "pct": 2.3,
-          "value": 0.0418
+          "value": 0.042
         }
       ],
       "recent_5": [
+        {
+          "round": 1243,
+          "sum": 176,
+          "range": "151~200"
+        },
         {
           "round": 1242,
           "sum": 104,
@@ -383,11 +388,6 @@
         {
           "round": 1239,
           "sum": 147,
-          "range": "101~150"
-        },
-        {
-          "round": 1238,
-          "sum": 145,
           "range": "101~150"
         }
       ]
