@@ -1,8 +1,8 @@
 {
   "summary": {
     "machine1": {
-      "count": 279,
-      "pct": 28.4
+      "count": 280,
+      "pct": 28.5
     },
     "machine2": {
       "count": 295,
@@ -14,27 +14,27 @@
     }
   },
   "all": {
-    "total_draws": 983,
+    "total_draws": 984,
     "top6": [
       {
         "number": 12,
         "count": 151,
-        "pct": 15.4
+        "pct": 15.3
       },
       {
         "number": 13,
         "count": 151,
-        "pct": 15.4
+        "pct": 15.3
       },
       {
         "number": 34,
         "count": 150,
-        "pct": 15.3
+        "pct": 15.2
       },
       {
         "number": 38,
         "count": 148,
-        "pct": 15.1
+        "pct": 15.0
       },
       {
         "number": 27,
@@ -49,12 +49,12 @@
     ],
     "bottom6": [
       {
-        "number": 25,
-        "count": 114,
-        "pct": 11.6
+        "number": 9,
+        "count": 115,
+        "pct": 11.7
       },
       {
-        "number": 9,
+        "number": 25,
         "count": 115,
         "pct": 11.7
       },
@@ -70,13 +70,13 @@
       },
       {
         "number": 32,
-        "count": 117,
-        "pct": 11.9
+        "count": 118,
+        "pct": 12.0
       },
       {
         "number": 5,
-        "count": 118,
-        "pct": 12.0
+        "count": 119,
+        "pct": 12.1
       }
     ],
     "number_stats": [
@@ -97,13 +97,13 @@
       },
       {
         "number": 4,
-        "count": 122,
-        "pct": 12.4
+        "count": 123,
+        "pct": 12.5
       },
       {
         "number": 5,
-        "count": 118,
-        "pct": 12.0
+        "count": 119,
+        "pct": 12.1
       },
       {
         "number": 6,
@@ -138,12 +138,12 @@
       {
         "number": 12,
         "count": 151,
-        "pct": 15.4
+        "pct": 15.3
       },
       {
         "number": 13,
         "count": 151,
-        "pct": 15.4
+        "pct": 15.3
       },
       {
         "number": 14,
@@ -202,8 +202,8 @@
       },
       {
         "number": 25,
-        "count": 114,
-        "pct": 11.6
+        "count": 115,
+        "pct": 11.7
       },
       {
         "number": 26,
@@ -217,8 +217,8 @@
       },
       {
         "number": 28,
-        "count": 128,
-        "pct": 13.0
+        "count": 129,
+        "pct": 13.1
       },
       {
         "number": 29,
@@ -237,8 +237,8 @@
       },
       {
         "number": 32,
-        "count": 117,
-        "pct": 11.9
+        "count": 118,
+        "pct": 12.0
       },
       {
         "number": 33,
@@ -248,7 +248,7 @@
       {
         "number": 34,
         "count": 150,
-        "pct": 15.3
+        "pct": 15.2
       },
       {
         "number": 35,
@@ -268,7 +268,7 @@
       {
         "number": 38,
         "count": 148,
-        "pct": 15.1
+        "pct": 15.0
       },
       {
         "number": 39,
@@ -287,8 +287,8 @@
       },
       {
         "number": 42,
-        "count": 120,
-        "pct": 12.2
+        "count": 121,
+        "pct": 12.3
       },
       {
         "number": 43,
@@ -312,7 +312,7 @@
         "even": 3,
         "pattern": "3:3",
         "count": 323,
-        "pct": 32.9
+        "pct": 32.8
       },
       {
         "odd": 4,
@@ -325,8 +325,8 @@
         "odd": 2,
         "even": 4,
         "pattern": "2:4",
-        "count": 223,
-        "pct": 22.7
+        "count": 224,
+        "pct": 22.8
       },
       {
         "odd": 5,
@@ -360,7 +360,7 @@
     "range_stats": [
       {
         "range": "1~9",
-        "count": 1133,
+        "count": 1135,
         "pct": 19.2,
         "value": 0.5
       },
@@ -372,19 +372,19 @@
       },
       {
         "range": "20~29",
-        "count": 1158,
+        "count": 1159,
         "pct": 19.6,
         "value": 0.6
       },
       {
         "range": "30~39",
-        "count": 1168,
+        "count": 1170,
         "pct": 19.8,
         "value": 0.65
       },
       {
         "range": "40~45",
-        "count": 1187,
+        "count": 1188,
         "pct": 20.1,
         "value": 0.725
       }
@@ -408,13 +408,13 @@
       },
       {
         "range": "121~140",
-        "count": 257,
-        "pct": 26.1
+        "count": 258,
+        "pct": 26.2
       },
       {
         "range": "141~160",
         "count": 211,
-        "pct": 21.5
+        "pct": 21.4
       },
       {
         "range": "161~",
@@ -423,6 +423,19 @@
       }
     ],
     "recent_10": [
+      {
+        "draw_no": 1245,
+        "date": "2026-10-10",
+        "numbers": [
+          4,
+          5,
+          25,
+          28,
+          32,
+          42
+        ],
+        "bonus_no": 12
+      },
       {
         "draw_no": 1244,
         "date": "2026-10-03",
@@ -539,26 +552,13 @@
           38
         ],
         "bonus_no": 10
-      },
-      {
-        "draw_no": 1235,
-        "date": "2026-08-01",
-        "numbers": [
-          6,
-          7,
-          11,
-          15,
-          39,
-          43
-        ],
-        "bonus_no": 20
       }
     ],
     "avg_sum_diff": "+0.0",
     "avg_sum_compare": "전체 평균 138.2"
   },
   "machine1": {
-    "total_draws": 279,
+    "total_draws": 280,
     "top6": [
       {
         "number": 37,
@@ -568,7 +568,7 @@
       {
         "number": 44,
         "count": 46,
-        "pct": 16.5
+        "pct": 16.4
       },
       {
         "number": 27,
@@ -578,24 +578,24 @@
       {
         "number": 31,
         "count": 44,
-        "pct": 15.8
+        "pct": 15.7
       },
       {
         "number": 38,
         "count": 44,
-        "pct": 15.8
+        "pct": 15.7
       },
       {
         "number": 45,
         "count": 44,
-        "pct": 15.8
+        "pct": 15.7
       }
     ],
     "bottom6": [
       {
         "number": 42,
-        "count": 27,
-        "pct": 9.7
+        "count": 28,
+        "pct": 10.0
       },
       {
         "number": 8,
@@ -615,19 +615,19 @@
       {
         "number": 21,
         "count": 32,
-        "pct": 11.5
+        "pct": 11.4
       },
       {
-        "number": 25,
+        "number": 29,
         "count": 32,
-        "pct": 11.5
+        "pct": 11.4
       }
     ],
     "number_stats": [
       {
         "number": 1,
         "count": 37,
-        "pct": 13.3
+        "pct": 13.2
       },
       {
         "number": 2,
@@ -637,17 +637,17 @@
       {
         "number": 3,
         "count": 37,
-        "pct": 13.3
+        "pct": 13.2
       },
       {
         "number": 4,
-        "count": 39,
-        "pct": 14.0
+        "count": 40,
+        "pct": 14.3
       },
       {
         "number": 5,
-        "count": 39,
-        "pct": 14.0
+        "count": 40,
+        "pct": 14.3
       },
       {
         "number": 6,
@@ -667,12 +667,12 @@
       {
         "number": 9,
         "count": 37,
-        "pct": 13.3
+        "pct": 13.2
       },
       {
         "number": 10,
         "count": 37,
-        "pct": 13.3
+        "pct": 13.2
       },
       {
         "number": 11,
@@ -682,12 +682,12 @@
       {
         "number": 12,
         "count": 34,
-        "pct": 12.2
+        "pct": 12.1
       },
       {
         "number": 13,
         "count": 37,
-        "pct": 13.3
+        "pct": 13.2
       },
       {
         "number": 14,
@@ -722,17 +722,17 @@
       {
         "number": 20,
         "count": 39,
-        "pct": 14.0
+        "pct": 13.9
       },
       {
         "number": 21,
         "count": 32,
-        "pct": 11.5
+        "pct": 11.4
       },
       {
         "number": 22,
         "count": 39,
-        "pct": 14.0
+        "pct": 13.9
       },
       {
         "number": 23,
@@ -742,12 +742,12 @@
       {
         "number": 24,
         "count": 39,
-        "pct": 14.0
+        "pct": 13.9
       },
       {
         "number": 25,
-        "count": 32,
-        "pct": 11.5
+        "count": 33,
+        "pct": 11.8
       },
       {
         "number": 26,
@@ -761,13 +761,13 @@
       },
       {
         "number": 28,
-        "count": 41,
-        "pct": 14.7
+        "count": 42,
+        "pct": 15.0
       },
       {
         "number": 29,
         "count": 32,
-        "pct": 11.5
+        "pct": 11.4
       },
       {
         "number": 30,
@@ -777,27 +777,27 @@
       {
         "number": 31,
         "count": 44,
-        "pct": 15.8
+        "pct": 15.7
       },
       {
         "number": 32,
-        "count": 38,
-        "pct": 13.6
+        "count": 39,
+        "pct": 13.9
       },
       {
         "number": 33,
         "count": 32,
-        "pct": 11.5
+        "pct": 11.4
       },
       {
         "number": 34,
         "count": 42,
-        "pct": 15.1
+        "pct": 15.0
       },
       {
         "number": 35,
         "count": 39,
-        "pct": 14.0
+        "pct": 13.9
       },
       {
         "number": 36,
@@ -812,7 +812,7 @@
       {
         "number": 38,
         "count": 44,
-        "pct": 15.8
+        "pct": 15.7
       },
       {
         "number": 39,
@@ -827,27 +827,27 @@
       {
         "number": 41,
         "count": 32,
-        "pct": 11.5
+        "pct": 11.4
       },
       {
         "number": 42,
-        "count": 27,
-        "pct": 9.7
+        "count": 28,
+        "pct": 10.0
       },
       {
         "number": 43,
         "count": 39,
-        "pct": 14.0
+        "pct": 13.9
       },
       {
         "number": 44,
         "count": 46,
-        "pct": 16.5
+        "pct": 16.4
       },
       {
         "number": 45,
         "count": 44,
-        "pct": 15.8
+        "pct": 15.7
       }
     ],
     "odd_stats": [
@@ -856,21 +856,21 @@
         "even": 3,
         "pattern": "3:3",
         "count": 103,
-        "pct": 36.9
+        "pct": 36.8
       },
       {
         "odd": 4,
         "even": 2,
         "pattern": "4:2",
         "count": 66,
-        "pct": 23.7
+        "pct": 23.6
       },
       {
         "odd": 2,
         "even": 4,
         "pattern": "2:4",
-        "count": 63,
-        "pct": 22.6
+        "count": 64,
+        "pct": 22.9
       },
       {
         "odd": 1,
@@ -884,14 +884,14 @@
         "even": 1,
         "pattern": "5:1",
         "count": 18,
-        "pct": 6.5
+        "pct": 6.4
       },
       {
         "odd": 6,
         "even": 0,
         "pattern": "6:0",
         "count": 6,
-        "pct": 2.2
+        "pct": 2.1
       },
       {
         "odd": 0,
@@ -904,31 +904,31 @@
     "range_stats": [
       {
         "range": "1~9",
-        "count": 322,
-        "pct": 19.2,
-        "value": 0.553
+        "count": 324,
+        "pct": 19.3,
+        "value": 0.6
       },
       {
         "range": "10~19",
         "count": 318,
-        "pct": 19.0,
+        "pct": 18.9,
         "value": 0.5
       },
       {
         "range": "20~29",
-        "count": 335,
+        "count": 336,
         "pct": 20.0,
-        "value": 0.763
+        "value": 0.775
       },
       {
         "range": "30~39",
-        "count": 349,
-        "pct": 20.8,
-        "value": 0.974
+        "count": 351,
+        "pct": 20.9,
+        "value": 1.0
       },
       {
         "range": "40~45",
-        "count": 350,
+        "count": 351,
         "pct": 20.9,
         "value": 1.0
       }
@@ -943,22 +943,22 @@
       {
         "range": "81~100",
         "count": 13,
-        "pct": 4.7
+        "pct": 4.6
       },
       {
         "range": "101~120",
         "count": 44,
-        "pct": 15.8
+        "pct": 15.7
       },
       {
         "range": "121~140",
-        "count": 81,
-        "pct": 29.0
+        "count": 82,
+        "pct": 29.3
       },
       {
         "range": "141~160",
         "count": 62,
-        "pct": 22.2
+        "pct": 22.1
       },
       {
         "range": "161~",
@@ -967,6 +967,19 @@
       }
     ],
     "recent_10": [
+      {
+        "draw_no": 1245,
+        "date": "2026-10-10",
+        "numbers": [
+          4,
+          5,
+          25,
+          28,
+          32,
+          42
+        ],
+        "bonus_no": 12
+      },
       {
         "draw_no": 1244,
         "date": "2026-10-03",
@@ -1083,19 +1096,6 @@
           45
         ],
         "bonus_no": 25
-      },
-      {
-        "draw_no": 1209,
-        "date": "2026-01-31",
-        "numbers": [
-          2,
-          17,
-          20,
-          35,
-          37,
-          39
-        ],
-        "bonus_no": 24
       }
     ],
     "avg_sum_diff": "+2.7",
